@@ -80,9 +80,9 @@ VeriCapture implements the following specifications:
 
 | Specification | Version | Description |
 |--------------|---------|-------------|
-| [CPP](./docs/CPP-Specification-v1_0.md) | 1.0 | Content Provenance Protocol |
-| [VCP](./docs/VCP-Specification-v1_1.md) | 1.1 | VeriCapture Protocol |
-| [VAP Framework](./docs/VAP_Framework_Specification_v1_2.md) | 1.2 | Verifiable AI Provenance Framework |
+| [CPP](https://github.com/veritaschain/cpp-spec) | 1.0 | Content Provenance Protocol |
+| [VCP](https://github.com/veritaschain/vcp-spec) | 1.1 | VeriCapture Protocol |
+| [VAP Framework](https://github.com/veritaschain/vap-spec) | 1.2 | Verifiable AI Provenance Framework |
 
 ## Localization
 
