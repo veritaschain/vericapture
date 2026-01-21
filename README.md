@@ -180,7 +180,7 @@ See [LICENSE](./LICENSE) for details.
 
 ## Related Projects
 
-- [VeriCheck Web](https://vericheck.veritaschain.org) - Online verification tool
+- [VeriCapture Web](https://veritaschain.org/vap/cpp/vericapture/) - Online verification tool
 - [VAP Framework](https://github.com/veritaschain/vap-framework) - Verifiable AI Provenance specifications
 
 ## Contact
