@@ -1,925 +1,0 @@
-/* 
-  Localizable.strings (Arabic)
-  VeriCapture
-  
-  © 2026 VeritasChain Co., Ltd.
-*/
-
-// MARK: - Tab Bar
-// MARK: - App Tagline
-"app.tagline" = "كاميرا الإثبات المشفرة";
-
-// MARK: - Tab Bar
-"tab.capture" = "التقاط";
-"tab.gallery" = "الأدلة";
-"tab.verify" = "تحقق";
-"tab.settings" = "الإعدادات";
-
-// MARK: - Camera View
-"camera.cpp_on" = "دليل CPP: مفعل";
-"camera.permission.title" = "الوصول للكاميرا";
-"camera.permission.message" = "يحتاج VeriCapture للوصول إلى الكاميرا لالتقاط الصور.";
-"camera.permission.button" = "فتح الإعدادات";
-"camera.toast.captured" = "تم إنشاء الدليل";
-"camera.first_capture_hint" = "سيتم تسجيل عملية الالتقاط هذه بشكل تشفيري";
-"camera.privacy_note" = "تتم معالجة الصور محلياً على جهازك";
-"camera.first_capture_loading" = "التشغيل الأول فقط - يستغرق إنشاء الدليل لحظة";
-"camera.cpp_proof_generation" = "إنشاء دليل CPP";
-"camera.auth_in_progress" = "جارٍ المصادقة...";
-"camera.keep_device_still" = "يرجى إبقاء الجهاز ثابتاً";
-
-// MARK: - Capture Result
-"result.title" = "نتيجة الالتقاط";
-"result.close" = "إغلاق";
-"result.generated" = "تم الإنشاء";
-"result.anchored" = "مثبت خارجياً";
-"result.pending" = "جاري التثبيت...";
-"result.error" = "خطأ";
-"result.proof_id" = "معرف الدليل";
-"result.filename" = "اسم الملف";
-"result.filesize" = "حجم الملف";
-"result.timestamp" = "وقت الالتقاط";
-"result.hash_algo" = "خوارزمية التجزئة";
-"result.sign_algo" = "خوارزمية التوقيع";
-"result.anchor_status" = "الطابع الزمني الخارجي";
-"result.anchor_pending" = "معلق (يثبت خلال ~30 دقيقة)";
-"result.anchor_complete" = "مثبت";
-"result.third_party_verifiable" = "يمكن التحقق من هذا الدليل بواسطة أطراف ثالثة مستقلة";
-"result.share" = "مشاركة";
-"result.copy_proof_id" = "نسخ معرف الدليل";
-"result.copy_proof_url" = "نسخ رابط التحقق";
-
-// MARK: - Share Options
-"share.title" = "اختر طريقة المشاركة";
-"share.cancel" = "إلغاء";
-"share.image_only" = "الصورة فقط";
-"share.image_only.desc" = "مشاركة عادية";
-"share.with_proof" = "مع الدليل";
-"share.with_proof.desc" = "بيانات التحقق الأساسية فقط (بدون PII)";
-"share.with_qr" = "مع رمز QR للتحقق";
-"share.with_qr.desc" = "يضيف رمز QR مع رابط التحقق";
-"share.sns_note" = "⚠️ يُظهر هذا الدليل أنه تم تسجيل عملية التقاط.\nلا يضمن صحة أو صلاحية المحتوى.";
-
-// MARK: - QR Preview
-"qr.title" = "معاينة QR";
-"qr.position" = "موضع QR";
-"qr.position.bottom_right" = "أسفل اليمين";
-"qr.position.bottom_left" = "أسفل اليسار";
-"qr.opacity" = "الشفافية";
-"qr.share_this" = "مشاركة هذه الصورة";
-"qr.verify_note" = "امسح QR للتحقق من هذا الدليل";
-"qr.verify_desc" = "رمز QR هو نقطة الدخول للتحقق";
-
-// MARK: - Gallery
-"gallery.title" = "قائمة الأدلة";
-"gallery.empty.title" = "لا توجد أدلة بعد";
-"gallery.empty.message" = "التقط صوراً في تبويب الالتقاط\nلإنشاء أدلة تشفيرية";
-"gallery.status.generated" = "تم الإنشاء";
-"gallery.status.anchored" = "مثبت";
-"gallery.status.pending" = "جاري التثبيت...";
-"gallery.status.failed" = "فشل";
-"gallery.status_legend.anchored" = "مثبت: تم الحصول على طابع زمني من طرف ثالث";
-"gallery.status_legend.pending" = "معلق: في انتظار إرسال الطابع الزمني";
-"gallery.group.pinned" = "📌 مثبت";
-"gallery.group.today" = "اليوم";
-"gallery.group.yesterday" = "أمس";
-"gallery.group.this_week" = "هذا الأسبوع";
-"gallery.group.this_month" = "هذا الشهر";
-
-// MARK: - Event Detail
-"detail.title" = "تفاصيل الدليل";
-"detail.share" = "مشاركة الدليل";
-"detail.delete" = "حذف هذا الدليل";
-"detail.delete.confirm_title" = "حذف الدليل";
-"detail.delete.confirm_message" = "هل أنت متأكد من حذف هذا الدليل؟ لا يمكن التراجع عن هذا الإجراء.";
-"detail.delete.confirm_delete" = "حذف";
-"detail.delete.confirm_cancel" = "إلغاء";
-"detail.section.basic" = "معلومات أساسية";
-"detail.section.crypto" = "معلومات تشفيرية";
-"detail.section.anchor" = "الطابع الزمني الخارجي";
-"detail.capture_location" = "موقع الالتقاط";
-"detail.capture_location_marker" = "نقطة الالتقاط";
-"detail.location_privacy_note" = "* يتم تخزين الموقع على الجهاز فقط (يتم تضمين التجزئة فقط في Proof JSON)";
-"detail.proof_id_note" = "(يُستخدم للتحقق من طرف ثالث)";
-"detail.forensic_export" = "تصدير جنائي";
-"detail.preparing_proof" = "جاري تحضير الدليل...";
-
-// MARK: - Verify
-"verify.title" = "VeriCheck";
-"verify.subtitle" = "التحقق من دليل CPP v1.0";
-"verify.scan_qr" = "مسح رمز QR";
-"verify.scan_qr_desc" = "قراءة QR من VeriCapture";
-"verify.select_file" = "اختيار ملف";
-"verify.input_json" = "إدخال JSON";
-"verify.input_json_title" = "إدخال Proof JSON";
-"verify.recent_verifications" = "عمليات التحقق الأخيرة";
-"verify.clear" = "مسح";
-"verify.paste" = "لصق";
-"verify.verify" = "تحقق";
-"verify.cancel" = "إلغاء";
-"verify.check_items" = "عناصر التحقق";
-"verify.check_event_hash" = "سلامة EventHash";
-"verify.check_signature" = "التوقيع الرقمي ES256";
-"verify.check_image_hash" = "التحقق من تجزئة الصورة";
-"verify.check_timestamp" = "الطابع الزمني RFC 3161";
-"verify.check_merkle" = "التحقق من دليل Merkle";
-"verify.qr_instruction" = "ضع رمز QR داخل الإطار";
-"verify.result_title" = "نتيجة التحقق";
-"verify.items_passed" = "عناصر ناجحة";
-"verify.proof_info" = "معلومات الدليل";
-"verify.capture_time" = "وقت الالتقاط";
-"verify.device" = "الجهاز";
-"verify.generated_by" = "تم الإنشاء بواسطة";
-"verify.tsa_time" = "وقت TSA";
-"verify.tsa_service" = "خدمة TSA";
-"verify.flash_mode" = "الفلاش";
-"verify.error_title" = "خطأ";
-"verify.instruction_text" = "امسح رمز QR أو اقرأ ملف Proof JSON للتحقق";
-"verify.status.verified" = "تم التحقق من الدليل";
-"verify.status.signature_invalid" = "توقيع غير صالح";
-"verify.status.hash_mismatch" = "عدم تطابق التجزئة (تم اكتشاف تلاعب)";
-"verify.status.anchor_pending" = "الطابع الزمني معلق";
-"verify.status.anchor_verified" = "تم التحقق من TSA";
-"verify.status.asset_mismatch" = "عدم تطابق تجزئة الصورة";
-"verify.status.pending" = "جاري التحقق...";
-"verify.status.error" = "خطأ";
-
-// MARK: - Settings
-"settings.title" = "الإعدادات";
-"settings.version" = "الإصدار";
-"settings.about.title" = "حول هذا التطبيق";
-"settings.about.description" = "VeriCapture هي أداة لإنشاء الأدلة تسجل\nعمليات الالتقاط ومصدر البيانات\nبتنسيق مقاوم للتلاعب.\nيمكن التحقق من السجلات بواسطة أطراف ثالثة مستقلة.\nهذا أول تصميم تطبيق استهلاكي في العالم يجمع بين\nإنشاء الأدلة التشفيرية والتحقق من طرف ثالث.\nلا يضمن صحة أو صلاحية المحتوى.";
-"settings.timestamp.title" = "الطابع الزمني من طرف ثالث";
-"settings.timestamp.pending" = "أدلة معلقة";
-"settings.timestamp.last" = "آخر تثبيت";
-"settings.timestamp.trigger" = "تثبيت الآن";
-"settings.timestamp.footer" = "يتم تثبيت وقت وجود السجل بواسطة سلطة طابع زمني خارجية. يتم التثبيت تلقائياً كل ~30 دقيقة.";
-"settings.timestamp.offline_note" = "يتم وضع الأدلة في قائمة الانتظار دون اتصال وإرسالها تلقائياً عند العودة للاتصال.";
-"settings.location.title" = "الموقع";
-"settings.location.note" = "الموقع اختياري. يمكنك الالتقاط وإنشاء الأدلة دون منح الوصول للموقع.";
-"settings.location.status_title" = "الإعداد الحالي";
-"settings.location.status_on" = "مسموح - الموقع مضمن في الأدلة";
-"settings.location.status_off" = "غير مسموح - لا يتم تسجيل الموقع";
-"settings.location.open_settings" = "تغيير إعدادات الموقع";
-"settings.location.on_desc" = "【مفعل】يتم تسجيل خط العرض/الطول، 'أين تم الالتقاط' قابل للتحقق.";
-"settings.location.off_desc" = "【معطل】لا يتم تسجيل الموقع. الالتقاط والأدلة تعمل بشكل طبيعي. عطل للخصوصية.";
-"settings.use_cases.title" = "حالات الاستخدام";
-"settings.use_cases.view" = "عرض سيناريوهات التطبيق";
-"settings.use_cases.desc" = "VeriCapture مفيد للقانون والتدقيق والصحافة حيث المصدر مطلوب. صحة المحتوى تتطلب تحققاً منفصلاً.";
-"settings.data.title" = "إدارة البيانات";
-"settings.data.storage_used" = "التخزين المستخدم";
-"settings.data.photo_count" = "الأدلة المحفوظة";
-"settings.data.export_all" = "تصدير الكل";
-"settings.data.delete_all" = "حذف الكل";
-"settings.data.delete_confirm_title" = "حذف جميع الأدلة";
-"settings.data.delete_confirm_message" = "حذف جميع الأدلة؟ لا يمكن التراجع عن هذا الإجراء.";
-
-// MARK: - Use Cases
-"use_cases.title" = "حالات الاستخدام";
-"use_cases.subtitle" = "أمثلة استخدام VeriCapture";
-"use_cases.legal_title" = "قانوني وتقاضي";
-"use_cases.legal_desc" = "إثبات تاريخ وعدم تلاعب صور الأدلة";
-"use_cases.audit_title" = "تدقيق وامتثال";
-"use_cases.audit_desc" = "تسجيل وإدارة مصدر صور الموقع";
-"use_cases.journalism_title" = "صحافة";
-"use_cases.journalism_desc" = "ضمان أصالة صور التقارير";
-"use_cases.insurance_title" = "تأمين وتقييم";
-"use_cases.insurance_desc" = "إثبات تاريخ صور الحوادث/الأضرار";
-"use_cases.real_estate_title" = "عقارات وبناء";
-"use_cases.real_estate_desc" = "إدارة سجلات العقارات/مشاريع البناء";
-"use_cases.medical_title" = "طبي وصحي";
-"use_cases.medical_desc" = "حماية صور السجلات الطبية من التلاعب";
-"use_cases.footer" = "※VeriCapture يسجل عمليات الالتقاط. لا يضمن صحة المحتوى.";
-
-// MARK: - Paywall
-"paywall.title" = "VeriCapture Pro";
-"paywall.subtitle" = "ميزات احترافية";
-"paywall.feature.unlimited" = "إنشاء أدلة غير محدود";
-"paywall.feature.priority" = "طابع زمني ذو أولوية";
-"paywall.feature.export" = "تصدير جماعي";
-"paywall.feature.support" = "دعم ذو أولوية";
-"paywall.price.monthly" = "شهري";
-"paywall.price.yearly" = "سنوي";
-"paywall.price.save" = "وفر";
-"paywall.subscribe" = "اشترك";
-"paywall.restore" = "استعادة الشراء";
-"paywall.terms" = "شروط الخدمة";
-"paywall.privacy" = "سياسة الخصوصية";
-// Paywall Additional Keys
-"paywall.close" = "إغلاق";
-"paywall.error" = "خطأ";
-"paywall.limit_reached_title" = "تم بلوغ الحد المجاني";
-"paywall.limit_reached_message" = "حالياً %d / 50 إثبات محفوظ.\nلحفظ إثباتات جديدة، احذف القديمة أو قم بالترقية إلى Pro.";
-"paywall.unlimited_storage" = "تخزين الإثباتات: غير محدود";
-"paywall.tsa_redundancy" = "تكرار TSA";
-"paywall.tsa_redundancy_desc" = "مزودون متعددون للطوابع الزمنية لضمان الموثوقية";
-"paywall.free_limit" = "النسخة المجانية: 50 إثبات";
-"paywall.load_failed" = "تعذر تحميل معلومات المنتج";
-"paywall.reload" = "إعادة التحميل";
-"paywall.reference_price_note" = "سعر مرجعي (صالح بعد App Store Connect)";
-"paywall.monthly_plan" = "الخطة الشهرية";
-"paywall.yearly_plan" = "الخطة السنوية";
-"paywall.save_percent" = "وفر 37%";
-"paywall.per_month" = "/شهر";
-"paywall.per_year" = "/سنة";
-"paywall.upgrade_button" = "الترقية إلى Pro";
-"paywall.loading_plans" = "جارٍ تحميل الخطط...";
-"paywall.restore_purchases" = "استعادة المشتريات";
-"paywall.limit_reached_capture_title" = "تم بلوغ الحد المجاني";
-"paywall.limit_reached_capture_message" = "تم إنشاء الإثبات لكن لا يمكن حفظه بسبب الحد المجاني (50).";
-"paywall.current_count" = "الحالي: %d / %d إثبات";
-"paywall.pro_unlimited" = "غير محدود مع Pro";
-"paywall.make_space" = "إخلاء مساحة";
-"paywall.later" = "لاحقاً";
-"paywall.free_tier" = "مجاني: 50 صورة/شهر";
-
-// MARK: - Errors
-"error.generic" = "حدث خطأ";
-"error.network" = "خطأ في الشبكة";
-"error.storage" = "خطأ في التخزين";
-"error.crypto" = "خطأ تشفيري";
-"error.camera" = "خطأ في الكاميرا";
-"error.permission" = "الإذن مطلوب";
-
-// MARK: - Common
-"common.ok" = "موافق";
-"common.cancel" = "إلغاء";
-"common.done" = "تم";
-"common.delete" = "حذف";
-"common.share" = "مشاركة";
-"common.copy" = "نسخ";
-"common.copied" = "تم النسخ";
-"common.save" = "حفظ";
-"common.loading" = "جاري التحميل...";
-"common.error" = "خطأ";
-"common.success" = "نجاح";
-"common.retry" = "إعادة المحاولة";
-
-// MARK: - Subscription Status
-"subscription.status.free" = "مجاني";
-"subscription.status.pro" = "Pro";
-"subscription.status.expired" = "منتهي";
-"subscription.limit.title" = "تم بلوغ الحد الشهري";
-"subscription.limit.message" = "المجاني يسمح بـ 50 صورة/شهر. ترقية إلى Pro للحصول على غير محدود.";
-"subscription.limit.upgrade" = "الترقية إلى Pro";
-"subscription.limit.wait" = "انتظر حتى الشهر القادم";
-
-// MARK: - Photo Library
-"photo.save.success" = "تم حفظ الصورة";
-"photo.save.error" = "فشل حفظ الصورة";
-"photo.permission.title" = "الوصول لمكتبة الصور";
-"photo.permission.message" = "الإذن مطلوب لحفظ الصور";
-
-// MARK: - Timestamp
-"timestamp.none" = "لا يوجد";
-"timestamp.pending" = "معلق";
-"timestamp.verified" = "تم التحقق";
-"timestamp.error" = "خطأ";
-
-// MARK: - File Size
-"filesize.bytes" = "%d بايت";
-"filesize.kb" = "%.1f ك.ب";
-"filesize.mb" = "%.1f م.ب";
-
-// MARK: - Date Format
-"date.today" = "اليوم";
-"date.yesterday" = "أمس";
-"date.format" = "yyyy/MM/dd HH:mm";
-
-// MARK: - Internal Export
-"share.internal_proof" = "تصدير جنائي";
-"share.internal_proof.desc" = "للاستخدام القانوني/التقديم (قد يحتوي على PII)";
-"share.internal_warning" = "⚠️ للاستخدام القانوني/التقديم الداخلي فقط";
-"share.internal_warning_detail" = "يتضمن الموقع وبيانات المستشعرات وتفاصيل الجهاز. احذر من الخصوصية عند المشاركة.";
-"share.internal_export_button" = "تصدير الدليل الكامل";
-"share.internal_auth_required" = "المصادقة مطلوبة";
-"share.internal_auth_message" = "المصادقة مطلوبة للوصول إلى بيانات الدليل الكاملة";
-
-// MARK: - Gallery Delete
-"gallery.delete.title" = "حذف الدليل";
-"gallery.delete.message" = "حذف هذا الدليل؟\nالمصادقة مطلوبة.";
-"gallery.delete.auth_error" = "خطأ في المصادقة";
-
-// MARK: - Human Attestation
-"attestation.auth_method" = "طريقة المصادقة";
-"attestation.auth_time" = "وقت المصادقة";
-"attestation.time_offset" = "الفارق من الالتقاط";
-"attestation.disclaimer" = "هذا ليس تحققاً من الهوية. يسجل أن الالتقاط تم بواسطة شخص اجتاز المصادقة.";
-
-// MARK: - Export Messages
-"export.share_sheet" = "عرض ورقة المشاركة";
-"export.failed" = "فشل التصدير";
-"export.no_proofs" = "لا توجد أدلة للتصدير";
-"export.error" = "خطأ في التصدير: %@";
-
-// MARK: - Subscription
-"subscription.until" = "حتى %@";
-"subscription.restore_title" = "استعادة الشراء";
-"subscription.restore_success" = "تم استعادة الشراء. Pro نشط الآن.";
-"subscription.restore_failed" = "لم يتم العثور على مشتريات قابلة للاستعادة";
-"subscription.auth_failed" = "فشلت المصادقة: %@";
-
-// MARK: - Settings Developer
-"settings.developer_lead" = "قائد التطوير";
-
-// MARK: - Forensic Settings
-"settings.forensic.title" = "إعدادات التحليل الجنائي";
-"settings.forensic.footer" = "تكوين معلومات الموقع للتصدير الجنائي.";
-"settings.forensic.signer_name_label" = "اسم الموقع";
-"settings.forensic.signer_name_placeholder" = "مثال: أحمد محمد";
-"settings.forensic.signer_name_hint" = "سيتم تسجيله كموقع في JSON الإثبات الجنائي";
-
-// MARK: - World First
-"world_first.comparison_title" = "مقارنة مع الحلول الموجودة";
-"world_first.c2pa_products" = "Leica M11-P، Sony، Nikon، إلخ.";
-"world_first.c2pa_quote" = "هوية الموقع ليست بالضرورة فاعلاً بشرياً";
-"world_first.c2pa_gap" = "ربط الهوية البشرية مستبعد عمداً";
-"world_first.truepic_quote" = "تخلى عن الحاجة لتحديد المستخدم بشكل فريد";
-"world_first.truepic_gap" = "مصادقة الجهاز فقط، لا تحقق من الوجود البشري";
-"world_first.numbers_quote" = "هوية قائمة على المحفظة";
-"world_first.numbers_gap" = "إثبات الملكية فقط، لا وجود فعلي";
-"world_first.witness_quote" = "يوقع المحتوى على الجهاز والوقت";
-"world_first.witness_gap" = "لتوثيق حقوق الإنسان، لا ربط بشري";
-"world_first.starling_quote" = "يتجنب عمداً تخزين المعلومات الشخصية";
-"world_first.starling_gap" = "الخصوصية أولاً، لا تحديد بشري";
-"world_first.findings_title" = "ملخص نتائج البحث";
-"world_first.finding1_title" = "استنتاج متطابق في جميع الدراسات الخمس";
-"world_first.finding1_detail" = "لا يوجد نظام موجود يلبي جميع المتطلبات الخمسة";
-"world_first.finding2_title" = "ربط الوجود البشري هو المفتاح";
-"world_first.finding2_detail" = "C2PA، Truepic، إلخ. يستبعدون هذا عمداً";
-"world_first.finding3_title" = "منع التسجيل الانتقائي لم يُحل";
-"world_first.finding3_detail" = "لم يُعثر على حل حتى في الأدبيات الأكاديمية";
-"world_first.finding4_title" = "إنشاء فئة جديدة";
-"world_first.finding4_detail" = "ابتكار معماري، ليس تحسيناً تدريجياً";
-"world_first.tech_notes_title" = "ملاحظات تقنية";
-"world_first.who_equals_device" = "\"من\" = مفتاح الجهاز";
-"world_first.who_explanation" = "في التنفيذ الحالي، يتم إثبات 'من' بواسطة مفتاح الجهاز الخاص بـ Secure Enclave.";
-"world_first.device_proof" = "هذا يثبت 'تم الالتقاط على هذا الجهاز'، وليس 'تم الالتقاط بواسطة هذا الإنسان' عبر المصادقة البيومترية.";
-"world_first.future_updates" = "تحديثات مستقبلية مخططة";
-"world_first.future_explanation" = "إثبات الوجود البشري الحقيقي عبر Apple App Attest وتكامل Face ID/Touch ID مخطط له.";
-"world_first.references_title" = "المراجع";
-"world_first.github_report" = "تقرير World First (GitHub)";
-"world_first.cap_spec" = "مواصفات CPP (GitHub)";
-"world_first.conclusion_title" = "الخلاصة";
-"world_first.conclusion_text" = "VeriCapture هو **أول** تطبيق كاميرا استهلاكي في العالم يربط تشفيرياً التقاط الوسائط بالوجود البشري المتحقق منه، ويمنع التسجيل الانتقائي، ويتيح التحقق من طرف ثالث دون ثقة.";
-"world_first.conclusion_detail" = "توصلت جميع الدراسات الخمس المستقلة إلى نفس الاستنتاج. لا يوجد نظام موجود يلبي جميع المتطلبات التقنية الخمسة الحرجة في وقت واحد.";
-"world_first.requirements_title" = "5 متطلبات التقييم";
-"world_first.req1_title" = "دليل تشفيري وقت الالتقاط";
-"world_first.req1_desc" = "دليل يُنشأ لحظة الغالق (ليس بعد الالتقاط)";
-"world_first.req2_title" = "ربط الوجود البشري";
-"world_first.req2_desc" = "ربط تشفيري بإنسان حقيقي متحقق منه، ليس فقط جهاز أو محفظة";
-"world_first.req3_title" = "منع التسجيل الانتقائي";
-"world_first.req3_desc" = "الالتقاطات المحذوفة قابلة للكشف تشفيرياً";
-"world_first.req4_title" = "التحقق من طرف ثالث مستقل";
-"world_first.req4_desc" = "تحقق دون ثقة بدون الاعتماد على المنصة أو المنشئ";
-"world_first.req5_title" = "نشر استهلاكي";
-"world_first.req5_desc" = "قابل للنشر كتطبيق كاميرا استهلاكي";
-"world_first.doc_id" = "معرف الوثيقة: VC-RESEARCH-FINAL-001";
-"world_first.research_date" = "اكتمل البحث: 15 يناير 2026";
-"world_first.research_note" = "بناءً على 5 دراسات مستقلة";
-"world_first.nav_title" = "دليل World-First";
-"world_first.done" = "تم";
-
-// MARK: - Pro Remaining
-"pro.remaining_format" = "%d / 50 متبقي";
-"pro.until_format" = "حتى %@";
-
-// Export Alert
-"settings.export" = "تصدير";
-"export.forensic_subtitle" = "للاستخدام القانوني/التقديم (قد يحتوي على PII)";
-
-// MARK: - Share Options Additional
-"share.internal_about_title" = "حول الدليل الكامل";
-"share.internal_about_desc" = "للاستخدام القانوني/التقديم فقط\nقد يحتوي على معلومات شخصية بما في ذلك الموقع";
-"share.privacy_design_title" = "الخصوصية حسب التصميم";
-"share.privacy_design_desc" = "مشاركة معلومات التحقق الأساسية فقط\nالموقع والمستشعرات وتفاصيل الجهاز مستبعدة";
-"share.sns_warning_title" = "إشعار مهم";
-"share.sns_warning_desc" = "سيتم إزالة البيانات الوصفية\nيُوصى بمشاركة QR";
-"share.recommended_badge" = "موصى به";
-"share.ecosystem_warning_title" = "ستفقد بيانات الدليل";
-"share.ecosystem_warning_desc" = "عند الرفع إلى SNS أو منصات أخرى، تُزال بيانات الدليل ويصبح التحقق مستحيلاً بعد إعادة التنزيل.";
-"share.ecosystem_recommendation" = "للاستخدام القانوني/التدقيق، استخدم 'مع QR للتحقق' أو 'التصدير الجنائي'";
-
-// MARK: - QR Style
-"qr.style_title" = "النمط";
-"qr.style_standard" = "قياسي";
-"qr.style_rounded" = "مستدير";
-"qr.style_branded" = "ماركة";
-"qr.preparing_image" = "جاري تحضير الصورة...";
-
-// MARK: - Disclaimer
-"disclaimer.title" = "إشعار مهم";
-"disclaimer.content_not_guaranteed" = "⚠️ صحة أو صلاحية المحتوى غير مضمونة";
-"disclaimer.records_operation_only" = "يسجل فقط أن عملية التقاط حدثت ومصدر البيانات";
-"disclaimer.requires_verification" = "تحديد صحة المحتوى يتطلب تحققاً منفصلاً";
-"disclaimer.not_identity_proof" = "هذا التطبيق لا يقوم بالتحقق من الهوية أو المصادقة";
-"disclaimer.share_notice" = "⚠️ يُظهر هذا الدليل أنه تم تسجيل عملية التقاط. لا يضمن صحة أو صلاحية المحتوى.";
-"disclaimer.verification_notice" = "التحقق يؤكد فقط سلامة السجل. صحة المحتوى غير متحقق منها.";
-
-// MARK: - About App
-"about.tool_definition" = "أداة إنشاء الأدلة";
-"about.what_it_records" = "يسجل عمليات الالتقاط ومصدر البيانات بتنسيق مقاوم للتلاعب";
-"about.what_it_does_not" = "لا يضمن صحة أو صلاحية أو مقبولية المحتوى القانونية";
-"about.intended_use" = "للتقديم القانوني ومسارات التدقيق وسجلات الأعمال حيث المصدر مطلوب";
-
-// MARK: - Attested Capture Mode
-"attested_capture.section_title" = "وضع مصادقة الالتقاط";
-"attested_capture.toggle_title" = "الالتقاط الموثق";
-"attested_capture.enabled" = "مفعل";
-"attested_capture.disabled" = "معطل";
-"attested_capture.auth_method" = "طريقة المصادقة";
-"attested_capture.description" = "يحاول المصادقة البيومترية (%@) قبل الالتقاط ويسجل النتيجة.";
-"attested_capture.disclaimer" = "⚠️ هذا ليس تحققاً من الهوية";
-"attested_capture.disclaimer_full" = "هذا يسجل فقط أنه تم محاولة المصادقة البيومترية للجهاز.\n\nلا يتحقق من:\n• من هو المصور\n• ما إذا كان مالك الجهاز التقط الصورة\n• ما إذا كان إنسان التقط الصورة\n\nلا تفسر 'موثق' على أنها 'هوية متحقق منها'.";
-"attested_capture.not_available" = "المصادقة البيومترية غير مُعدة على هذا الجهاز";
-"attested_capture.auth_failed" = "فشلت المصادقة";
-"attested_capture.auth_cancelled" = "تم إلغاء المصادقة";
-"attested_capture.badge" = "موثق";
-"attested_capture.badge_tooltip" = "تشير هذه الشارة إلى أنه تم محاولة المصادقة البيومترية للجهاز قبل الالتقاط.\n\nلا تتحقق من هوية المصور أو صحة المحتوى.";
-"attested_capture.attestation_title" = "التوثيق البشري";
-"attested_capture.attestation_method" = "الطريقة";
-"attested_capture.attestation_time" = "وقت المصادقة";
-"attested_capture.attestation_offset" = "الفارق من الالتقاط";
-"attested_capture.attestation_disclaimer" = "هذا ليس تحققاً من الهوية. يسجل أن الالتقاط تم بواسطة شخص اجتاز المصادقة.";
-
-// MARK: - Additional Settings
-"settings.location.status_not_determined" = "غير محدد - سيُسأل عند الالتقاط";
-"settings.language.title" = "اللغة";
-"settings.language.current" = "تغيير لغة التطبيق";
-"settings.language.note" = "تغيير اللغة من إعدادات النظام. أعد تشغيل التطبيق بعد التغيير.";
-"settings.spec.title" = "المواصفات";
-"settings.spec.about" = "حول VeriCapture";
-"settings.spec.cpp" = "مواصفات CPP v1.0";
-"settings.spec.world_first" = "حول تقرير World-First";
-"settings.usecases.title" = "حالات الاستخدام";
-"settings.usecases.browse" = "تصفح حالات الاستخدام";
-"settings.usecases.footer" = "VeriCapture مفيد للحالات القانونية والتدقيق والصحافة حيث سجلات المصدر مطلوبة. صحة المحتوى تتطلب تحققاً منفصلاً.";
-"settings.philosophy" = "Verify, Don't Trust.";
-"settings.philosophy.desc" = "يمكن التحقق من الأدلة بواسطة أطراف ثالثة مستقلة دون الثقة في أي منظمة محددة.";
-"settings.developer" = "المطور";
-"settings.developer.name" = "VeritasChain Co., Ltd.";
-"settings.support_message" = "للإبلاغ عن الأخطاء أو المشكلات، يرجى التواصل عبر developers@veritaschain.org أو إرسال رسالة LinkedIn إلى المطور الرئيسي. عادةً ما يتم نشر الإصلاحات خلال 24 ساعة.";
-"settings.plan_section" = "الخطة";
-"settings.free_plan" = "الخطة المجانية";
-"settings.pro_active" = "Pro نشط";
-"settings.manage_subscription" = "إدارة الاشتراك";
-"settings.remaining_slots" = "متبقي %d / %d صورة";
-"settings.approaching_limit" = "يقترب من الحد";
-"settings.upgrade_to_pro" = "الترقية إلى Pro";
-"settings.restore_purchases" = "استعادة المشتريات";
-"settings.data_management" = "إدارة البيانات";
-"settings.export_all_forensic" = "تصدير جميع الأدلة (جنائي)";
-"settings.export_all_forensic_desc" = "بيانات كاملة تشمل الموقع والمستشعرات";
-"settings.export_all_forensic_footer" = "تصدير جماعي للبيانات الكاملة لجميع الأدلة للتقديم القانوني. المصادقة مطلوبة.";
-"settings.exporting_all" = "جاري تصدير جميع الأدلة...";
-"settings.technical_advantage" = "الميزة التقنية";
-"settings.world_first_evidence" = "دليل World-First";
-"settings.world_first_evidence_desc" = "تم التحقق بواسطة 5 أبحاث مستقلة";
-"settings.world_first_evidence_footer" = "اكتشف لماذا VeriCapture هو أول تطبيق في العالم مقارنة بـ C2PA، Truepic، Numbers Protocol، إلخ.";
-
-// MARK: - Export Additional
-"export.forensic_title" = "التصدير الجنائي";
-"export.forensic_confirm_title" = "التصدير الجنائي";
-"export.forensic_confirm_message" = "تصدير Proof JSON الكامل بما في ذلك الموقع وبيانات المستشعرات وتفاصيل الجهاز.\n\n⚠️ للمشاركة مع طرف ثالث، استخدم \"مشاركة مع الدليل\".";
-"export.forensic_button" = "تصدير";
-"export.complete_title" = "اكتمل التصدير";
-"export.auth_error_title" = "خطأ في المصادقة";
-"export.auth_failed_message" = "فشلت المصادقة: %@";
-
-// MARK: - World First Additional
-"world_first.title" = "دليل World-First";
-"world_first.subtitle" = "تم التحقق بواسطة 5 أبحاث مستقلة";
-"world_first.conclusion_subtext" = "توصلت جميع الأبحاث الخمسة المستقلة إلى نفس الاستنتاج. لا يوجد نظام موجود يلبي جميع المتطلبات التقنية الخمسة الحرجة في وقت واحد.";
-"world_first.document_id" = "معرف الوثيقة: VC-RESEARCH-FINAL-001";
-"world_first.based_on_research" = "بناءً على 5 أبحاث مستقلة";
-
-// MARK: - Initialization
-"init.title" = "VeriCapture";
-"init.subtitle" = "كاميرا الدليل التشفيري";
-"init.error" = "خطأ في التهيئة";
-
-// MARK: - Common Additional
-"common.unknown" = "غير معروف";
-
-// MARK: - Error Additional
-"error.title" = "خطأ";
-"error.ok" = "موافق";
-"error.unknown" = "خطأ غير معروف";
-
-// MARK: - Camera Info Popover
-"camera.info.title" = "إنشاء دليل CPP";
-"camera.info.feature1" = "دليل تشفيري يُنشأ عند الالتقاط";
-"camera.info.feature2" = "لا يمكن التلاعب بالصورة لاحقاً";
-"camera.info.feature3" = "يمكن لأطراف ثالثة التحقق بشكل مستقل";
-"camera.info.secure_enclave" = "موقع في Secure Enclave";
-"camera.info.disclaimer" = "※ لا يضمن صحة أو شرعية المحتوى";
-
-// MARK: - Permission Screen
-"permission.camera_access" = "الوصول للكاميرا";
-"permission.camera_message" = "VeriCapture ينشئ أدلة تشفيرية\nلصورك.\nيرجى السماح بالوصول للكاميرا.";
-"permission.allow_camera" = "السماح للكاميرا";
-"permission.open_settings" = "فتح الإعدادات";
-
-// MARK: - Gallery Additional
-"gallery.context.delete" = "حذف";
-"gallery.remaining" = "%d متبقي";
-
-// MARK: - Gallery Pinning
-"gallery.pin.pin" = "تثبيت";
-"gallery.pin.unpin" = "إلغاء التثبيت";
-
-// MARK: - Gallery Search
-"gallery.search.placeholder" = "بحث...";
-"gallery.search.no_results" = "لم يتم العثور على أدلة مطابقة";
-"gallery.search.clear_filter" = "مسح الفلتر";
-
-// MARK: - Gallery Filter
-"gallery.filter.all" = "الكل";
-"gallery.filter.attested" = "Attested فقط";
-"gallery.filter.anchored" = "مثبت";
-"gallery.filter.pending" = "قيد الانتظار";
-
-// MARK: - Gallery Selection
-"gallery.select.title" = "%d محدد";
-"gallery.select.select_all" = "تحديد الكل";
-"gallery.select.deselect_all" = "إلغاء تحديد الكل";
-"gallery.select.delete_title" = "حذف %d عنصر";
-"gallery.select.delete_message" = "حذف الأدلة المحددة؟ لا يمكن التراجع عن هذا الإجراء.";
-
-// MARK: - Share Options (Location)
-"share.include_location" = "تضمين موقع الالتقاط";
-"share.include_location_note" = "※ يتضمن خط العرض/الطول\n※ قد يحتوي على معلومات شخصية";
-
-// MARK: - Verification (JSON Input)
-"verify.json_input.title" = "أدخل JSON الإثبات";
-"verify.json_input.description" = "الصق JSON الإثبات المستلم عبر 'مشاركة مع الإثبات'";
-
-// MARK: - Verification Result
-"verify.result.authentic_message" = "تم تسجيل هذه الصورة بشكل أصيل في وقت الالتقاط";
-"verify.result.hash_mismatch_message" = "عدم تطابق التجزئة. تم تعديل البيانات";
-"verify.result.attestation_section" = "شهادة الالتقاط";
-"verify.result.attestation_description" = "تمت محاولة المصادقة البيومترية عند الالتقاط";
-"verify.result.location_section" = "موقع الالتقاط";
-"verify.result.latitude" = "خط العرض";
-"verify.result.longitude" = "خط الطول";
-"verify.result.location_warning" = "تم تضمين بيانات الموقع هذه في التصدير الجنائي. قد تشكل معلومات شخصية.";
-
-// MARK: - Verification Checks
-"verify.check.json_parse" = "تحليل JSON";
-"verify.check.version" = "التحقق من الإصدار";
-"verify.check.event_hash" = "التحقق من EventHash";
-"verify.check.signature" = "التحقق من التوقيع";
-"verify.check.image_hash" = "التحقق من تجزئة الصورة";
-"verify.check.step1" = "الخطوة 1/4: تحليل JSON...";
-"verify.check.step2" = "الخطوة 2/4: التحقق من الإصدار...";
-"verify.check.step3" = "الخطوة 3/4: التحقق من EventHash...";
-"verify.check.step4" = "الخطوة 4/4: التحقق من التوقيع...";
-"verify.check.step_image" = "إضافي: التحقق من تجزئة الصورة...";
-"verify.check.version_supported" = "مدعوم";
-"verify.check.version_unsupported" = "غير مدعوم";
-"verify.check.hash_match" = "تجزئة SHA-256: متطابق";
-"verify.check.hash_mismatch" = "تجزئة SHA-256: غير متطابق";
-"verify.check.hash_format_ok" = "تجزئة SHA-256: التنسيق صحيح";
-"verify.check.hash_format_invalid" = "تنسيق تجزئة غير صالح";
-"verify.check.image_not_provided" = "الصورة غير متوفرة - تم التخطي";
-"verify.check.event_hash_desc" = "التحقق من سلامة تجزئة الحدث";
-"verify.check.event_hash_format_desc" = "التحقق من تنسيق تجزئة الحدث";
-"share.location_no_data" = "لا يحتوي هذا الدليل على بيانات موقع. لتضمين الموقع، يرجى تمكين الوصول إلى الموقع في الإعدادات.";
-"verify.check.json_parse_desc" = "التحقق من بنية JSON للإثبات";
-"verify.check.version_desc" = "التحقق من الإصدار المدعوم";
-"verify.check.signature_desc" = "التحقق من توقيع ECDSA P-256 (ES256)";
-"verify.check.image_hash_desc" = "التحقق من سلامة الأصل";
-"verify.check.signature_valid" = "توقيع ES256: صالح";
-"verify.check.signature_invalid" = "توقيع ES256: غير صالح";
-"verify.check.image_match" = "SHA-256: متطابق";
-"verify.check.image_mismatch" = "SHA-256: غير متطابق (احتمال تلاعب)";
-"verify.check.verification_error" = "خطأ في التحقق: %@";
-"verify.check.step_tsa" = "إضافي: التحقق من TSA...";
-"verify.check.merkle" = "التحقق من Merkle Proof";
-"verify.check.merkle_desc" = "التحقق من دليل Merkle";
-"verify.check.merkle_match" = "جذر Merkle: متطابق";
-"verify.check.merkle_mismatch" = "جذر Merkle: غير متطابق";
-"verify.check.tsa" = "طابع زمني TSA";
-"verify.check.tsa_desc" = "التحقق من الطابع الزمني RFC 3161";
-"verify.check.signature_presence_desc" = "التحقق من وجود توقيع ES256";
-"verify.check.signature_present" = "توقيع ES256: موجود";
-"verify.check.signature_missing" = "توقيع غير صالح";
-"verify.check.shareable_format" = "تنسيق Shareable v%@";
-"verify.check.unknown" = "غير معروف";
-"verify.error.invalid_format" = "تنسيق Proof JSON غير صالح";
-
-// رسالة طلب مسح QR
-"verify.proof_needed_title" = "بيانات الإثبات مطلوبة";
-"verify.proof_needed_message" = "يحتوي رمز QR هذا على معرف الإثبات فقط.\nللتحقق، اطلب من المصور المشاركة باستخدام \"مع الإثبات (Proof JSON)\".";
-"verify.request_data" = "طلب البيانات";
-"verify.request_proof_line1" = "أرغب في التحقق من إثبات هذه الصورة/الفيديو.";
-"verify.request_proof_line2" = "إذا تم التقاطها باستخدام VeriCapture، يرجى اختيار \"مع الإثبات (Proof JSON)\" والإرسال.";
-"verify.request_proof_footer" = "(يمكن التحقق من هذا الإثبات بدون اتصال من قبل أطراف ثالثة)";
-"verify.request_proof_disclaimer" = "(لا يضمن صحة أو مشروعية المحتوى)";
-
-"verify.result.signature_invalid_message" = "التوقيع غير صالح. قد تكون البيانات قد تم العبث بها";
-"verify.result.asset_mismatch_message" = "الصورة لا تتطابق مع البيانات الأصلية";
-"verify.result.anchor_pending_message" = "اكتمل التحقق. الطابع الزمني قيد الانتظار";
-"verify.result.pending_message" = "جارٍ التحقق...";
-"verify.result.error_message" = "حدث خطأ أثناء التحقق";
-
-// MARK: - Paywall Additional
-"paywall.tagline" = "أطلق العنان للقوة الكاملة للأدلة المشفرة.";
-"paywall.pro_benefits_title" = "ما يتغير مع Pro";
-"paywall.free_features_title" = "الميزات المجانية";
-"paywall.free_feature.capture" = "التقاط";
-"paywall.free_feature.proof" = "إنشاء دليل";
-"paywall.free_feature.qr" = "مشاركة QR";
-"paywall.free_feature.json" = "تصدير JSON";
-"paywall.select_plan" = "اختر الخطة";
-"paywall.subscription_info_title" = "حول الاشتراكات";
-"paywall.subscription_info_body" = "• سيتم خصم الدفع من Apple ID عند التأكيد\n• يتجدد الاشتراك تلقائياً ما لم يتم الإلغاء قبل 24 ساعة من نهاية الفترة\n• إدارة أو إلغاء الاشتراكات في الإعدادات";
-
-// Onboarding
-"onboarding.title1" = "مرحباً بك في VeriCapture";
-"onboarding.desc1" = "تطبيق كاميرا يسجل لقطاتك بشكل مشفر، ويثبت متى وماذا تم تصويره.";
-"onboarding.title2" = "كشف التلاعب";
-"onboarding.desc2" = "توقيعات رقمية منشأة في Secure Enclave. يمكن اكتشاف أي تعديل على صورك.";
-"onboarding.title3" = "طابع زمني خارجي";
-"onboarding.desc3" = "جهة الطابع الزمني تتحقق من وقت الالتقاط. يمكن لأي شخص التحقق بشكل مستقل من وقت التقاط الصور.";
-"onboarding.title4" = "معيار مفتوح";
-"onboarding.desc4" = "متوافق مع CPP v1.0. مواصفات مفتوحة ومحايدة يمكن لأي شخص التحقق منها.";
-"onboarding.next" = "التالي";
-"onboarding.start" = "ابدأ";
-"onboarding.skip" = "تخطي";
-
-// MARK: - CPP Additional Spec Localization
-
-// Media Status
-"media_status.present" = "الوسائط موجودة";
-"media_status.purged" = "تم المسح";
-"media_status.corrupted" = "تالف";
-"media_status.migrated" = "تم الترحيل";
-
-// Event Status
-"event_status.active" = "نشط";
-"event_status.invalidated" = "غير صالح";
-"event_status.superseded" = "مستبدل";
-
-// Anchor Status
-"anchor_status.pending" = "تثبيت معلق";
-"anchor_status.anchored" = "مثبت";
-"anchor_status.failed" = "فشل التثبيت";
-"anchor_status.skipped" = "تم التخطي";
-"anchor_status.pending_description" = "اكتمل توقيع الجهاز. سيتم التثبيت الخارجي في الدفعة التالية.";
-"anchor_status.anchored_description" = "تم الحصول على إثبات الوجود من جهة طابع زمني متوافقة مع RFC 3161.";
-"anchor_status.failed_description" = "فشل التثبيت الخارجي. يمكنك المحاولة مرة أخرى.";
-"anchor_status.trigger_now" = "ثبت الآن";
-
-// Invalidation Reason
-"invalidation_reason.privacy" = "حماية الخصوصية";
-"invalidation_reason.accidental" = "تصحيح التقاط عرضي";
-"invalidation_reason.inappropriate" = "محتوى غير لائق";
-"invalidation_reason.court_order" = "أمر محكمة";
-"invalidation_reason.gdpr" = "طلب محو GDPR";
-"invalidation_reason.duplicate" = "تم اكتشاف نسخة مكررة";
-"invalidation_reason.integrity" = "سلامة مخترقة";
-
-// Delete / Purge / Invalidate
-"delete.sheet_title" = "خيارات الحذف";
-"delete.media_title" = "حذف الصورة";
-"delete.media_description" = "سيتم حذف بيانات الصورة فقط. سيبقى سجل الالتقاط.";
-"delete.media_confirm" = "حذف هذه الصورة؟";
-"delete.media_confirm_message" = "سيتم حذف بيانات الصورة، لكن سجل الالتقاط سيبقى.\n\nAssetHash يسمح بمطابقة نفس الصورة مستقبلاً.";
-"delete.media_button" = "حذف";
-
-"delete.invalidate_title" = "إبطال الإثبات";
-"delete.invalidate_description" = "إبطال هذا الإثبات (لا يمكن التراجع). حقيقة الإبطال ستبقى كسجل.";
-"delete.invalidate_confirm" = "إبطال هذا الإثبات؟";
-"delete.invalidate_confirm_message" = "هذا الإجراء لا يمكن التراجع عنه.\n\nسيتم تسجيل الإثبات كـ 'مبطل' وسيفقد قيمته القانونية.\n\nحقيقة الإبطال ستبقى كمسار تدقيق.";
-"delete.invalidate_button" = "إبطال";
-"delete.invalidate_select_reason" = "اختر سبب الإبطال";
-"delete.confirm_title" = "حذف هذا الإثبات؟";
-"delete.confirm_message" = "سيتم حذف الصورة والإثبات. لا يمكن التراجع عن هذا الإجراء.\n\nسيتم تسجيل الحذف في مسار التدقيق.";
-"delete.confirm_button" = "حذف";
-
-"delete.nothing_deleted" = "لا يمكن لأي عملية جعلها 'لم تحدث'";
-"delete.record_remains" = "حقيقة الالتقاط مسجلة";
-
-// Forensic Export Warnings
-"forensic_warning.pending_title" = "إثباتات معلقة للتثبيت الخارجي";
-"forensic_warning.pending_message" = "للأغراض القانونية، يُوصى بالتثبيت الخارجي لجميع الإثباتات.";
-"forensic_warning.anchor_all" = "ثبت الكل الآن";
-"forensic_warning.export_anyway" = "تصدير على أي حال";
-"forensic_warning.what_is_anchor" = "ما هو التثبيت الخارجي؟";
-"forensic_warning.anchor_explanation" = "جهة الطابع الزمني المتوافقة مع RFC 3161 (TSA) تثبت بشكل مستقل وقت وجود الإثباتات. هذا يعزز الموثوقية كدليل قانوني.";
-
-// Gallery Status Badges
-"gallery_status.anchored" = "مثبت";
-"gallery_status.pending" = "معلق";
-"gallery_status.failed" = "فشل";
-"gallery_status.invalidated" = "مبطل";
-"gallery_status.media_purged" = "تم مسح الوسائط";
-
-// أخطاء ماسح QR
-"verify.qr_error.camera_unavailable" = "الكاميرا غير متوفرة";
-"verify.qr_error.permission_denied" = "لم يتم منح إذن الكاميرا";
-
-// MARK: - التحقق من سلامة السلسلة
-
-"chain.title" = "سلامة السلسلة";
-"chain.statistics_title" = "إحصائيات السلسلة";
-"chain.verification_title" = "التحقق من السلامة";
-"chain.verification_footer" = "يتحقق من أن جميع الأحداث مرتبطة بشكل صحيح ولم يحدث أي تلاعب.";
-"chain.run_verification" = "تشغيل التحقق";
-"chain.error_details_title" = "تفاصيل الخطأ";
-"chain.how_it_works" = "كيف يعمل";
-"chain.total_events" = "الإجمالي";
-"chain.active_events" = "نشط";
-"chain.invalidated_events" = "ملغى";
-"chain.tombstones" = "شواهد القبور";
-"chain.anchored" = "مثبت";
-"chain.pending_anchor" = "قيد الانتظار";
-"chain.date_range" = "نطاق التاريخ";
-"chain.verification_passed" = "تم التحقق من سلامة السلسلة";
-"chain.verification_failed" = "تم اكتشاف مشاكل في السلامة";
-"chain.checked_format" = "تم فحص %d حدث، %d شاهد قبر";
-"chain.verified_at" = "تم التحقق في %@";
-"chain.errors_found" = "تم العثور على %d أخطاء";
-"chain.error_prev_hash" = "عدم تطابق الهاش السابق";
-"chain.error_event_hash" = "عدم تطابق هاش الحدث";
-"chain.error_signature" = "توقيع غير صالح";
-"chain.error_tombstone_target" = "عدم تطابق هدف شاهد القبر";
-"chain.error_orphaned_tombstone" = "شاهد قبر يتيم";
-"chain.error_timestamp" = "شذوذ الطابع الزمني";
-"chain.explain_prev_hash" = "ربط سلسلة الهاش";
-"chain.explain_prev_hash_desc" = "كل حدث يحتوي على هاش الحدث السابق، مما يخلق سلسلة غير قابلة للكسر. إذا تم تعديل أي حدث، تصبح جميع الهاشات اللاحقة غير صالحة.";
-"chain.explain_event_hash" = "سلامة هاش الحدث";
-"chain.explain_event_hash_desc" = "يتم تشفير محتوى كل حدث باستخدام SHA-256. أي تعديل على بيانات الحدث سينتج عنه هاش مختلف.";
-"chain.explain_tombstone" = "سجلات شواهد القبور";
-"chain.explain_tombstone_desc" = "عندما يتم إبطال إثبات، يتم تسجيل حدث شاهد قبر في السلسلة. يبقى الحدث الأصلي، لكنه يُعلَّم على أنه غير صالح.";
-
-// Chain Reset
-"chain.danger_zone" = "منطقة الخطر";
-"chain.reset_chain" = "إعادة تعيين السلسلة";
-"chain.reset_chain_footer" = "يحذف جميع الأحداث والأدلة والوسائط. لا يمكن التراجع عن هذا الإجراء. استخدمه لحل مشاكل سلامة السلسلة بعد التحديثات.";
-"chain.reset_confirm_title" = "إعادة تعيين السلسلة؟";
-"chain.reset_confirm_message" = "سيؤدي هذا إلى حذف جميع الأحداث والشواهد والمراسي وملفات الوسائط بشكل دائم. ستبدأ السلسلة من جديد من GENESIS. لا يمكن التراجع عن هذا الإجراء.";
-"chain.reset_confirm_button" = "إعادة تعيين السلسلة";
-"chain.auth_error" = "خطأ في المصادقة";
-"chain.auth_failed" = "فشل المصادقة: %@";
-
-// v36 TSA Redundancy & Chain Integrity
-"settings.tsa.provider" = "مزود TSA";
-"settings.tsa.configure" = "تكوين";
-"detail.anchor_info" = "معلومات الطابع الزمني";
-"detail.anchor_provider" = "مزود TSA";
-"detail.anchor_time" = "وقت التثبيت";
-"detail.anchor_id" = "معرف التثبيت";
-"chain.verification_passed_with_warnings" = "السلامة جيدة (مع تحذيرات)";
-"chain.warnings_found" = "%d تحذيرات";
-"chain.error_deleted_gap" = "فجوة بسبب الحذف";
-"settings.timestamp.footer_pro" = "التحويل التلقائي: DigiCert → Sectigo. يتم الترسيخ تلقائياً كل ~30 دقيقة.";
-"verify.check.signature_no_public_key" = "لا يمكن التحقق - public_key مفقود في الإثبات";
-
-// MARK: - Image Verification (AssetHash)
-"verify.image_verification_title" = "التحقق من الصورة";
-"verify.image_verification_desc" = "اختر الصورة الأصلية للتحقق من تطابقها مع الإثبات. هذا يؤكد أن الصورة لم يتم تعديلها.";
-"verify.expected_asset_hash" = "AssetHash المتوقع:";
-"verify.select_image_to_verify" = "اختر صورة للتحقق";
-"verify.select_image_hint" = "اختر ملف الصورة الأصلي\nللتحقق منه مقابل الإثبات";
-"verify.image_selected" = "تم اختيار الصورة";
-"verify.change_image" = "تغيير الصورة";
-"verify.verify_with_image" = "التحقق مع الصورة";
-"verify.verify_without_image" = "التحقق من الإثبات فقط";
-"verify.skip_image_verification" = "تخطي التحقق من الصورة";
-"verify.image_verification_note" = "يؤكد التحقق من الصورة أن الصورة تتطابق مع AssetHash في الإثبات. بدون هذا، يتم التحقق من هيكل الإثبات فقط.";
-"verify.asset_hash_verification" = "التحقق من AssetHash";
-"verify.select_image_from_files" = "اختر من تطبيق الملفات
-(الملف الأصلي، ليس الصور)";
-
-// MARK: - Raw Data Export
-"share.raw_data_export" = "حفظ في الملفات";
-"share.raw_data_export_desc" = "حفظ مباشرة في تطبيق الملفات (ليس واتساب)";
-"share.raw_data_export_note" = "واتساب/AirDrop يضغط الصور. استخدم تطبيق الملفات للحفاظ على البيانات الأصلية";
-"share.for_verification" = "للتحقق";
-"verify.proof_file" = "إثبات VeriCapture";
-
-// MARK: - Full Chain Export with Tombstones
-"export.full_chain_title" = "تصدير السلسلة الكاملة";
-"export.full_chain_desc" = "تصدير جميع الأدلة بما في ذلك سجلات الحذف (شواهد القبور)";
-"export.include_tombstones" = "تضمين شواهد القبور";
-"export.include_tombstones_desc" = "تضمين سجلات الإبطال لإثبات أن عمليات الحذف كانت مقصودة";
-"export.shareable_package" = "حزمة قابلة للمشاركة";
-"export.shareable_package_desc" = "التحقق من طرف ثالث (بيانات قليلة، الخصوصية أولاً)";
-"export.internal_package" = "الحزمة الداخلية";
-"export.internal_package_desc" = "مسار تدقيق كامل (للطب الشرعي والأغراض القانونية)";
-"export.tombstone_note" = "شواهد القبور تثبت أن عمليات الحذف مقصودة وليست تلاعباً";
-"export.tombstone_count" = "يتضمن %d شاهد قبر";
-"export.package_generated" = "تم إنشاء حزمة التصدير";
-"export.package_includes" = "يتضمن %d حدث و%d شاهد قبر";
-
-// Chain Statistics Labels
-"chain.stats_note" = "الإجمالي = الأحداث النشطة + الملغاة (شواهد القبور محسوبة بشكل منفصل)";
-"chain.active_note" = "أدلة صالحة";
-"chain.invalidated_note" = "أدلة ملغاة عبر شاهد القبر";
-
-// MARK: - Case Management (v40)
-"case.title" = "الحالات";
-"case.create_new" = "إنشاء حالة جديدة";
-"case.empty_title" = "لا توجد حالات";
-"case.empty_message" = "أنشئ حالة لتنظيم لقطاتك حسب المشروع أو الموقع.";
-"case.current" = "الحالة الحالية";
-"case.other" = "حالات أخرى";
-"case.archived" = "مؤرشف";
-"case.show_archived" = "إظهار المؤرشفة";
-"case.name" = "الاسم";
-"case.name_placeholder" = "أدخل اسم الحالة";
-"case.description" = "الوصف";
-"case.description_placeholder" = "ملاحظات اختيارية";
-"case.icon" = "الأيقونة";
-"case.color" = "اللون";
-"case.select" = "تحديد";
-"case.edit" = "تعديل";
-"case.archive" = "أرشفة";
-"case.unarchive" = "إلغاء الأرشفة";
-"case.delete" = "حذف";
-"case.export" = "تصدير";
-"case.create_title" = "إنشاء حالة";
-"case.edit_title" = "تعديل الحالة";
-"case.save" = "حفظ";
-"case.create" = "إنشاء";
-"case.tap_to_change" = "انقر لتغيير الحالة";
-"case.delete_confirm_title" = "حذف الحالة";
-"case.delete_confirm_message" = "هل أنت متأكد من حذف هذه الحالة؟";
-"case.delete_has_events" = "تحتوي هذه الحالة على %d أحداث. هل تريد الحذف على أي حال؟";
-"case.stats_title" = "إحصائيات الحالة";
-"case.stats_total" = "إجمالي الأحداث";
-"case.stats_active" = "نشط";
-"case.stats_invalidated" = "ملغى";
-"case.stats_anchored" = "مثبت";
-"case.stats_pending" = "معلق";
-"case.stats_date_range" = "النطاق الزمني";
-"case.stats_size" = "حجم التخزين";
-"case.export_title" = "تصدير الحالة";
-"case.export_success" = "تم تصدير الحالة بنجاح";
-"case.export_include_location" = "تضمين بيانات الموقع";
-"case.export_metadata_only" = "البيانات الوصفية فقط (JSON)";
-"case.export_full_package" = "الحزمة الكاملة مع الصور (ZIP)";
-"case.export_message" = "اختر تنسيق التصدير. تتضمن الحزمة الكاملة جميع الصور مع الإثباتات المشفرة.";
-"case.quick_capture" = "التقاط سريع";
-"case.selector_title" = "تحديد الحالة";
-"case.default_name" = "افتراضي";
-"common.done" = "تم";
-"common.cancel" = "إلغاء";
-"common.save" = "حفظ";
-"common.delete" = "حذف";
-"common.edit" = "تعديل";
-"common.ok" = "موافق";
-"common.error" = "خطأ";
-
-// Biometric Authentication
-"biometric.delete_proof" = "مطلوب المصادقة لحذف الإثبات";
-"biometric.export_full_proof" = "مطلوب المصادقة لتصدير الإثبات الكامل مع البيانات الشخصية";
-"biometric.verified_capture" = "مصادقة عملية الالتقاط";
-"biometric.reset_chain" = "مطلوب المصادقة لإعادة تعيين السلسلة";
-
-// Delete Errors
-"delete.error_target_not_found" = "خطأ: لم يتم العثور على الحدث المستهدف";
-"delete.error_already_invalidated" = "خطأ: Tombstone موجود بالفعل";
-"delete.error_event_not_active" = "خطأ: الحدث غير نشط";
-"delete.error_signature_failed" = "خطأ: فشل التوقيع";
-"delete.error_storage_failed" = "خطأ: فشل حفظ Tombstone";
-"delete.error_generic" = "فشل الحذف: %@";
-"delete.error_auth_failed" = "فشل المصادقة: %@";
-
-// Chain Error Details
-"chain.warning_badge" = "تحذير";
-"chain.event_label" = "حدث: %@";
-"chain.deleted_event_gap_message" = "فجوة بسبب حدث محذوف";
-"chain.expected_label" = "المتوقع: %@";
-"chain.actual_label" = "الفعلي: %@";
-
-// Detail View Labels
-"detail.invalidated_at" = "أُبطل في: %@";
-"detail.human_attestation" = "إثبات بشري";
-"detail.proof_id" = "معرف الإثبات";
-"detail.asset_hash" = "تجزئة الأصل";
-"detail.event_hash" = "تجزئة الحدث";
-
-// Case Management
-"case.section_info" = "معلومات";
-"case.section_events" = "الأحداث";
-"case.section_technical" = "تقني";
-"case.no_events" = "لا توجد أحداث";
-"case.photo_singular" = "صورة %d";
-"case.photo_plural" = "%d صور";
-"case.last_capture" = "آخر: %@";
-
-// Settings - Cases
-"settings.cases.title" = "الحالات";
-"settings.cases.footer" = "نظم التقاطاتك حسب المشروع أو الموقع. كل حالة لها سلسلة تجزئة مستقلة.";
-
-// Capture View
-"capture.simulator_title" = "وضع المحاكي";
-"capture.simulator_message" = "اضغط على زر الالتقاط لإنشاء صورة تجريبية";
-
-// Signer protection
-"verify.signer_name" = "الموقع";
-"verify.signer_protected" = "محمي بالتجزئة (مقاوم للتلاعب)";
-"verify.signer_not_protected" = "غير محمي بالتجزئة (تنسيق قديم)";
