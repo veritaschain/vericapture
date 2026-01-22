@@ -1,0 +1,926 @@
+/* 
+  Localizable.strings (Portuguese)
+  VeriCapture
+  
+  © 2026 VeritasChain Co., Ltd.
+*/
+
+// MARK: - Tab Bar
+// MARK: - App Tagline
+"app.tagline" = "Câmera de prova criptográfica";
+
+// MARK: - Tab Bar
+"tab.capture" = "Captura";
+"tab.gallery" = "Provas";
+"tab.verify" = "Verificar";
+"tab.settings" = "Configurações";
+
+// MARK: - Camera View
+"camera.cpp_on" = "Prova CPP: ATIVA";
+"camera.permission.title" = "Acesso à Câmera";
+"camera.permission.message" = "VeriCapture precisa de acesso à câmera para tirar fotos.";
+"camera.permission.button" = "Abrir Configurações";
+"camera.toast.captured" = "Prova gerada";
+"camera.first_capture_hint" = "Esta operação de captura será registrada criptograficamente";
+"camera.privacy_note" = "Fotos são processadas localmente no seu dispositivo";
+"camera.first_capture_loading" = "Apenas na primeira vez - geração de prova leva um momento";
+"camera.cpp_proof_generation" = "Geração de Prova CPP";
+"camera.auth_in_progress" = "Autenticando...";
+"camera.keep_device_still" = "Por favor, mantenha o dispositivo parado";
+
+// MARK: - Capture Result
+"result.title" = "Resultado da Captura";
+"result.close" = "Fechar";
+"result.generated" = "Gerada";
+"result.anchored" = "Ancorada Externamente";
+"result.pending" = "Ancorando...";
+"result.error" = "Erro";
+"result.proof_id" = "ID da Prova";
+"result.filename" = "Nome do Arquivo";
+"result.filesize" = "Tamanho do Arquivo";
+"result.timestamp" = "Capturada Em";
+"result.hash_algo" = "Algoritmo Hash";
+"result.sign_algo" = "Algoritmo de Assinatura";
+"result.anchor_status" = "Carimbo de Tempo Externo";
+"result.anchor_pending" = "Pendente (ancorada em ~30 min)";
+"result.anchor_complete" = "Ancorada";
+"result.third_party_verifiable" = "Esta prova pode ser verificada por terceiros independentes";
+"result.share" = "Compartilhar";
+"result.copy_proof_id" = "Copiar ID da Prova";
+"result.copy_proof_url" = "Copiar URL de Verificação";
+
+// MARK: - Share Options
+"share.title" = "Escolher Método de Compartilhamento";
+"share.cancel" = "Cancelar";
+"share.image_only" = "Apenas Imagem";
+"share.image_only.desc" = "Compartilhamento padrão";
+"share.with_proof" = "Com Prova";
+"share.with_proof.desc" = "Apenas dados mínimos de verificação (sem PII)";
+"share.with_qr" = "Com QR de Verificação";
+"share.with_qr.desc" = "Adiciona código QR com URL de verificação";
+"share.sns_note" = "⚠️ Esta prova mostra que uma operação de captura foi registrada.\nNÃO garante a verdade ou validade do conteúdo.";
+
+// MARK: - QR Preview
+"qr.title" = "Prévia do QR";
+"qr.position" = "Posição do QR";
+"qr.position.bottom_right" = "Inferior Direito";
+"qr.position.bottom_left" = "Inferior Esquerdo";
+"qr.opacity" = "Opacidade";
+"qr.share_this" = "Compartilhar Esta Imagem";
+"qr.verify_note" = "Escaneie o QR para verificar esta prova";
+"qr.verify_desc" = "O código QR é o ponto de entrada para verificação";
+
+// MARK: - Gallery
+"gallery.title" = "Provas";
+"gallery.empty.title" = "Ainda não há provas";
+"gallery.empty.message" = "Tire fotos na aba Captura\npara criar provas criptográficas";
+"gallery.status.generated" = "Gerada";
+"gallery.status.anchored" = "Ancorada";
+"gallery.status.pending" = "Ancorando...";
+"gallery.status.failed" = "Falhou";
+"gallery.status_legend.anchored" = "Ancorada: Carimbo de tempo de terceiros obtido";
+"gallery.status_legend.pending" = "Pendente: Aguardando envio de carimbo de tempo";
+"gallery.group.pinned" = "📌 Fixados";
+"gallery.group.today" = "Hoje";
+"gallery.group.yesterday" = "Ontem";
+"gallery.group.this_week" = "Esta Semana";
+"gallery.group.this_month" = "Este Mês";
+
+// MARK: - Event Detail
+"detail.title" = "Detalhes da Prova";
+"detail.share" = "Compartilhar Prova";
+"detail.delete" = "Excluir Esta Prova";
+"detail.delete.confirm_title" = "Excluir Prova";
+"detail.delete.confirm_message" = "Tem certeza que deseja excluir esta prova? Esta ação não pode ser desfeita.";
+"detail.delete.confirm_delete" = "Excluir";
+"detail.delete.confirm_cancel" = "Cancelar";
+"detail.section.basic" = "Info Básica";
+"detail.section.crypto" = "Info Criptográfica";
+"detail.section.anchor" = "Carimbo de Tempo Externo";
+"detail.capture_location" = "Local de Captura";
+"detail.capture_location_marker" = "Ponto de Captura";
+"detail.location_privacy_note" = "* Localização é armazenada apenas no dispositivo (apenas o hash é incluído no Proof JSON)";
+"detail.proof_id_note" = "(Usado para verificação de terceiros)";
+"detail.forensic_export" = "Exportação Forense";
+"detail.preparing_proof" = "Preparando prova...";
+
+// MARK: - Verify
+"verify.title" = "VeriCheck";
+"verify.subtitle" = "Verificação de Prova CPP v1.0";
+"verify.scan_qr" = "Escanear Código QR";
+"verify.scan_qr_desc" = "Ler QR do VeriCapture";
+"verify.select_file" = "Selecionar Arquivo";
+"verify.input_json" = "Inserir JSON";
+"verify.input_json_title" = "Entrada de Proof JSON";
+"verify.recent_verifications" = "Verificações Recentes";
+"verify.clear" = "Limpar";
+"verify.paste" = "Colar";
+"verify.verify" = "Verificar";
+"verify.cancel" = "Cancelar";
+"verify.check_items" = "Itens de Verificação";
+"verify.check_event_hash" = "Integridade do EventHash";
+"verify.check_signature" = "Assinatura Digital ES256";
+"verify.check_image_hash" = "Verificação de Hash da Imagem";
+"verify.check_timestamp" = "Carimbo de Tempo RFC 3161";
+"verify.check_merkle" = "Verificação de Prova Merkle";
+"verify.qr_instruction" = "Posicione o código QR dentro do quadro";
+"verify.result_title" = "Resultado da Verificação";
+"verify.items_passed" = "itens passaram";
+"verify.proof_info" = "Informação da Prova";
+"verify.capture_time" = "Hora da Captura";
+"verify.device" = "Dispositivo";
+"verify.generated_by" = "Gerado Por";
+"verify.tsa_time" = "Hora TSA";
+"verify.tsa_service" = "Serviço TSA";
+"verify.flash_mode" = "Flash";
+"verify.error_title" = "Erro";
+"verify.instruction_text" = "Escaneie código QR ou leia arquivo Proof JSON para verificar";
+"verify.status.verified" = "Prova Verificada";
+"verify.status.signature_invalid" = "Assinatura Inválida";
+"verify.status.hash_mismatch" = "Hash Não Coincide (Adulteração Detectada)";
+"verify.status.anchor_pending" = "Carimbo de Tempo Pendente";
+"verify.status.anchor_verified" = "TSA Verificada";
+"verify.status.asset_mismatch" = "Hash da Imagem Não Coincide";
+"verify.status.pending" = "Verificando...";
+"verify.status.error" = "Erro";
+
+// MARK: - Settings
+"settings.title" = "Configurações";
+"settings.version" = "Versão";
+"settings.about.title" = "Sobre Este App";
+"settings.about.description" = "VeriCapture é uma ferramenta de geração de evidência que registra\noperações de captura e procedência de dados\nem formato à prova de adulteração.\nRegistros podem ser verificados por terceiros independentes.\nEste é o primeiro design de app de consumo do mundo que combina\ngeração de evidência criptográfica com verificação de terceiros.\nNÃO garante a verdade ou validade do conteúdo.";
+"settings.timestamp.title" = "Carimbo de Tempo de Terceiros";
+"settings.timestamp.pending" = "Provas Pendentes";
+"settings.timestamp.last" = "Última Ancorada";
+"settings.timestamp.trigger" = "Ancorar Agora";
+"settings.timestamp.footer" = "O tempo de existência do registro é ancorado por uma autoridade de carimbo de tempo externa. Ancorado automaticamente a cada ~30 minutos.";
+"settings.timestamp.offline_note" = "Provas são enfileiradas offline e enviadas automaticamente quando voltar online.";
+"settings.location.title" = "Localização";
+"settings.location.note" = "Localização é opcional. Você pode capturar e criar provas sem conceder acesso à localização.";
+"settings.location.status_title" = "Configuração Atual";
+"settings.location.status_on" = "Permitida - Localização incluída nas provas";
+"settings.location.status_off" = "Não Permitida - Localização não registrada";
+"settings.location.open_settings" = "Alterar configurações de localização";
+"settings.location.on_desc" = "【Ativado】Latitude/longitude é registrada, 'onde capturado' é verificável.";
+"settings.location.off_desc" = "【Desativado】Localização não é registrada. Captura e provas funcionam normalmente. Desative para privacidade.";
+"settings.use_cases.title" = "Casos de Uso";
+"settings.use_cases.view" = "Ver cenários de aplicação";
+"settings.use_cases.desc" = "VeriCapture é útil para jurídico, auditoria, jornalismo onde procedência é necessária. Verdade do conteúdo requer verificação separada.";
+"settings.data.title" = "Gerenciamento de Dados";
+"settings.data.storage_used" = "Armazenamento Usado";
+"settings.data.photo_count" = "Provas Salvas";
+"settings.data.export_all" = "Exportar Tudo";
+"settings.data.delete_all" = "Excluir Tudo";
+"settings.data.delete_confirm_title" = "Excluir Todas as Provas";
+"settings.data.delete_confirm_message" = "Excluir todas as provas? Esta ação não pode ser desfeita.";
+
+// MARK: - Use Cases
+"use_cases.title" = "Casos de Uso";
+"use_cases.subtitle" = "Exemplos de uso do VeriCapture";
+"use_cases.legal_title" = "Jurídico e Litígio";
+"use_cases.legal_desc" = "Provar data e não-adulteração de fotos de evidência";
+"use_cases.audit_title" = "Auditoria e Conformidade";
+"use_cases.audit_desc" = "Registro e gerenciamento de procedência de fotos de campo";
+"use_cases.journalism_title" = "Jornalismo";
+"use_cases.journalism_desc" = "Garantir originalidade de fotos de reportagem";
+"use_cases.insurance_title" = "Seguros e Avaliação";
+"use_cases.insurance_desc" = "Prova de data de fotos de acidentes/danos";
+"use_cases.real_estate_title" = "Imobiliário e Construção";
+"use_cases.real_estate_desc" = "Gerenciamento de registros de propriedades/projetos de construção";
+"use_cases.medical_title" = "Medicina e Saúde";
+"use_cases.medical_desc" = "Proteção contra adulteração de fotos de registros médicos";
+"use_cases.footer" = "※VeriCapture registra operações de captura. Não garante verdade do conteúdo.";
+
+// MARK: - Paywall
+"paywall.title" = "VeriCapture Pro";
+"paywall.subtitle" = "Recursos Profissionais";
+"paywall.feature.unlimited" = "Geração ilimitada de provas";
+"paywall.feature.priority" = "Carimbo de tempo prioritário";
+"paywall.feature.export" = "Exportação em massa";
+"paywall.feature.support" = "Suporte prioritário";
+"paywall.price.monthly" = "Mensal";
+"paywall.price.yearly" = "Anual";
+"paywall.price.save" = "Economia";
+"paywall.subscribe" = "Assinar";
+"paywall.restore" = "Restaurar Compra";
+"paywall.terms" = "Termos de Serviço";
+"paywall.privacy" = "Política de Privacidade";
+// Paywall Additional Keys
+"paywall.close" = "Fechar";
+"paywall.error" = "Erro";
+"paywall.limit_reached_title" = "Limite gratuito atingido";
+"paywall.limit_reached_message" = "Atualmente %d / 50 provas armazenadas.\nPara salvar novas provas, exclua as antigas ou atualize para Pro.";
+"paywall.unlimited_storage" = "Armazenamento: Ilimitado";
+"paywall.tsa_redundancy" = "Redundância TSA";
+"paywall.tsa_redundancy_desc" = "Múltiplos provedores de carimbo de tempo para confiabilidade";
+"paywall.free_limit" = "Versão gratuita: 50 provas";
+"paywall.load_failed" = "Não foi possível carregar info do produto";
+"paywall.reload" = "Recarregar";
+"paywall.reference_price_note" = "Preço de referência (válido após App Store Connect)";
+"paywall.monthly_plan" = "Plano Mensal";
+"paywall.yearly_plan" = "Plano Anual";
+"paywall.save_percent" = "Economize 37%";
+"paywall.per_month" = "/mês";
+"paywall.per_year" = "/ano";
+"paywall.upgrade_button" = "Atualizar para Pro";
+"paywall.loading_plans" = "Carregando planos...";
+"paywall.restore_purchases" = "Restaurar compras";
+"paywall.limit_reached_capture_title" = "Limite gratuito atingido";
+"paywall.limit_reached_capture_message" = "A prova foi gerada mas não pode ser salva devido ao limite gratuito (50).";
+"paywall.current_count" = "Atual: %d / %d provas";
+"paywall.pro_unlimited" = "Ilimitado com Pro";
+"paywall.make_space" = "Liberar espaço";
+"paywall.later" = "Mais tarde";
+"paywall.free_tier" = "Grátis: 50 fotos/mês";
+
+// MARK: - Errors
+"error.generic" = "Ocorreu um erro";
+"error.network" = "Erro de rede";
+"error.storage" = "Erro de armazenamento";
+"error.crypto" = "Erro criptográfico";
+"error.camera" = "Erro de câmera";
+"error.permission" = "Permissão necessária";
+
+// MARK: - Common
+"common.ok" = "OK";
+"common.cancel" = "Cancelar";
+"common.done" = "Concluído";
+"common.delete" = "Excluir";
+"common.share" = "Compartilhar";
+"common.copy" = "Copiar";
+"common.copied" = "Copiado";
+"common.save" = "Salvar";
+"common.loading" = "Carregando...";
+"common.error" = "Erro";
+"common.success" = "Sucesso";
+"common.retry" = "Tentar Novamente";
+
+// MARK: - Subscription Status
+"subscription.status.free" = "Grátis";
+"subscription.status.pro" = "Pro";
+"subscription.status.expired" = "Expirada";
+"subscription.limit.title" = "Limite Mensal Atingido";
+"subscription.limit.message" = "Grátis permite 50 fotos/mês. Atualize para Pro para ilimitado.";
+"subscription.limit.upgrade" = "Atualizar para Pro";
+"subscription.limit.wait" = "Esperar até o próximo mês";
+
+// MARK: - Photo Library
+"photo.save.success" = "Foto salva";
+"photo.save.error" = "Falha ao salvar foto";
+"photo.permission.title" = "Acesso à Biblioteca de Fotos";
+"photo.permission.message" = "Permissão necessária para salvar fotos";
+
+// MARK: - Timestamp
+"timestamp.none" = "Nenhum";
+"timestamp.pending" = "Pendente";
+"timestamp.verified" = "Verificado";
+"timestamp.error" = "Erro";
+
+// MARK: - File Size
+"filesize.bytes" = "%d bytes";
+"filesize.kb" = "%.1f KB";
+"filesize.mb" = "%.1f MB";
+
+// MARK: - Date Format
+"date.today" = "Hoje";
+"date.yesterday" = "Ontem";
+"date.format" = "dd/MM/yyyy HH:mm";
+
+// MARK: - Internal Export
+"share.internal_proof" = "Exportação Forense";
+"share.internal_proof.desc" = "Para uso jurídico/submissão (pode conter PII)";
+"share.internal_warning" = "⚠️ Apenas para uso jurídico/submissão interna";
+"share.internal_warning_detail" = "Inclui localização, dados de sensores, detalhes do dispositivo. Cuidado com privacidade ao compartilhar.";
+"share.internal_export_button" = "Exportar prova completa";
+"share.internal_auth_required" = "Autenticação necessária";
+"share.internal_auth_message" = "Autenticação necessária para acessar dados completos da prova";
+
+// MARK: - Gallery Delete
+"gallery.delete.title" = "Excluir Prova";
+"gallery.delete.message" = "Excluir esta prova?\nAutenticação necessária.";
+"gallery.delete.auth_error" = "Erro de Autenticação";
+
+// MARK: - Human Attestation
+"attestation.auth_method" = "Método de Auth";
+"attestation.auth_time" = "Hora da Auth";
+"attestation.time_offset" = "Deslocamento da Captura";
+"attestation.disclaimer" = "Isso não é verificação de identidade. Registra que a captura foi realizada por alguém que passou na autenticação.";
+
+// MARK: - Export Messages
+"export.share_sheet" = "Mostrando folha de compartilhamento";
+"export.failed" = "Falha na exportação";
+"export.no_proofs" = "Nenhuma prova para exportar";
+"export.error" = "Erro de exportação: %@";
+
+// MARK: - Subscription
+"subscription.until" = "Até %@";
+"subscription.restore_title" = "Restaurar Compra";
+"subscription.restore_success" = "Compra restaurada. Pro está ativo agora.";
+"subscription.restore_failed" = "Nenhuma compra restaurável encontrada";
+"subscription.auth_failed" = "Autenticação falhou: %@";
+
+// MARK: - Settings Developer
+"settings.developer_lead" = "Líder de Desenvolvimento";
+
+// MARK: - Forensic Settings
+"settings.forensic.title" = "Configurações Forenses";
+"settings.forensic.footer" = "Configure as informações do assinante para exportações forenses.";
+"settings.forensic.signer_name_label" = "Nome do Assinante";
+"settings.forensic.signer_name_placeholder" = "ex. João Silva";
+"settings.forensic.signer_name_hint" = "Será registrado como assinante no Proof JSON forense";
+
+// MARK: - World First
+"world_first.comparison_title" = "Comparação com Soluções Existentes";
+"world_first.c2pa_products" = "Leica M11-P, Sony, Nikon, etc.";
+"world_first.c2pa_quote" = "A identidade do assinante não é necessariamente um ator humano";
+"world_first.c2pa_gap" = "Vinculação de identidade humana intencionalmente excluída";
+"world_first.truepic_quote" = "Abandonou a necessidade de identificar exclusivamente o usuário";
+"world_first.truepic_gap" = "Apenas autenticação de dispositivo, sem verificação de presença humana";
+"world_first.numbers_quote" = "Identidade baseada em carteira";
+"world_first.numbers_gap" = "Apenas prova de propriedade, sem presença física";
+"world_first.witness_quote" = "Assina conteúdo para dispositivo e tempo";
+"world_first.witness_gap" = "Para documentação de direitos humanos, sem vinculação humana";
+"world_first.starling_quote" = "Evita intencionalmente armazenar informações pessoais";
+"world_first.starling_gap" = "Privacidade primeiro, sem identificação humana";
+"world_first.findings_title" = "Resumo dos Resultados da Pesquisa";
+"world_first.finding1_title" = "Conclusão idêntica em todos os 5 estudos";
+"world_first.finding1_detail" = "Nenhum sistema existente atende aos 5 requisitos";
+"world_first.finding2_title" = "Vinculação de presença humana é a chave";
+"world_first.finding2_detail" = "C2PA, Truepic, etc. intencionalmente excluem isso";
+"world_first.finding3_title" = "Prevenção de gravação seletiva não resolvida";
+"world_first.finding3_detail" = "Nenhuma solução encontrada mesmo na literatura acadêmica";
+"world_first.finding4_title" = "Criação de nova categoria";
+"world_first.finding4_detail" = "Inovação arquitetural, não melhoria incremental";
+"world_first.tech_notes_title" = "Notas Técnicas";
+"world_first.who_equals_device" = "\"Quem\" = Chave do Dispositivo";
+"world_first.who_explanation" = "Na implementação atual, 'quem' é provado pela chave específica do dispositivo do Secure Enclave.";
+"world_first.device_proof" = "Isso prova 'capturado neste dispositivo', não 'capturado por este humano' via autenticação biométrica.";
+"world_first.future_updates" = "Atualizações Futuras Planejadas";
+"world_first.future_explanation" = "Prova de presença humana real via Apple App Attest e integração Face ID/Touch ID planejada.";
+"world_first.references_title" = "Referências";
+"world_first.github_report" = "Relatório World First (GitHub)";
+"world_first.cap_spec" = "Especificação CPP (GitHub)";
+"world_first.conclusion_title" = "Conclusão";
+"world_first.conclusion_text" = "VeriCapture é o **primeiro** aplicativo de câmera para consumidores do mundo que vincula criptograficamente a captura de mídia à presença humana verificada, previne gravação seletiva e permite verificação de terceiros sem confiança.";
+"world_first.conclusion_detail" = "Todos os cinco estudos independentes chegaram à mesma conclusão. Nenhum sistema existente atende simultaneamente aos cinco requisitos técnicos críticos.";
+"world_first.requirements_title" = "5 Requisitos de Avaliação";
+"world_first.req1_title" = "Evidência Criptográfica na Captura";
+"world_first.req1_desc" = "Evidência gerada no momento do obturador (não pós-captura)";
+"world_first.req2_title" = "Vinculação de Presença Humana";
+"world_first.req2_desc" = "Vinculação criptográfica a humano real verificado, não apenas dispositivo ou carteira";
+"world_first.req3_title" = "Prevenção de Gravação Seletiva";
+"world_first.req3_desc" = "Capturas omitidas são detectáveis criptograficamente";
+"world_first.req4_title" = "Verificação de Terceiros Independente";
+"world_first.req4_desc" = "Verificação sem confiança sem depender de plataforma ou criador";
+"world_first.req5_title" = "Implantação de Consumidor";
+"world_first.req5_desc" = "Implantável como app de câmera para consumidores";
+"world_first.doc_id" = "ID do Documento: VC-RESEARCH-FINAL-001";
+"world_first.research_date" = "Pesquisa Concluída: 15 de janeiro de 2026";
+"world_first.research_note" = "Baseado em 5 estudos independentes";
+"world_first.nav_title" = "Evidência World-First";
+"world_first.done" = "Concluído";
+
+// MARK: - Pro Remaining
+"pro.remaining_format" = "%d / 50 restantes";
+"pro.until_format" = "Até %@";
+
+// Export Alert
+"settings.export" = "Exportar";
+"export.forensic_subtitle" = "Para uso jurídico/submissão (pode conter PII)";
+
+// MARK: - Share Options Additional
+"share.internal_about_title" = "Sobre Prova Completa";
+"share.internal_about_desc" = "Apenas para uso jurídico/submissão\nPode conter informações pessoais incluindo localização";
+"share.privacy_design_title" = "Privacidade por Design";
+"share.privacy_design_desc" = "Apenas info de verificação mínima compartilhada\nLocalização, sensores e detalhes do dispositivo excluídos";
+"share.sns_warning_title" = "Aviso Importante";
+"share.sns_warning_desc" = "Metadados serão removidos\nCompartilhamento QR recomendado";
+"share.recommended_badge" = "Recomendado";
+"share.ecosystem_warning_title" = "Dados da prova serão perdidos";
+"share.ecosystem_warning_desc" = "Ao fazer upload para SNS ou outras plataformas, dados da prova são removidos e verificação fica impossível após re-download.";
+"share.ecosystem_recommendation" = "Para uso jurídico/auditoria, use 'Com QR de Verificação' ou 'Exportação Forense'";
+
+// MARK: - QR Style
+"qr.style_title" = "Estilo";
+"qr.style_standard" = "Padrão";
+"qr.style_rounded" = "Arredondado";
+"qr.style_branded" = "Marca";
+"qr.preparing_image" = "Preparando imagem...";
+
+// MARK: - Disclaimer
+"disclaimer.title" = "Aviso Importante";
+"disclaimer.content_not_guaranteed" = "⚠️ A verdade ou validade do conteúdo NÃO é garantida";
+"disclaimer.records_operation_only" = "Apenas registra que uma operação de captura ocorreu e procedência de dados";
+"disclaimer.requires_verification" = "Determinar a verdade do conteúdo requer verificação separada";
+"disclaimer.not_identity_proof" = "Este app NÃO realiza verificação de identidade ou autenticação";
+"disclaimer.share_notice" = "⚠️ Esta prova mostra que uma operação de captura foi registrada. NÃO garante a verdade ou validade do conteúdo.";
+"disclaimer.verification_notice" = "Verificação apenas confirma integridade do registro. Verdade do conteúdo NÃO é verificada.";
+
+// MARK: - About App
+"about.tool_definition" = "Ferramenta de Geração de Evidência";
+"about.what_it_records" = "Registra operações de captura e procedência de dados em formato à prova de adulteração";
+"about.what_it_does_not" = "NÃO garante verdade, validade ou admissibilidade legal do conteúdo";
+"about.intended_use" = "Para submissão jurídica, trilhas de auditoria e registros comerciais onde procedência é necessária";
+
+// MARK: - Attested Capture Mode
+"attested_capture.section_title" = "Modo de Autenticação de Captura";
+"attested_capture.toggle_title" = "Captura Atestada";
+"attested_capture.enabled" = "Habilitado";
+"attested_capture.disabled" = "Desabilitado";
+"attested_capture.auth_method" = "Método de Auth";
+"attested_capture.description" = "Tenta auth biométrica (%@) antes da captura e registra o resultado.";
+"attested_capture.disclaimer" = "⚠️ Isso NÃO é verificação de identidade";
+"attested_capture.disclaimer_full" = "Isso registra apenas que uma autenticação biométrica do dispositivo foi tentada.\n\nNÃO verifica:\n• Quem é o fotógrafo\n• Se o dono do dispositivo tirou a foto\n• Se um humano tirou a foto\n\nNão interprete 'Atestado' como 'identidade verificada'.";
+"attested_capture.not_available" = "Autenticação biométrica não configurada neste dispositivo";
+"attested_capture.auth_failed" = "Autenticação falhou";
+"attested_capture.auth_cancelled" = "Autenticação cancelada";
+"attested_capture.badge" = "Atestado";
+"attested_capture.badge_tooltip" = "Este distintivo indica que auth biométrica do dispositivo foi tentada antes da captura.\n\nNão verifica a identidade do fotógrafo ou verdade do conteúdo.";
+"attested_capture.attestation_title" = "Atestação Humana";
+"attested_capture.attestation_method" = "Método";
+"attested_capture.attestation_time" = "Hora da Auth";
+"attested_capture.attestation_offset" = "Deslocamento da Captura";
+"attested_capture.attestation_disclaimer" = "Isso não é verificação de identidade. Registra que a captura foi realizada por alguém que passou na autenticação.";
+
+// MARK: - Additional Settings
+"settings.location.status_not_determined" = "Não definido - Será perguntado ao capturar";
+"settings.language.title" = "Idioma";
+"settings.language.current" = "Alterar Idioma do App";
+"settings.language.note" = "Alterar idioma nas configurações do sistema. Reiniciar o app após a alteração.";
+"settings.spec.title" = "Especificações";
+"settings.spec.about" = "Sobre VeriCapture";
+"settings.spec.cpp" = "Especificação CPP v1.0";
+"settings.spec.world_first" = "Sobre o Relatório World-First";
+"settings.usecases.title" = "Casos de Uso";
+"settings.usecases.browse" = "Explorar Casos de Uso";
+"settings.usecases.footer" = "VeriCapture é útil para casos jurídicos, auditoria e jornalismo onde registros de procedência são necessários. A verdade do conteúdo requer verificação separada.";
+"settings.philosophy" = "Verify, Don't Trust.";
+"settings.philosophy.desc" = "As provas podem ser verificadas por terceiros independentes sem confiar em nenhuma organização específica.";
+"settings.developer" = "Desenvolvedor";
+"settings.developer.name" = "VeritasChain Co., Ltd.";
+"settings.support_message" = "Para bugs ou problemas, entre em contato com developers@veritaschain.org ou envie uma mensagem no LinkedIn para o Lead Developer. Correções são normalmente implementadas em 24 horas.";
+"settings.plan_section" = "Plano";
+"settings.free_plan" = "Plano Gratuito";
+"settings.pro_active" = "Pro Ativo";
+"settings.manage_subscription" = "Gerenciar Assinatura";
+"settings.remaining_slots" = "Restantes %d / %d fotos";
+"settings.approaching_limit" = "Aproximando-se do limite";
+"settings.upgrade_to_pro" = "Atualizar para Pro";
+"settings.restore_purchases" = "Restaurar Compras";
+"settings.data_management" = "Gerenciamento de Dados";
+"settings.export_all_forensic" = "Exportar Todas as Provas (Forense)";
+"settings.export_all_forensic_desc" = "Dados completos incluindo localização e sensores";
+"settings.export_all_forensic_footer" = "Exportação em massa de dados completos de todas as provas para submissão jurídica. Autenticação necessária.";
+"settings.exporting_all" = "Exportando todas as provas...";
+"settings.technical_advantage" = "Vantagem Técnica";
+"settings.world_first_evidence" = "Prova World-First";
+"settings.world_first_evidence_desc" = "Verificado por 5 pesquisas independentes";
+"settings.world_first_evidence_footer" = "Descubra por que VeriCapture é a primeira implementação mundial comparada a C2PA, Truepic, Numbers Protocol, etc.";
+
+// MARK: - Export Additional
+"export.forensic_title" = "Exportação Forense";
+"export.forensic_confirm_title" = "Exportação Forense";
+"export.forensic_confirm_message" = "Exportar Proof JSON completo incluindo localização, dados de sensores e detalhes do dispositivo.\n\n⚠️ Para compartilhamento com terceiros, use \"Compartilhar com Prova\".";
+"export.forensic_button" = "Exportar";
+"export.complete_title" = "Exportação Completa";
+"export.auth_error_title" = "Erro de Autenticação";
+"export.auth_failed_message" = "Autenticação falhou: %@";
+
+// MARK: - World First Additional
+"world_first.title" = "Prova World-First";
+"world_first.subtitle" = "Verificado por 5 pesquisas independentes";
+"world_first.conclusion_subtext" = "Todas as 5 pesquisas independentes chegaram à mesma conclusão. Nenhum sistema existente satisfaz os 5 requisitos técnicos críticos simultaneamente.";
+"world_first.document_id" = "ID do Documento: VC-RESEARCH-FINAL-001";
+"world_first.based_on_research" = "Baseado em 5 pesquisas independentes";
+
+// MARK: - Initialization
+"init.title" = "VeriCapture";
+"init.subtitle" = "Câmera de Prova Criptográfica";
+"init.error" = "Erro de Inicialização";
+
+// MARK: - Common Additional
+"common.unknown" = "Desconhecido";
+
+// MARK: - Error Additional
+"error.title" = "Erro";
+"error.ok" = "OK";
+"error.unknown" = "Erro desconhecido";
+
+// MARK: - Camera Info Popover
+"camera.info.title" = "Geração de Prova CPP";
+"camera.info.feature1" = "Prova criptográfica gerada na captura";
+"camera.info.feature2" = "A imagem não pode ser alterada depois";
+"camera.info.feature3" = "Terceiros podem verificar independentemente";
+"camera.info.secure_enclave" = "Assinado no Secure Enclave";
+"camera.info.disclaimer" = "※ Não garante a veracidade ou validade do conteúdo";
+
+// MARK: - Permission Screen
+"permission.camera_access" = "Acesso à Câmera";
+"permission.camera_message" = "VeriCapture gera provas criptográficas\ndas suas fotos.\nPor favor permita acesso à câmera.";
+"permission.allow_camera" = "Permitir Câmera";
+"permission.open_settings" = "Abrir Configurações";
+
+// MARK: - Gallery Additional
+"gallery.context.delete" = "Excluir";
+"gallery.remaining" = "%d restantes";
+
+// MARK: - Gallery Pinning
+"gallery.pin.pin" = "Fixar";
+"gallery.pin.unpin" = "Desafixar";
+
+// MARK: - Gallery Search
+"gallery.search.placeholder" = "Pesquisar...";
+"gallery.search.no_results" = "Nenhuma prova correspondente encontrada";
+"gallery.search.clear_filter" = "Limpar Filtro";
+
+// MARK: - Gallery Filter
+"gallery.filter.all" = "Todos";
+"gallery.filter.attested" = "Apenas Attested";
+"gallery.filter.anchored" = "Ancorado";
+"gallery.filter.pending" = "Pendente";
+
+// MARK: - Gallery Selection
+"gallery.select.title" = "%d Selecionados";
+"gallery.select.select_all" = "Selecionar Tudo";
+"gallery.select.deselect_all" = "Desmarcar Tudo";
+"gallery.select.delete_title" = "Excluir %d Itens";
+"gallery.select.delete_message" = "Excluir provas selecionadas? Esta ação não pode ser desfeita.";
+
+// MARK: - Share Options (Location)
+"share.include_location" = "Incluir local de captura";
+"share.include_location_note" = "※ Inclui latitude/longitude\n※ Pode conter informações pessoais";
+
+// MARK: - Verification (JSON Input)
+"verify.json_input.title" = "Inserir JSON de Prova";
+"verify.json_input.description" = "Cole o JSON de Prova recebido via 'Compartilhar com Prova'";
+
+// MARK: - Verification Result
+"verify.result.authentic_message" = "Esta foto foi autenticamente registrada no momento da captura";
+"verify.result.hash_mismatch_message" = "Incompatibilidade de hash. Os dados foram modificados";
+"verify.result.attestation_section" = "Atestação de Captura";
+"verify.result.attestation_description" = "Autenticação biométrica foi tentada na captura";
+"verify.result.location_section" = "Local de Captura";
+"verify.result.latitude" = "Latitude";
+"verify.result.longitude" = "Longitude";
+"verify.result.location_warning" = "Estes dados de localização foram incluídos na exportação forense. Podem constituir informações pessoais.";
+
+// MARK: - Verification Checks
+"verify.check.json_parse" = "Análise JSON";
+"verify.check.version" = "Verificação de Versão";
+"verify.check.event_hash" = "Verificação EventHash";
+"verify.check.signature" = "Verificação de Assinatura";
+"verify.check.image_hash" = "Verificação Hash de Imagem";
+"verify.check.step1" = "Passo 1/4: Analisando JSON...";
+"verify.check.step2" = "Passo 2/4: Verificando versão...";
+"verify.check.step3" = "Passo 3/4: Verificando EventHash...";
+"verify.check.step4" = "Passo 4/4: Verificando assinatura...";
+"verify.check.step_image" = "Adicional: Verificando hash de imagem...";
+"verify.check.version_supported" = "Suportado";
+"verify.check.version_unsupported" = "Não suportado";
+"verify.check.hash_match" = "Hash SHA-256: Corresponde";
+"verify.check.hash_mismatch" = "Hash SHA-256: Não corresponde";
+"verify.check.hash_format_ok" = "Hash SHA-256: Formato OK";
+"verify.check.hash_format_invalid" = "Formato de hash inválido";
+"verify.check.image_not_provided" = "Imagem não fornecida - Ignorado";
+"verify.check.event_hash_desc" = "Verificação integridade hash de evento";
+"verify.check.event_hash_format_desc" = "Verificação formato hash de evento";
+"share.location_no_data" = "Esta prova não contém dados de localização. Para incluir localização, ative o acesso à localização nas Configurações.";
+"verify.check.json_parse_desc" = "Verificação de estrutura JSON de Prova";
+"verify.check.version_desc" = "Verificação de versão suportada";
+"verify.check.signature_desc" = "Verificação de assinatura ECDSA P-256 (ES256)";
+"verify.check.image_hash_desc" = "Verificação de integridade do ativo";
+"verify.check.signature_valid" = "Assinatura ES256: Válida";
+"verify.check.signature_invalid" = "Assinatura ES256: Inválida";
+"verify.check.image_match" = "SHA-256: Corresponde";
+"verify.check.image_mismatch" = "SHA-256: Não corresponde (possível manipulação)";
+"verify.check.verification_error" = "Erro de verificação: %@";
+"verify.check.step_tsa" = "Adicional: Verificando TSA...";
+"verify.check.merkle" = "Verificação Merkle Proof";
+"verify.check.merkle_desc" = "Verificação de prova Merkle";
+"verify.check.merkle_match" = "Raiz Merkle: Corresponde";
+"verify.check.merkle_mismatch" = "Raiz Merkle: Não corresponde";
+"verify.check.tsa" = "Timestamp TSA";
+"verify.check.tsa_desc" = "Verificação timestamp RFC 3161";
+"verify.check.signature_presence_desc" = "Verificação presença assinatura ES256";
+"verify.check.signature_present" = "Assinatura ES256: Presente";
+"verify.check.signature_missing" = "Assinatura inválida";
+"verify.check.shareable_format" = "Formato Shareable v%@";
+"verify.check.unknown" = "Desconhecido";
+"verify.error.invalid_format" = "Formato Proof JSON inválido";
+
+// Mensagem de solicitação de scan QR
+"verify.proof_needed_title" = "Dados de prova necessários";
+"verify.proof_needed_message" = "Este QR contém apenas o identificador da prova.\nPara verificar, peça ao fotógrafo para compartilhar com \"Com prova (Proof JSON)\".";
+"verify.request_data" = "Solicitar dados";
+"verify.request_proof_line1" = "Gostaria de verificar a prova desta imagem/vídeo.";
+"verify.request_proof_line2" = "Se capturado com VeriCapture, selecione \"Com prova (Proof JSON)\" e envie.";
+"verify.request_proof_footer" = "(Esta prova pode ser verificada offline por terceiros)";
+"verify.request_proof_disclaimer" = "(Não garante a veracidade ou validade do conteúdo)";
+
+"verify.result.signature_invalid_message" = "Assinatura inválida. Os dados podem ter sido adulterados";
+"verify.result.asset_mismatch_message" = "A imagem não corresponde aos dados originais";
+"verify.result.anchor_pending_message" = "Verificação concluída. Timestamp pendente";
+"verify.result.pending_message" = "Verificando...";
+"verify.result.error_message" = "Ocorreu um erro durante a verificação";
+
+// MARK: - Paywall Additional
+"paywall.tagline" = "Desbloqueie todo o poder das provas criptográficas.";
+"paywall.pro_benefits_title" = "O que muda com Pro";
+"paywall.free_features_title" = "Recursos gratuitos";
+"paywall.free_feature.capture" = "Captura";
+"paywall.free_feature.proof" = "Gerar Prova";
+"paywall.free_feature.qr" = "Compartilhar QR";
+"paywall.free_feature.json" = "Exportar JSON";
+"paywall.select_plan" = "Selecionar Plano";
+"paywall.subscription_info_title" = "Sobre Assinaturas";
+"paywall.subscription_info_body" = "• O pagamento será cobrado do seu Apple ID na confirmação\n• A assinatura renova automaticamente a menos que cancelada 24h antes do fim do período\n• Gerencie ou cancele assinaturas nas Configurações";
+
+// Onboarding
+"onboarding.title1" = "Bem-vindo ao VeriCapture";
+"onboarding.desc1" = "Um aplicativo de câmera que registra criptograficamente suas capturas, provando quando e o que foi fotografado.";
+"onboarding.title2" = "Detecção de Adulteração";
+"onboarding.desc2" = "Assinaturas digitais criadas no Secure Enclave. Qualquer modificação em suas fotos pode ser detectada.";
+"onboarding.title3" = "Carimbo de Tempo Externo";
+"onboarding.desc3" = "Autoridade de carimbo de tempo verifica o momento da captura. Qualquer pessoa pode verificar independentemente quando as fotos foram tiradas.";
+"onboarding.title4" = "Padrão Aberto";
+"onboarding.desc4" = "Compatível com CPP v1.0. Especificação aberta e neutra que qualquer pessoa pode verificar.";
+"onboarding.next" = "Próximo";
+"onboarding.start" = "Começar";
+"onboarding.skip" = "Pular";
+
+// MARK: - CPP Additional Spec Localization
+
+// Media Status
+"media_status.present" = "Mídia presente";
+"media_status.purged" = "Purgado";
+"media_status.corrupted" = "Corrompido";
+"media_status.migrated" = "Migrado";
+
+// Event Status
+"event_status.active" = "Ativo";
+"event_status.invalidated" = "Invalidado";
+"event_status.superseded" = "Substituído";
+
+// Anchor Status
+"anchor_status.pending" = "Âncora pendente";
+"anchor_status.anchored" = "Ancorado";
+"anchor_status.failed" = "Falha na âncora";
+"anchor_status.skipped" = "Ignorado";
+"anchor_status.pending_description" = "Assinatura do dispositivo concluída. Será ancorado externamente no próximo lote.";
+"anchor_status.anchored_description" = "Prova de existência obtida de autoridade de carimbo de tempo compatível com RFC 3161.";
+"anchor_status.failed_description" = "Ancoragem externa falhou. Você pode tentar novamente.";
+"anchor_status.trigger_now" = "Ancorar agora";
+
+// Invalidation Reason
+"invalidation_reason.privacy" = "Proteção de privacidade";
+"invalidation_reason.accidental" = "Correção de captura acidental";
+"invalidation_reason.inappropriate" = "Conteúdo inadequado";
+"invalidation_reason.court_order" = "Ordem judicial";
+"invalidation_reason.gdpr" = "Solicitação de exclusão LGPD/RGPD";
+"invalidation_reason.duplicate" = "Duplicado detectado";
+"invalidation_reason.integrity" = "Integridade comprometida";
+
+// Delete / Purge / Invalidate
+"delete.sheet_title" = "Opções de exclusão";
+"delete.media_title" = "Excluir foto";
+"delete.media_description" = "Apenas os dados da imagem serão excluídos. O registro de captura permanecerá.";
+"delete.media_confirm" = "Excluir esta foto?";
+"delete.media_confirm_message" = "Os dados da imagem serão excluídos, mas o registro de captura permanecerá.\n\nO AssetHash permite correspondência futura da mesma imagem.";
+"delete.media_button" = "Excluir";
+
+"delete.invalidate_title" = "Invalidar prova";
+"delete.invalidate_description" = "Invalidar esta prova (não pode ser desfeito). O fato da invalidação permanecerá como registro.";
+"delete.invalidate_confirm" = "Invalidar esta prova?";
+"delete.invalidate_confirm_message" = "Esta ação não pode ser desfeita.\n\nA prova será registrada como 'invalidada' e perderá seu valor probatório legal.\n\nO fato da invalidação permanecerá como trilha de auditoria.";
+"delete.invalidate_button" = "Invalidar";
+"delete.invalidate_select_reason" = "Selecionar motivo da invalidação";
+"delete.confirm_title" = "Excluir esta prova?";
+"delete.confirm_message" = "A foto e a prova serão excluídas. Esta ação não pode ser desfeita.\n\nA exclusão será registrada na trilha de auditoria.";
+"delete.confirm_button" = "Excluir";
+
+"delete.nothing_deleted" = "Nenhuma operação pode fazer com que 'nunca aconteceu'";
+"delete.record_remains" = "O fato da captura está registrado";
+
+// Forensic Export Warnings
+"forensic_warning.pending_title" = "Provas pendentes de âncora externa";
+"forensic_warning.pending_message" = "Para fins legais, recomenda-se a ancoragem externa de todas as provas.";
+"forensic_warning.anchor_all" = "Ancorar tudo agora";
+"forensic_warning.export_anyway" = "Exportar mesmo assim";
+"forensic_warning.what_is_anchor" = "O que é âncora externa?";
+"forensic_warning.anchor_explanation" = "A autoridade de carimbo de tempo compatível com RFC 3161 (TSA) prova independentemente o momento de existência das provas. Isso aumenta a confiabilidade como evidência legal.";
+
+// Gallery Status Badges
+"gallery_status.anchored" = "Ancorado";
+"gallery_status.pending" = "Pendente";
+"gallery_status.failed" = "Falhou";
+"gallery_status.invalidated" = "Invalidado";
+"gallery_status.media_purged" = "Mídia purgada";
+
+// Erros do scanner QR
+"verify.qr_error.camera_unavailable" = "Câmera indisponível";
+"verify.qr_error.permission_denied" = "Permissão de câmera não concedida";
+
+// MARK: - Verificação de integridade da cadeia
+
+"chain.title" = "Integridade da Cadeia";
+"chain.statistics_title" = "Estatísticas da Cadeia";
+"chain.verification_title" = "Verificação de Integridade";
+"chain.verification_footer" = "Verifica se todos os eventos estão corretamente vinculados e se não ocorreu adulteração.";
+"chain.run_verification" = "Executar Verificação";
+"chain.error_details_title" = "Detalhes do Erro";
+"chain.how_it_works" = "Como Funciona";
+"chain.total_events" = "Total";
+"chain.active_events" = "Ativos";
+"chain.invalidated_events" = "Invalidados";
+"chain.tombstones" = "Lápides";
+"chain.anchored" = "Ancorados";
+"chain.pending_anchor" = "Pendentes";
+"chain.date_range" = "Intervalo de Datas";
+"chain.verification_passed" = "Integridade da Cadeia Verificada";
+"chain.verification_failed" = "Problemas de Integridade Detectados";
+"chain.checked_format" = "Verificados %d eventos, %d lápides";
+"chain.verified_at" = "Verificado às %@";
+"chain.errors_found" = "%d erros encontrados";
+"chain.error_prev_hash" = "Hash Anterior Não Corresponde";
+"chain.error_event_hash" = "Hash de Evento Não Corresponde";
+"chain.error_signature" = "Assinatura Inválida";
+"chain.error_tombstone_target" = "Alvo da Lápide Não Corresponde";
+"chain.error_orphaned_tombstone" = "Lápide Órfã";
+"chain.error_timestamp" = "Anomalia de Timestamp";
+"chain.explain_prev_hash" = "Vínculo da Cadeia Hash";
+"chain.explain_prev_hash_desc" = "Cada evento contém o hash do evento anterior, criando uma cadeia inquebrantável. Se qualquer evento for modificado, todos os hashes subsequentes se tornam inválidos.";
+"chain.explain_event_hash" = "Integridade do Hash de Evento";
+"chain.explain_event_hash_desc" = "O conteúdo de cada evento é hasheado usando SHA-256. Qualquer modificação nos dados do evento resultará em um hash diferente.";
+"chain.explain_tombstone" = "Registros de Lápide";
+"chain.explain_tombstone_desc" = "Quando uma prova é invalidada, um evento de lápide é registrado na cadeia. O evento original permanece, mas é marcado como inválido.";
+
+// Chain Reset
+"chain.danger_zone" = "Zona de Perigo";
+"chain.reset_chain" = "Redefinir Cadeia";
+"chain.reset_chain_footer" = "Exclui todos os eventos, provas e mídia. Esta ação não pode ser desfeita. Use para resolver problemas de integridade da cadeia após atualizações.";
+"chain.reset_confirm_title" = "Redefinir Cadeia?";
+"chain.reset_confirm_message" = "Isso excluirá permanentemente todos os eventos, lápides, âncoras e arquivos de mídia. A cadeia começará do zero a partir de GENESIS. Esta ação não pode ser desfeita.";
+"chain.reset_confirm_button" = "Redefinir Cadeia";
+"chain.auth_error" = "Erro de autenticação";
+"chain.auth_failed" = "Falha na autenticação: %@";
+
+// v36 TSA Redundancy & Chain Integrity
+"settings.tsa.provider" = "Provedor TSA";
+"settings.tsa.configure" = "Configurar";
+"detail.anchor_info" = "Info do carimbo de tempo";
+"detail.anchor_provider" = "Provedor TSA";
+"detail.anchor_time" = "Hora da âncora";
+"detail.anchor_id" = "ID da âncora";
+"chain.verification_passed_with_warnings" = "Integridade OK (com avisos)";
+"chain.warnings_found" = "%d avisos";
+"chain.error_deleted_gap" = "Lacuna por exclusão";
+"settings.timestamp.footer_pro" = "Failover automático: DigiCert → Sectigo. Ancoragem automática a cada ~30 minutos.";
+"verify.check.signature_no_public_key" = "Não é possível verificar - public_key ausente na prova";
+
+// MARK: - Image Verification (AssetHash)
+"verify.image_verification_title" = "Verificação de imagem";
+"verify.image_verification_desc" = "Selecione a imagem original para verificar se corresponde à prova. Isso confirma que a imagem não foi modificada.";
+"verify.expected_asset_hash" = "AssetHash esperado:";
+"verify.select_image_to_verify" = "Selecionar imagem para verificar";
+"verify.select_image_hint" = "Escolha o arquivo de imagem original\npara verificar contra a prova";
+"verify.image_selected" = "Imagem selecionada";
+"verify.change_image" = "Alterar imagem";
+"verify.verify_with_image" = "Verificar com imagem";
+"verify.verify_without_image" = "Verificar apenas prova";
+"verify.verify_proof_only" = "Verificar apenas prova (pular verificação de imagem)";
+"verify.skip_image_verification" = "Pular verificação de imagem";
+"verify.image_verification_note" = "A verificação de imagem confirma que a foto corresponde ao AssetHash na prova. Sem isso, apenas a estrutura da prova é verificada.";
+"verify.asset_hash_verification" = "Verificação AssetHash";
+"verify.select_image_from_files" = "Selecionar de Arquivos
+(arquivo original, não Fotos)";
+
+// MARK: - Raw Data Export
+"share.raw_data_export" = "Salvar em Arquivos";
+"share.raw_data_export_desc" = "Salvar diretamente no app Arquivos (nao WhatsApp)";
+"share.raw_data_export_note" = "WhatsApp/AirDrop comprime imagens. Use app Arquivos para manter dados originais";
+"share.for_verification" = "Para verificacao";
+"verify.proof_file" = "Prova VeriCapture";
+
+// MARK: - Full Chain Export with Tombstones
+"export.full_chain_title" = "Exportação completa da cadeia";
+"export.full_chain_desc" = "Exportar todas as provas incluindo registros de exclusão (Tombstones)";
+"export.include_tombstones" = "Incluir Tombstones";
+"export.include_tombstones_desc" = "Incluir registros de invalidação para provar que as exclusões foram intencionais";
+"export.shareable_package" = "Pacote compartilhável";
+"export.shareable_package_desc" = "Verificação de terceiros (dados mínimos, privacidade em primeiro)";
+"export.internal_package" = "Pacote interno";
+"export.internal_package_desc" = "Trilha de auditoria completa (forense, fins legais)";
+"export.tombstone_note" = "Tombstones provam que exclusões são intencionais, não adulteração";
+"export.tombstone_count" = "%d tombstones incluídos";
+"export.package_generated" = "Pacote de exportação gerado";
+"export.package_includes" = "Inclui %d eventos e %d tombstones";
+
+// Chain Statistics Labels
+"chain.stats_note" = "Total = Eventos ativos + invalidados (Tombstones contados separadamente)";
+"chain.active_note" = "Provas válidas";
+"chain.invalidated_note" = "Provas invalidadas via Tombstone";
+
+// MARK: - Case Management (v40)
+"case.title" = "Casos";
+"case.create_new" = "Criar novo caso";
+"case.empty_title" = "Sem casos";
+"case.empty_message" = "Crie um caso para organizar suas capturas por projeto ou local.";
+"case.current" = "Caso atual";
+"case.other" = "Outros casos";
+"case.archived" = "Arquivado";
+"case.show_archived" = "Mostrar arquivados";
+"case.name" = "Nome";
+"case.name_placeholder" = "Digite o nome do caso";
+"case.description" = "Descrição";
+"case.description_placeholder" = "Notas opcionais";
+"case.icon" = "Ícone";
+"case.color" = "Cor";
+"case.select" = "Selecionar";
+"case.edit" = "Editar";
+"case.archive" = "Arquivar";
+"case.unarchive" = "Desarquivar";
+"case.delete" = "Excluir";
+"case.export" = "Exportar";
+"case.create_title" = "Criar caso";
+"case.edit_title" = "Editar caso";
+"case.save" = "Salvar";
+"case.create" = "Criar";
+"case.tap_to_change" = "Toque para mudar";
+"case.delete_confirm_title" = "Excluir caso";
+"case.delete_confirm_message" = "Tem certeza de que deseja excluir este caso?";
+"case.delete_has_events" = "Este caso contém %d eventos. Excluir mesmo assim?";
+"case.stats_title" = "Estatísticas do caso";
+"case.stats_total" = "Total de eventos";
+"case.stats_active" = "Ativos";
+"case.stats_invalidated" = "Invalidados";
+"case.stats_anchored" = "Ancorados";
+"case.stats_pending" = "Pendentes";
+"case.stats_date_range" = "Período";
+"case.stats_size" = "Tamanho do armazenamento";
+"case.export_title" = "Exportar caso";
+"case.export_success" = "Caso exportado com sucesso";
+"case.export_include_location" = "Incluir dados de localização";
+"case.export_metadata_only" = "Apenas metadados (JSON)";
+"case.export_full_package" = "Pacote completo com fotos (ZIP)";
+"case.export_message" = "Escolha o formato de exportação. O pacote completo inclui todas as fotos com provas criptográficas.";
+"case.quick_capture" = "Captura rápida";
+"case.selector_title" = "Selecionar caso";
+"case.default_name" = "Padrão";
+"common.done" = "Concluído";
+"common.cancel" = "Cancelar";
+"common.save" = "Salvar";
+"common.delete" = "Excluir";
+"common.edit" = "Editar";
+"common.ok" = "OK";
+"common.error" = "Erro";
+
+// Biometric Authentication
+"biometric.delete_proof" = "Autenticação necessária para excluir a prova";
+"biometric.export_full_proof" = "Autenticação necessária para exportar prova completa com dados pessoais";
+"biometric.verified_capture" = "Autenticar operação de captura";
+"biometric.reset_chain" = "Autenticação necessária para redefinir a cadeia";
+
+// Delete Errors
+"delete.error_target_not_found" = "Erro: Evento alvo não encontrado";
+"delete.error_already_invalidated" = "Erro: Tombstone já existe";
+"delete.error_event_not_active" = "Erro: Evento não está ativo";
+"delete.error_signature_failed" = "Erro: Falha na assinatura";
+"delete.error_storage_failed" = "Erro: Falha ao salvar tombstone";
+"delete.error_generic" = "Falha ao excluir: %@";
+"delete.error_auth_failed" = "Falha na autenticação: %@";
+
+// Chain Error Details
+"chain.warning_badge" = "Aviso";
+"chain.event_label" = "Evento: %@";
+"chain.deleted_event_gap_message" = "Lacuna devido a evento excluído";
+"chain.expected_label" = "Esperado: %@";
+"chain.actual_label" = "Real: %@";
+
+// Detail View Labels
+"detail.invalidated_at" = "Invalidado em: %@";
+"detail.human_attestation" = "Atestação humana";
+"detail.proof_id" = "ID da prova";
+"detail.asset_hash" = "Hash do ativo";
+"detail.event_hash" = "Hash do evento";
+
+// Case Management
+"case.section_info" = "Info";
+"case.section_events" = "Eventos";
+"case.section_technical" = "Técnico";
+"case.no_events" = "Sem eventos";
+"case.photo_singular" = "%d foto";
+"case.photo_plural" = "%d fotos";
+"case.last_capture" = "Última: %@";
+
+// Settings - Cases
+"settings.cases.title" = "Casos";
+"settings.cases.footer" = "Organize suas capturas por projeto ou local. Cada caso tem sua própria cadeia de hash independente.";
+
+// Capture View
+"capture.simulator_title" = "Modo Simulador";
+"capture.simulator_message" = "Toque no botão de captura para gerar uma imagem de demonstração";
+
+// Signer protection
+"verify.signer_name" = "Signatário";
+"verify.signer_protected" = "Protegido por hash (à prova de adulteração)";
+"verify.signer_not_protected" = "Sem proteção hash (formato antigo)";
