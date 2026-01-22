@@ -1,0 +1,976 @@
+/* 
+  Localizable.strings (Traditional Chinese)
+  VeriCapture
+  
+  © 2026 VeritasChain Co., Ltd.
+*/
+
+// MARK: - Tab Bar
+// MARK: - App Tagline
+"app.tagline" = "加密證據相機";
+
+// MARK: - Tab Bar
+"tab.capture" = "拍攝";
+"tab.gallery" = "證據";
+"tab.verify" = "驗證";
+"tab.settings" = "設定";
+
+// MARK: - Camera View
+"camera.cpp_on" = "CPP證據：開啟";
+"camera.permission.title" = "相機存取";
+"camera.permission.message" = "VeriCapture需要相機權限來拍照。";
+"camera.permission.button" = "開啟設定";
+"camera.toast.captured" = "證據已產生";
+"camera.first_capture_hint" = "此拍攝操作將被加密記錄";
+"camera.privacy_note" = "照片僅在您的裝置上本機處理";
+"camera.first_capture_loading" = "僅首次啟動 - 證據產生需要片刻";
+"camera.cpp_proof_generation" = "CPP證據產生";
+"camera.auth_in_progress" = "認證中...";
+"camera.keep_device_still" = "請保持裝置穩定";
+
+// MARK: - Capture Result
+"result.title" = "拍攝結果";
+"result.close" = "關閉";
+"result.generated" = "已產生";
+"result.anchored" = "已外部錨定";
+"result.pending" = "錨定中...";
+"result.error" = "錯誤";
+"result.proof_id" = "證據ID";
+"result.filename" = "檔案名稱";
+"result.filesize" = "檔案大小";
+"result.timestamp" = "拍攝時間";
+"result.hash_algo" = "雜湊演算法";
+"result.sign_algo" = "簽章演算法";
+"result.anchor_status" = "外部時間戳記";
+"result.anchor_pending" = "待定（約30分鐘內錨定）";
+"result.anchor_complete" = "已錨定";
+"result.third_party_verifiable" = "此證據可由獨立第三方驗證";
+"result.share" = "分享";
+"result.copy_proof_id" = "複製證據ID";
+"result.copy_proof_url" = "複製驗證URL";
+
+// MARK: - Share Options
+"share.title" = "選擇分享方式";
+"share.cancel" = "取消";
+"share.image_only" = "僅圖片";
+"share.image_only.desc" = "標準分享";
+"share.with_proof" = "附帶證據";
+"share.with_proof.desc" = "僅最少驗證資料（無PII）";
+"share.with_qr" = "附帶驗證QR碼";
+"share.with_qr.desc" = "新增附帶驗證URL的QR碼";
+"share.sns_note" = "⚠️ 此證據表明拍攝操作已被記錄。\n不保證內容的真實性或有效性。";
+
+// MARK: - QR Preview
+"qr.title" = "QR碼預覽";
+"qr.position" = "QR碼位置";
+"qr.position.bottom_right" = "右下角";
+"qr.position.bottom_left" = "左下角";
+"qr.opacity" = "不透明度";
+"qr.share_this" = "分享此圖片";
+"qr.verify_note" = "掃描QR碼驗證此證據";
+"qr.verify_desc" = "QR碼是驗證的入口";
+
+// MARK: - Gallery
+"gallery.title" = "證據列表";
+"gallery.empty.title" = "尚無證據";
+"gallery.empty.message" = "在拍攝標籤頁中拍照\n以建立加密證據";
+"gallery.status.generated" = "已產生";
+"gallery.status.anchored" = "已錨定";
+"gallery.status.pending" = "錨定中...";
+"gallery.status.failed" = "失敗";
+"gallery.status_legend.anchored" = "已錨定：已取得第三方時間戳記";
+"gallery.status_legend.pending" = "待定：等待時間戳記提交";
+"gallery.group.pinned" = "📌 已固定";
+"gallery.group.today" = "今天";
+"gallery.group.yesterday" = "昨天";
+"gallery.group.this_week" = "本週";
+"gallery.group.this_month" = "本月";
+
+// MARK: - Event Detail
+"detail.title" = "證據詳情";
+"detail.share" = "分享證據";
+"detail.delete" = "刪除此證據";
+"detail.delete.confirm_title" = "刪除證據";
+"detail.delete.confirm_message" = "確定要刪除此證據嗎？此操作無法復原。";
+"detail.delete.confirm_delete" = "刪除";
+"detail.delete.confirm_cancel" = "取消";
+"detail.section.basic" = "基本資訊";
+"detail.section.crypto" = "加密資訊";
+"detail.section.anchor" = "外部時間戳記";
+"detail.capture_location" = "拍攝位置";
+"detail.capture_location_marker" = "拍攝點";
+"detail.location_privacy_note" = "* 位置僅儲存在裝置上（Proof JSON中僅包含雜湊）";
+"detail.proof_id_note" = "（用於第三方驗證）";
+"detail.forensic_export" = "鑑識匯出";
+"detail.preparing_proof" = "準備證據中...";
+
+// MARK: - Verify
+"verify.title" = "VeriCheck";
+"verify.subtitle" = "CPP v1.0證據驗證";
+"verify.scan_qr" = "掃描QR碼";
+"verify.scan_qr_desc" = "讀取VeriCapture QR碼";
+"verify.select_file" = "選擇檔案";
+"verify.input_json" = "輸入JSON";
+"verify.input_json_title" = "Proof JSON輸入";
+"verify.recent_verifications" = "最近驗證";
+"verify.clear" = "清除";
+"verify.paste" = "貼上";
+"verify.verify" = "驗證";
+"verify.cancel" = "取消";
+"verify.check_items" = "驗證項目";
+"verify.check_event_hash" = "EventHash完整性";
+"verify.check_signature" = "ES256數位簽章";
+"verify.check_image_hash" = "圖片雜湊驗證";
+"verify.check_timestamp" = "RFC 3161時間戳記";
+"verify.check_merkle" = "Merkle證明驗證";
+"verify.qr_instruction" = "將QR碼置於框內";
+"verify.result_title" = "驗證結果";
+"verify.items_passed" = "項通過";
+"verify.proof_info" = "證據資訊";
+"verify.capture_time" = "拍攝時間";
+"verify.device" = "裝置";
+"verify.generated_by" = "產生者";
+"verify.tsa_time" = "TSA時間";
+"verify.tsa_service" = "TSA服務";
+"verify.flash_mode" = "閃光燈";
+"verify.error_title" = "錯誤";
+"verify.instruction_text" = "掃描QR碼或讀取Proof JSON檔案進行驗證";
+"verify.status.verified" = "證據已驗證";
+"verify.status.signature_invalid" = "簽章無效";
+"verify.status.hash_mismatch" = "雜湊不符（偵測到竄改）";
+"verify.status.anchor_pending" = "時間戳記待定";
+"verify.status.anchor_verified" = "TSA已驗證";
+"verify.status.asset_mismatch" = "圖片雜湊不符";
+"verify.status.pending" = "驗證中...";
+"verify.status.error" = "錯誤";
+
+// MARK: - Settings
+"settings.title" = "設定";
+"settings.version" = "版本";
+"settings.about.title" = "關於此應用程式";
+"settings.about.description" = "VeriCapture是一款證據產生工具，它以\n防竄改格式記錄拍攝操作和資料來源。\n記錄可由獨立第三方驗證。\n這是世界上第一個將加密證據產生\n與第三方驗證相結合的消費者應用程式設計。\n不保證內容的真實性或有效性。";
+"settings.timestamp.title" = "第三方時間戳記";
+"settings.timestamp.pending" = "待定證據";
+"settings.timestamp.last" = "上次錨定";
+"settings.timestamp.trigger" = "立即錨定";
+"settings.timestamp.footer" = "記錄存在時間由外部時間戳記機構錨定。約每30分鐘自動錨定。";
+"settings.timestamp.offline_note" = "證據在離線時排隊，上線後自動傳送。";
+"settings.location.title" = "位置";
+"settings.location.note" = "位置是選用的。您可以在不授予位置權限的情況下拍攝和建立證據。";
+"settings.location.status_title" = "目前設定";
+"settings.location.status_on" = "已允許 - 位置包含在證據中";
+"settings.location.status_off" = "未允許 - 位置不被記錄";
+"settings.location.open_settings" = "變更位置設定";
+"settings.location.on_desc" = "【開啟】記錄經緯度，'在哪裡拍攝'可驗證。";
+"settings.location.off_desc" = "【關閉】不記錄位置。拍攝和證據正常運作。如需隱私請關閉。";
+"settings.use_cases.title" = "使用情境";
+"settings.use_cases.view" = "檢視應用情境";
+"settings.use_cases.desc" = "VeriCapture適用於需要來源證明的法律、稽核、新聞情境。內容真實性需要單獨驗證。";
+"settings.data.title" = "資料管理";
+"settings.data.storage_used" = "已用儲存空間";
+"settings.data.photo_count" = "已儲存證據";
+"settings.data.export_all" = "匯出全部";
+"settings.data.delete_all" = "刪除全部";
+"settings.data.delete_confirm_title" = "刪除所有證據";
+"settings.data.delete_confirm_message" = "刪除所有證據？此操作無法復原。";
+
+// MARK: - Use Cases
+"use_cases.title" = "使用情境";
+"use_cases.subtitle" = "VeriCapture使用範例";
+"use_cases.legal_title" = "法律與訴訟";
+"use_cases.legal_desc" = "證明證據照片的日期和未被竄改";
+"use_cases.audit_title" = "稽核與合規";
+"use_cases.audit_desc" = "現場照片記錄和來源管理";
+"use_cases.journalism_title" = "新聞";
+"use_cases.journalism_desc" = "確保報導照片的原創性";
+"use_cases.insurance_title" = "保險與評估";
+"use_cases.insurance_desc" = "事故/損失照片的日期證明";
+"use_cases.real_estate_title" = "不動產與建築";
+"use_cases.real_estate_desc" = "房產/建築專案記錄管理";
+"use_cases.medical_title" = "醫療與健康";
+"use_cases.medical_desc" = "醫療記錄照片防竄改保護";
+"use_cases.footer" = "※VeriCapture記錄拍攝操作。不保證內容真實性。";
+
+// MARK: - Paywall
+"paywall.title" = "VeriCapture Pro";
+"paywall.subtitle" = "專業功能";
+"paywall.feature.unlimited" = "無限證據產生";
+"paywall.feature.priority" = "優先時間戳記";
+"paywall.feature.export" = "批次匯出";
+"paywall.feature.support" = "優先支援";
+"paywall.price.monthly" = "月付";
+"paywall.price.yearly" = "年付";
+"paywall.price.save" = "節省";
+"paywall.subscribe" = "訂閱";
+"paywall.restore" = "恢復購買";
+"paywall.terms" = "服務條款";
+"paywall.privacy" = "隱私權政策";
+// Paywall Additional Keys
+"paywall.close" = "關閉";
+"paywall.error" = "錯誤";
+"paywall.limit_reached_title" = "已達免費上限";
+"paywall.limit_reached_message" = "目前已儲存 %d / 50 個證據。\n要儲存新證據，請刪除舊證據或升級至Pro。";
+"paywall.unlimited_storage" = "證據儲存：無限";
+"paywall.tsa_redundancy" = "TSA冗餘";
+"paywall.tsa_redundancy_desc" = "多個時間戳提供商確保可靠性";
+"paywall.free_limit" = "免費版限50個";
+"paywall.load_failed" = "無法載入商品資訊";
+"paywall.reload" = "重新載入";
+"paywall.reference_price_note" = "參考價格（連接App Store Connect後有效）";
+"paywall.monthly_plan" = "月度計劃";
+"paywall.yearly_plan" = "年度計劃";
+"paywall.save_percent" = "節省37%";
+"paywall.per_month" = "/月";
+"paywall.per_year" = "/年";
+"paywall.upgrade_button" = "升級至Pro";
+"paywall.restore_purchases" = "恢復購買";
+"paywall.limit_reached_capture_title" = "已達免費上限";
+"paywall.limit_reached_capture_message" = "證據已產生，但由於免費上限（50個）無法儲存。";
+"paywall.current_count" = "目前：%d / %d 個";
+"paywall.pro_unlimited" = "Pro無限使用";
+"paywall.make_space" = "騰出空間";
+"paywall.later" = "稍後";
+"paywall.free_tier" = "免費：50張/月";
+
+// MARK: - Errors
+"error.generic" = "發生錯誤";
+"error.network" = "網路錯誤";
+"error.storage" = "儲存空間錯誤";
+"error.crypto" = "加密錯誤";
+"error.camera" = "相機錯誤";
+"error.permission" = "需要權限";
+
+// MARK: - Common
+"common.ok" = "確定";
+"common.cancel" = "取消";
+"common.done" = "完成";
+"common.delete" = "刪除";
+"common.share" = "分享";
+"common.copy" = "複製";
+"common.copied" = "已複製";
+"common.save" = "儲存";
+"common.loading" = "載入中...";
+"common.error" = "錯誤";
+"common.success" = "成功";
+"common.retry" = "重試";
+
+// MARK: - Subscription Status
+"subscription.status.free" = "免費";
+"subscription.status.pro" = "Pro";
+"subscription.status.expired" = "已過期";
+"subscription.limit.title" = "已達月度限額";
+"subscription.limit.message" = "免費版允許每月50張。升級到Pro可獲得無限。";
+"subscription.limit.upgrade" = "升級到Pro";
+"subscription.limit.wait" = "等待下個月";
+
+// MARK: - Photo Library
+"photo.save.success" = "照片已儲存";
+"photo.save.error" = "照片儲存失敗";
+"photo.permission.title" = "照片圖庫存取";
+"photo.permission.message" = "需要權限才能儲存照片";
+
+// MARK: - Timestamp
+"timestamp.none" = "無";
+"timestamp.pending" = "待定";
+"timestamp.verified" = "已驗證";
+"timestamp.error" = "錯誤";
+
+// MARK: - File Size
+"filesize.bytes" = "%d 位元組";
+"filesize.kb" = "%.1f KB";
+"filesize.mb" = "%.1f MB";
+
+// MARK: - Date Format
+"date.today" = "今天";
+"date.yesterday" = "昨天";
+"date.format" = "yyyy/MM/dd HH:mm";
+
+// MARK: - Internal Export
+"share.internal_proof" = "鑑識匯出";
+"share.internal_proof.desc" = "用於法律/提交（可能包含PII）";
+"share.internal_warning" = "⚠️ 僅用於法律/內部提交";
+"share.internal_warning_detail" = "包含位置、感測器資料、裝置詳情。分享時請注意隱私。";
+"share.internal_export_button" = "匯出完整證據";
+"share.internal_auth_required" = "需要身分驗證";
+"share.internal_auth_message" = "需要身分驗證才能存取完整證據資料";
+
+// MARK: - Gallery Delete
+"gallery.delete.title" = "刪除證據";
+"gallery.delete.message" = "刪除此證據？\n需要身分驗證。";
+"gallery.delete.auth_error" = "身分驗證錯誤";
+
+// MARK: - Human Attestation
+"attestation.auth_method" = "認證方式";
+"attestation.auth_time" = "認證時間";
+"attestation.time_offset" = "距拍攝偏移";
+"attestation.disclaimer" = "這不是身分驗證。它記錄拍攝由通過認證的人執行。";
+
+// MARK: - Export Messages
+"export.share_sheet" = "顯示分享面板";
+"export.failed" = "匯出失敗";
+"export.no_proofs" = "沒有可匯出的證據";
+"export.error" = "匯出錯誤：%@";
+
+// MARK: - Subscription
+"subscription.until" = "到 %@";
+"subscription.restore_title" = "恢復購買";
+"subscription.restore_success" = "購買已恢復。Pro現已啟用。";
+"subscription.restore_failed" = "未找到可恢復的購買";
+"subscription.auth_failed" = "身分驗證失敗：%@";
+
+// MARK: - Settings Developer
+"settings.developer_lead" = "開發負責人";
+
+// MARK: - Forensic Settings
+"settings.forensic.title" = "鑑識設定";
+"settings.forensic.footer" = "設定鑑識匯出中包含的簽章者資訊。";
+"settings.forensic.signer_name_label" = "簽章者姓名";
+"settings.forensic.signer_name_placeholder" = "例：王大明";
+"settings.forensic.signer_name_hint" = "將作為簽章者記錄在鑑識Proof JSON中";
+
+// MARK: - World First
+"world_first.comparison_title" = "與現有解決方案的比較";
+"world_first.c2pa_products" = "Leica M11-P、Sony、Nikon等";
+"world_first.c2pa_quote" = "簽章者身分不一定是人類行為者";
+"world_first.c2pa_gap" = "人類身分綁定被故意排除";
+"world_first.truepic_quote" = "放棄了唯一識別使用者的需求";
+"world_first.truepic_gap" = "僅裝置認證，無人類存在驗證";
+"world_first.numbers_quote" = "基於錢包的身分";
+"world_first.numbers_gap" = "僅所有權證明，無實體存在";
+"world_first.witness_quote" = "將內容簽章到裝置和時間";
+"world_first.witness_gap" = "用於人權文件，無人類綁定";
+"world_first.starling_quote" = "故意避免儲存個人資訊";
+"world_first.starling_gap" = "隱私優先，無人類識別";
+"world_first.findings_title" = "研究發現摘要";
+"world_first.finding1_title" = "5項研究得出相同結論";
+"world_first.finding1_detail" = "沒有現有系統滿足所有5項要求";
+"world_first.finding2_title" = "人類存在綁定是關鍵";
+"world_first.finding2_detail" = "C2PA、Truepic等故意排除此項";
+"world_first.finding3_title" = "選擇性記錄防止未解決";
+"world_first.finding3_detail" = "即使在學術文獻中也未找到解決方案";
+"world_first.finding4_title" = "建立新類別";
+"world_first.finding4_detail" = "架構創新，非增量改進";
+"world_first.tech_notes_title" = "技術說明";
+"world_first.who_equals_device" = "「誰」= 裝置金鑰";
+"world_first.who_explanation" = "在目前實作中，'誰'由Secure Enclave的裝置特定金鑰證明。";
+"world_first.device_proof" = "這證明'在此裝置上拍攝'，而非透過生物認證證明'由此人拍攝'。";
+"world_first.future_updates" = "計畫的未來更新";
+"world_first.future_explanation" = "計畫透過Apple App Attest和Face ID/Touch ID整合實現真正的人類存在證明。";
+"world_first.references_title" = "參考文獻";
+"world_first.github_report" = "World First報告（GitHub）";
+"world_first.cap_spec" = "CPP規格（GitHub）";
+"world_first.conclusion_title" = "結論";
+"world_first.conclusion_text" = "VeriCapture是**世界上第一個**將媒體拍攝與經驗證的人類存在進行加密綁定、防止選擇性記錄並實現無信任第三方驗證的消費者相機應用程式。";
+"world_first.conclusion_detail" = "所有五項獨立研究得出相同結論。沒有現有系統同時滿足所有五項關鍵技術要求。";
+"world_first.requirements_title" = "5項評估要求";
+"world_first.req1_title" = "拍攝時加密證據";
+"world_first.req1_desc" = "證據在快門瞬間產生（非拍攝後）";
+"world_first.req2_title" = "人類存在綁定";
+"world_first.req2_desc" = "與經驗證的真實人類的加密綁定，不僅僅是裝置或錢包";
+"world_first.req3_title" = "選擇性記錄防止";
+"world_first.req3_desc" = "省略的拍攝可被加密偵測";
+"world_first.req4_title" = "獨立第三方驗證";
+"world_first.req4_desc" = "無需依賴平台或建立者的無信任驗證";
+"world_first.req5_title" = "消費者部署";
+"world_first.req5_desc" = "可作為消費者相機應用程式部署";
+"world_first.doc_id" = "文件ID：VC-RESEARCH-FINAL-001";
+"world_first.research_date" = "研究完成：2026年1月15日";
+"world_first.research_note" = "基於5項獨立研究";
+"world_first.nav_title" = "世界首創證據";
+"world_first.done" = "完成";
+
+// MARK: - Pro Remaining
+"pro.remaining_format" = "%d / 50 剩餘";
+"pro.until_format" = "到 %@";
+
+// Export Alert
+"settings.export" = "匯出";
+"export.forensic_subtitle" = "用於法律/提交（可能包含PII）";
+
+// MARK: - Share Options Additional
+"share.internal_about_title" = "關於完整證據";
+"share.internal_about_desc" = "僅用於法律/提交\n可能包含位置等個人資訊";
+"share.privacy_design_title" = "隱私設計";
+"share.privacy_design_desc" = "僅分享最少驗證資訊\n排除位置、感測器和裝置詳情";
+"share.sns_warning_title" = "重要提示";
+"share.sns_warning_desc" = "中繼資料將被移除\n推薦QR碼分享";
+"share.recommended_badge" = "推薦";
+"share.ecosystem_warning_title" = "證據資料將遺失";
+"share.ecosystem_warning_desc" = "上傳到SNS或其他平台時，證據資料會被移除，重新下載後無法驗證。";
+"share.ecosystem_recommendation" = "用於法律/稽核目的，請使用'附帶驗證QR碼'或'鑑識匯出'";
+
+// MARK: - QR Style
+"qr.style_title" = "樣式";
+"qr.style_standard" = "標準";
+"qr.style_rounded" = "圓角";
+"qr.style_branded" = "品牌";
+"qr.preparing_image" = "準備圖片中...";
+
+// MARK: - Disclaimer
+"disclaimer.title" = "重要提示";
+"disclaimer.content_not_guaranteed" = "⚠️ 不保證內容的真實性或有效性";
+"disclaimer.records_operation_only" = "僅記錄拍攝操作發生和資料來源";
+"disclaimer.requires_verification" = "判斷內容真實性需要單獨驗證";
+"disclaimer.not_identity_proof" = "此應用程式不執行身分驗證或認證";
+"disclaimer.share_notice" = "⚠️ 此證據表明拍攝操作已被記錄。不保證內容的真實性或有效性。";
+"disclaimer.verification_notice" = "驗證僅確認記錄完整性。內容真實性未被驗證。";
+
+// MARK: - About App
+"about.tool_definition" = "證據產生工具";
+"about.what_it_records" = "以防竄改格式記錄拍攝操作和資料來源";
+"about.what_it_does_not" = "不保證內容的真實性、有效性或法律可採性";
+"about.intended_use" = "用於需要來源證明的法律提交、稽核追蹤和商業記錄";
+
+// MARK: - Attested Capture Mode
+"attested_capture.section_title" = "拍攝認證模式";
+"attested_capture.toggle_title" = "認證拍攝";
+"attested_capture.enabled" = "已啟用";
+"attested_capture.disabled" = "已停用";
+"attested_capture.auth_method" = "認證方式";
+"attested_capture.description" = "在拍攝前嘗試生物認證（%@）並記錄結果。";
+"attested_capture.disclaimer" = "⚠️ 這不是身分驗證";
+"attested_capture.disclaimer_full" = "這僅記錄裝置生物認證被嘗試。\n\n不驗證：\n• 拍攝者是誰\n• 裝置擁有者是否拍攝了照片\n• 是否是人類拍攝了照片\n\n不要將'已認證'解釋為'已驗證身分'。";
+"attested_capture.not_available" = "此裝置未設定生物認證";
+"attested_capture.auth_failed" = "認證失敗";
+"attested_capture.auth_cancelled" = "認證已取消";
+"attested_capture.badge" = "已認證";
+"attested_capture.badge_tooltip" = "此徽章表示在拍攝前嘗試了裝置生物認證。\n\n不驗證拍攝者身分或內容真實性。";
+"attested_capture.attestation_title" = "人類證明";
+"attested_capture.attestation_method" = "方式";
+"attested_capture.attestation_time" = "認證時間";
+"attested_capture.attestation_offset" = "距拍攝偏移";
+"attested_capture.attestation_disclaimer" = "這不是身分驗證。記錄拍攝由通過認證的人執行。";
+
+// MARK: - Additional Settings
+"settings.location.status_not_determined" = "未設定 - 拍攝時會詢問";
+"settings.language.title" = "語言";
+"settings.language.current" = "更改應用程式語言";
+"settings.language.note" = "從系統設定更改語言。更改後請重新啟動應用程式。";
+"settings.spec.title" = "規格";
+"settings.spec.about" = "關於VeriCapture";
+"settings.spec.cpp" = "CPP v1.0規範";
+"settings.spec.world_first" = "關於World-First報告";
+"settings.usecases.title" = "使用情境";
+"settings.usecases.browse" = "瀏覽使用情境";
+"settings.usecases.footer" = "VeriCapture適用於需要來源記錄的法律、稽核和新聞案例。內容真實性需要單獨驗證。";
+"settings.philosophy" = "Verify, Don't Trust.";
+"settings.philosophy.desc" = "證據可由獨立第三方驗證，無需信任任何特定組織。";
+"settings.developer" = "開發者";
+"settings.developer.name" = "VeritasChain Co., Ltd.";
+"settings.support_message" = "如有問題或bug，請聯繫 developers@veritaschain.org 或通過LinkedIn私信開發負責人。通常24小時內修復。";
+"settings.plan_section" = "計畫";
+"settings.free_plan" = "免費計畫";
+"settings.pro_active" = "Pro已啟用";
+"settings.manage_subscription" = "管理訂閱";
+"settings.remaining_slots" = "剩餘 %d / %d 張";
+"settings.approaching_limit" = "接近限額";
+"settings.upgrade_to_pro" = "升級到Pro";
+"settings.restore_purchases" = "恢復購買";
+"settings.data_management" = "資料管理";
+"settings.export_all_forensic" = "匯出所有證據（鑑識）";
+"settings.export_all_forensic_desc" = "包含位置和感測器的完整資料";
+"settings.export_all_forensic_footer" = "批次匯出所有證據的完整資料用於法律提交。需要身分驗證。";
+"settings.exporting_all" = "正在匯出所有證據...";
+"settings.technical_advantage" = "技術優勢";
+"settings.world_first_evidence" = "World-First證據";
+"settings.world_first_evidence_desc" = "經5項獨立研究驗證";
+"settings.world_first_evidence_footer" = "了解為什麼VeriCapture是與C2PA、Truepic、Numbers Protocol等相比的世界首創實現。";
+
+// MARK: - Export Additional
+"export.forensic_title" = "鑑識匯出";
+"export.forensic_confirm_title" = "鑑識匯出";
+"export.forensic_confirm_message" = "匯出完整的Proof JSON，包括位置、感測器資料和裝置詳情。\n\n⚠️ 如需與第三方共享，請使用「附帶證據分享」。";
+"export.forensic_button" = "匯出";
+"export.complete_title" = "匯出完成";
+"export.auth_error_title" = "身分驗證錯誤";
+"export.auth_failed_message" = "身分驗證失敗：%@";
+
+// MARK: - World First Additional
+"world_first.title" = "World-First證據";
+"world_first.subtitle" = "經5項獨立研究驗證";
+"world_first.conclusion_subtext" = "所有5項獨立研究得出相同結論。沒有現有系統同時滿足所有5項關鍵技術要求。";
+"world_first.document_id" = "文件ID：VC-RESEARCH-FINAL-001";
+"world_first.based_on_research" = "基於5項獨立研究";
+
+// MARK: - Initialization
+"init.title" = "VeriCapture";
+"init.subtitle" = "加密證據相機";
+"init.error" = "初始化錯誤";
+
+// MARK: - Common Additional
+"common.unknown" = "未知";
+
+// MARK: - Error Additional
+"error.title" = "錯誤";
+"error.ok" = "確定";
+"error.unknown" = "未知錯誤";
+
+// MARK: - Camera Info Popover
+"camera.info.title" = "CPP證據產生";
+"camera.info.feature1" = "拍攝時產生加密證據";
+"camera.info.feature2" = "圖像之後無法被竄改";
+"camera.info.feature3" = "第三方可獨立驗證";
+"camera.info.secure_enclave" = "在Secure Enclave中簽章";
+"camera.info.disclaimer" = "※ 不保證內容的真實性或正當性";
+
+// MARK: - Permission Screen
+"permission.camera_access" = "相機存取";
+"permission.camera_message" = "VeriCapture為您的照片產生\n加密證據。\n請允許相機存取。";
+"permission.allow_camera" = "允許相機";
+"permission.open_settings" = "開啟設定";
+
+// MARK: - Gallery Additional
+"gallery.context.delete" = "刪除";
+"gallery.remaining" = "剩餘 %d";
+
+// MARK: - Gallery Pinning
+"gallery.pin.pin" = "固定";
+"gallery.pin.unpin" = "取消固定";
+
+// MARK: - Gallery Search
+"gallery.search.placeholder" = "搜尋...";
+"gallery.search.no_results" = "未找到符合的證據";
+"gallery.search.clear_filter" = "清除篩選";
+
+// MARK: - Gallery Filter
+"gallery.filter.all" = "全部";
+"gallery.filter.attested" = "僅 Attested";
+"gallery.filter.anchored" = "已錨定";
+"gallery.filter.pending" = "待處理";
+
+// MARK: - Gallery Selection
+"gallery.select.title" = "已選擇 %d 項";
+"gallery.select.select_all" = "全選";
+"gallery.select.deselect_all" = "取消全選";
+"gallery.select.delete_title" = "刪除 %d 項";
+"gallery.select.delete_message" = "刪除所選證據？此操作無法撤銷。";
+
+// MARK: - Share Options (Location)
+"share.include_location" = "包含拍攝位置";
+"share.include_location_note" = "※ 包含緯度/經度\n※ 可能包含個人資訊";
+
+// MARK: - Verification (JSON Input)
+"verify.json_input.title" = "輸入證據JSON";
+"verify.json_input.description" = "貼上透過「帶證據分享」收到的Proof JSON";
+
+// MARK: - Verification Result
+"verify.result.authentic_message" = "此照片在拍攝時被真實記錄";
+"verify.result.hash_mismatch_message" = "雜湊不匹配。資料已被修改";
+"verify.result.attestation_section" = "拍攝認證";
+"verify.result.attestation_description" = "拍攝時嘗試了生物識別認證";
+"verify.result.location_section" = "拍攝位置";
+"verify.result.latitude" = "緯度";
+"verify.result.longitude" = "經度";
+"verify.result.location_warning" = "此位置資料包含在法務匯出中。可能構成個人資訊。";
+
+// MARK: - Verification Checks
+"verify.check.json_parse" = "JSON解析";
+"verify.check.version" = "版本檢查";
+"verify.check.event_hash" = "EventHash驗證";
+"verify.check.signature" = "簽名驗證";
+"verify.check.image_hash" = "圖像雜湊驗證";
+"verify.check.step1" = "第1/4步：解析JSON...";
+"verify.check.step2" = "第2/4步：檢查版本...";
+"verify.check.step3" = "第3/4步：驗證EventHash...";
+"verify.check.step4" = "第4/4步：驗證簽名...";
+"verify.check.step_image" = "附加：驗證圖像雜湊...";
+"verify.check.version_supported" = "已支援";
+"verify.check.version_unsupported" = "不支援";
+"verify.check.hash_match" = "SHA-256雜湊：匹配";
+"verify.check.hash_mismatch" = "SHA-256雜湊：不匹配";
+"verify.check.hash_format_ok" = "SHA-256雜湊：格式正確";
+"verify.check.hash_format_invalid" = "雜湊格式無效";
+"verify.check.image_not_provided" = "未提供圖像 - 已跳過";
+"verify.check.event_hash_desc" = "事件雜湊完整性驗證";
+"verify.check.event_hash_format_desc" = "事件雜湊格式驗證";
+"share.location_no_data" = "此證據不包含位置資料。要包含位置，請在設定中啟用位置存取。";
+"verify.check.json_parse_desc" = "Proof JSON結構驗證";
+"verify.check.version_desc" = "支援版本檢查";
+"verify.check.signature_desc" = "ECDSA P-256 (ES256) 簽名驗證";
+"verify.check.image_hash_desc" = "資產完整性驗證";
+"verify.check.signature_valid" = "ES256簽名：有效";
+"verify.check.signature_invalid" = "ES256簽名：無效";
+"verify.check.image_match" = "SHA-256：匹配";
+"verify.check.image_mismatch" = "SHA-256：不匹配（可能被竄改）";
+"verify.check.verification_error" = "驗證錯誤：%@";
+"verify.check.step_tsa" = "附加：驗證TSA...";
+"verify.check.merkle" = "Merkle Proof驗證";
+"verify.check.merkle_desc" = "Merkle證明驗證";
+"verify.check.merkle_match" = "Merkle根：匹配";
+"verify.check.merkle_mismatch" = "Merkle根：不匹配";
+"verify.check.tsa" = "TSA時間戳";
+"verify.check.tsa_desc" = "RFC 3161時間戳驗證";
+"verify.check.signature_presence_desc" = "ES256簽名存在檢查";
+"verify.check.signature_present" = "ES256簽名：存在";
+"verify.check.signature_missing" = "簽名無效";
+"verify.check.shareable_format" = "Shareable格式 v%@";
+"verify.check.unknown" = "未知";
+"verify.error.invalid_format" = "Proof JSON格式無效";
+
+// QR掃描請求訊息
+"verify.proof_needed_title" = "需要證明資料";
+"verify.proof_needed_message" = "此QR僅包含證明識別碼。\n請向拍攝者索取「帶證明分享（Proof JSON）」。";
+"verify.request_data" = "請求資料";
+"verify.request_proof_line1" = "我想驗證此圖像/影片的證明。";
+"verify.request_proof_line2" = "如使用VeriCapture拍攝，請選擇「帶證明分享（Proof JSON）」發送。";
+"verify.request_proof_footer" = "（此證明可由第三方離線驗證）";
+"verify.request_proof_disclaimer" = "（不保證內容的真實性或正當性）";
+"verify.result.signature_invalid_message" = "簽名無效。資料可能已被竄改";
+"verify.result.asset_mismatch_message" = "圖像與原始資料不匹配";
+"verify.result.anchor_pending_message" = "驗證完成。時間戳待確認";
+"verify.result.pending_message" = "驗證中...";
+"verify.result.error_message" = "驗證過程中發生錯誤";
+
+// MARK: - Paywall Additional
+"paywall.tagline" = "釋放加密證據的全部力量。";
+"paywall.pro_benefits_title" = "Pro 帶來的改變";
+"paywall.free_features_title" = "免費功能";
+"paywall.free_feature.capture" = "拍攝";
+"paywall.free_feature.proof" = "生成證據";
+"paywall.free_feature.qr" = "QR分享";
+"paywall.free_feature.json" = "JSON匯出";
+"paywall.select_plan" = "選擇計劃";
+"paywall.subscription_info_title" = "關於訂閱";
+"paywall.subscription_info_body" = "• 確認時將從您的 Apple ID 扣款\n• 訂閱將自動續訂，除非在當前期限結束前 24 小時取消\n• 在設定中管理或取消訂閱";
+
+// Onboarding
+"onboarding.title1" = "歡迎使用 VeriCapture";
+"onboarding.desc1" = "以加密方式記錄拍攝操作的相機應用，可證明拍攝時間和內容。";
+"onboarding.title2" = "篡改檢測";
+"onboarding.desc2" = "在安全晶片中創建數位簽名。可檢測照片的任何修改。";
+"onboarding.title3" = "外部時間戳";
+"onboarding.desc3" = "第三方時間戳機構驗證拍攝時間。任何人都可以獨立驗證照片拍攝時間。";
+"onboarding.title4" = "開放標準";
+"onboarding.desc4" = "符合 CPP v1.0。任何人都可以驗證的廠商中立開放規範。";
+"onboarding.next" = "下一步";
+"onboarding.start" = "開始使用";
+"onboarding.skip" = "跳過";
+
+// MARK: - CPP Additional Spec Localization
+
+// Media Status
+"media_status.present" = "媒體存在";
+"media_status.purged" = "已清除";
+"media_status.corrupted" = "已損壞";
+"media_status.migrated" = "已遷移";
+
+// Event Status
+"event_status.active" = "有效";
+"event_status.invalidated" = "已失效";
+"event_status.superseded" = "已被取代";
+
+// Anchor Status
+"anchor_status.pending" = "等待錨定";
+"anchor_status.anchored" = "已錨定";
+"anchor_status.failed" = "錨定失敗";
+"anchor_status.skipped" = "已跳過";
+"anchor_status.pending_description" = "裝置簽名已完成。將在下一批次進行外部錨定。";
+"anchor_status.anchored_description" = "已從符合RFC 3161標準的時間戳機構獲取存在證明。";
+"anchor_status.failed_description" = "外部錨定失敗。您可以重試。";
+"anchor_status.trigger_now" = "立即錨定";
+
+// Invalidation Reason
+"invalidation_reason.privacy" = "隱私保護";
+"invalidation_reason.accidental" = "誤拍更正";
+"invalidation_reason.inappropriate" = "不當內容";
+"invalidation_reason.court_order" = "法院命令";
+"invalidation_reason.gdpr" = "GDPR刪除請求";
+"invalidation_reason.duplicate" = "檢測到重複";
+"invalidation_reason.integrity" = "完整性受損";
+
+// Delete / Purge / Invalidate
+"delete.sheet_title" = "刪除選項";
+"delete.media_title" = "刪除照片";
+"delete.media_description" = "僅刪除圖片資料。拍攝記錄將保留。";
+"delete.media_confirm" = "刪除此照片？";
+"delete.media_confirm_message" = "圖片資料將被刪除，但拍攝記錄將保留。\n\nAssetHash允許將來匹配同一圖片。";
+"delete.media_button" = "刪除";
+
+"delete.invalidate_title" = "使證據失效";
+"delete.invalidate_description" = "使此證據失效（無法撤銷）。失效的事實將作為記錄保留。";
+"delete.invalidate_confirm" = "使此證據失效？";
+"delete.invalidate_confirm_message" = "此操作無法撤銷。\n\n證據將被記錄為'已失效'，並將失去法律證據效力。\n\n失效的事實將作為審計追蹤保留。";
+"delete.invalidate_button" = "失效";
+"delete.invalidate_select_reason" = "選擇失效原因";
+"delete.confirm_title" = "刪除此證據？";
+"delete.confirm_message" = "照片和證據將被刪除。此操作無法撤銷。\n\n刪除將被記錄在審計追蹤中。";
+"delete.confirm_button" = "刪除";
+
+"delete.nothing_deleted" = "兩種操作都無法使其'從未發生'";
+"delete.record_remains" = "拍攝事實已被記錄";
+
+// Forensic Export Warnings
+"forensic_warning.pending_title" = "證據待外部錨定";
+"forensic_warning.pending_message" = "為法律目的，建議對所有證據進行外部錨定。";
+"forensic_warning.anchor_all" = "立即全部錨定";
+"forensic_warning.export_anyway" = "仍然匯出";
+"forensic_warning.what_is_anchor" = "什麼是外部錨定？";
+"forensic_warning.anchor_explanation" = "符合RFC 3161標準的時間戳機構（TSA）獨立證明證據的存在時間。這增強了證據作為法律證據的可靠性。";
+
+// Gallery Status Badges
+"gallery_status.anchored" = "已錨定";
+"gallery_status.pending" = "待處理";
+"gallery_status.failed" = "失敗";
+"gallery_status.invalidated" = "已失效";
+"gallery_status.media_purged" = "媒體已清除";
+
+// QR掃描器錯誤
+"verify.qr_error.camera_unavailable" = "相機不可用";
+"verify.qr_error.permission_denied" = "未授予相機權限";
+
+// MARK: - 鏈完整性驗證
+
+"chain.title" = "鏈完整性";
+"chain.statistics_title" = "鏈統計";
+"chain.verification_title" = "完整性驗證";
+"chain.verification_footer" = "驗證所有事件是否正確連結，且未發生竄改。";
+"chain.run_verification" = "執行驗證";
+"chain.error_details_title" = "錯誤詳情";
+"chain.how_it_works" = "運作原理";
+"chain.total_events" = "總計";
+"chain.active_events" = "有效";
+"chain.invalidated_events" = "已失效";
+"chain.tombstones" = "墓碑";
+"chain.anchored" = "已錨定";
+"chain.pending_anchor" = "待錨定";
+"chain.date_range" = "日期範圍";
+"chain.verification_passed" = "鏈完整性已驗證";
+"chain.verification_failed" = "檢測到完整性問題";
+"chain.checked_format" = "已檢查 %d 個事件，%d 個墓碑";
+"chain.verified_at" = "驗證時間: %@";
+"chain.errors_found" = "發現 %d 個錯誤";
+"chain.error_prev_hash" = "前雜湊不匹配";
+"chain.error_event_hash" = "事件雜湊不匹配";
+"chain.error_signature" = "簽名無效";
+"chain.error_tombstone_target" = "墓碑目標不匹配";
+"chain.error_orphaned_tombstone" = "孤立墓碑";
+"chain.error_timestamp" = "時間戳異常";
+"chain.explain_prev_hash" = "雜湊鏈連結";
+"chain.explain_prev_hash_desc" = "每個事件包含前一個事件的雜湊，形成不可斷裂的鏈。如果任何事件被修改，所有後續雜湊將失效。";
+"chain.explain_event_hash" = "事件雜湊完整性";
+"chain.explain_event_hash_desc" = "每個事件的內容使用SHA-256雜湊。對事件資料的任何修改都會產生不同的雜湊。";
+"chain.explain_tombstone" = "墓碑記錄";
+"chain.explain_tombstone_desc" = "當證明被失效時，墓碑事件會記錄在鏈中。原始事件保留但標記為無效。";
+
+// Chain Reset
+"chain.danger_zone" = "危險區域";
+"chain.reset_chain" = "重置鏈";
+"chain.reset_chain_footer" = "刪除所有事件、證明和媒體。此操作無法撤消。用於解決應用更新後的鏈完整性問題。";
+"chain.reset_confirm_title" = "重置鏈？";
+"chain.reset_confirm_message" = "這將永久刪除所有事件、墓碑、錨點和媒體檔案。鏈將從GENESIS重新開始。此操作無法撤消。";
+"chain.reset_confirm_button" = "重置鏈";
+"chain.auth_error" = "認證錯誤";
+"chain.auth_failed" = "認證失敗: %@";
+
+// v36 TSA Redundancy & Chain Integrity
+"settings.tsa.provider" = "時間戳服務商";
+"settings.tsa.configure" = "配置";
+"detail.anchor_info" = "時間戳資訊";
+"detail.anchor_provider" = "時間戳服務商";
+"detail.anchor_time" = "錨定時間";
+"detail.anchor_id" = "錨定ID";
+"chain.verification_passed_with_warnings" = "完整性正常（有警告）";
+"chain.warnings_found" = "%d 個警告";
+"chain.error_deleted_gap" = "因刪除產生的間隙";
+"settings.timestamp.footer_pro" = "自動故障轉移: DigiCert → Sectigo。約每30分鐘自動錨定。";
+"verify.check.signature_no_public_key" = "無法驗證 - 證明中缺少public_key";
+
+// MARK: - Image Verification (AssetHash)
+"verify.image_verification_title" = "圖像驗證";
+"verify.image_verification_desc" = "選擇原始圖像以驗證其與證明是否匹配。這確認圖像未被修改。";
+"verify.expected_asset_hash" = "預期的AssetHash:";
+"verify.select_image_to_verify" = "選擇要驗證的圖像";
+"verify.select_image_hint" = "選擇原始圖像檔案\n與證明進行比對";
+"verify.image_selected" = "已選擇圖像";
+"verify.change_image" = "更換圖像";
+"verify.verify_with_image" = "連同圖像一起驗證";
+"verify.verify_without_image" = "僅驗證證明";
+"verify.skip_image_verification" = "跳過圖像驗證";
+"verify.image_verification_note" = "圖像驗證確認照片與證明中的AssetHash匹配。沒有此驗證，只會驗證證明結構。";
+"verify.asset_hash_verification" = "AssetHash驗證";
+"verify.select_image_from_files" = "從檔案應用程式選擇
+（原始檔案，非照片）";
+
+// MARK: - Raw Data Export
+"share.raw_data_export" = "儲存到檔案";
+"share.raw_data_export_desc" = "直接儲存到檔案App（非LINE等）";
+"share.raw_data_export_note" = "LINE/AirDrop會壓縮圖像。請從檔案App分享以保持原始資料";
+"share.for_verification" = "支援驗證";
+"verify.proof_file" = "VeriCapture證據";
+
+// MARK: - Full Chain Export with Tombstones
+"export.full_chain_title" = "完整鏈導出";
+"export.full_chain_desc" = "導出所有證據，包括刪除記錄（墓碑）";
+"export.include_tombstones" = "包含墓碑記錄";
+"export.include_tombstones_desc" = "包含失效記錄以證明刪除是有意的";
+"export.shareable_package" = "可分享套件";
+"export.shareable_package_desc" = "第三方驗證（最小數據，隱私優先）";
+"export.internal_package" = "內部套件";
+"export.internal_package_desc" = "完整稽核追蹤（鑑識、法律用途）";
+"export.tombstone_note" = "墓碑證明刪除是有意的，而非篡改";
+"export.tombstone_count" = "包含%d個墓碑記錄";
+"export.package_generated" = "導出套件已生成";
+"export.package_includes" = "包含%d個事件和%d個墓碑";
+
+// Chain Statistics Labels
+"chain.stats_note" = "總數 = 有效 + 失效事件（墓碑另計）";
+"chain.active_note" = "有效證據";
+"chain.invalidated_note" = "透過墓碑標記為無效的證據";
+
+// MARK: - Case Management (v40)
+"case.title" = "案例";
+"case.create_new" = "建立新案例";
+"case.empty_title" = "沒有案例";
+"case.empty_message" = "建立案例以按專案或地點整理您的拍攝。";
+"case.current" = "目前案例";
+"case.other" = "其他案例";
+"case.archived" = "已封存";
+"case.show_archived" = "顯示已封存";
+"case.name" = "名稱";
+"case.name_placeholder" = "輸入案例名稱";
+"case.description" = "描述";
+"case.description_placeholder" = "選用備註";
+"case.icon" = "圖示";
+"case.color" = "顏色";
+"case.select" = "選擇";
+"case.edit" = "編輯";
+"case.archive" = "封存";
+"case.unarchive" = "取消封存";
+"case.delete" = "刪除";
+"case.export" = "匯出";
+"case.create_title" = "建立案例";
+"case.edit_title" = "編輯案例";
+"case.save" = "儲存";
+"case.create" = "建立";
+"case.tap_to_change" = "點按以更改案例";
+"case.delete_confirm_title" = "刪除案例";
+"case.delete_confirm_message" = "確定要刪除此案例嗎？";
+"case.delete_has_events" = "此案例包含 %d 個事件。仍要刪除嗎？";
+"case.stats_title" = "案例統計";
+"case.stats_total" = "事件總數";
+"case.stats_active" = "活動";
+"case.stats_invalidated" = "已失效";
+"case.stats_anchored" = "已錨定";
+"case.stats_pending" = "待處理";
+"case.stats_date_range" = "時間範圍";
+"case.stats_size" = "儲存大小";
+"case.export_title" = "匯出案例";
+"case.export_success" = "案例匯出成功";
+"case.export_include_location" = "包含位置資料";
+"case.export_metadata_only" = "僅元數據 (JSON)";
+"case.export_full_package" = "含照片完整包 (ZIP)";
+"case.export_message" = "選擇匯出格式。完整包包含所有帶加密證明的照片。";
+"case.quick_capture" = "快速拍攝";
+"case.selector_title" = "選擇案例";
+"case.default_name" = "預設";
+"common.done" = "完成";
+"common.cancel" = "取消";
+"common.save" = "儲存";
+"common.delete" = "刪除";
+"common.edit" = "編輯";
+"common.ok" = "確定";
+"common.error" = "錯誤";
+
+// Biometric Authentication
+"biometric.delete_proof" = "刪除證據需要身份驗證";
+"biometric.export_full_proof" = "匯出包含個人資料的完整證據需要身份驗證";
+"biometric.verified_capture" = "驗證拍攝操作";
+"biometric.reset_chain" = "重置鏈需要身份驗證";
+
+// Delete Errors
+"delete.error_target_not_found" = "錯誤: 未找到目標事件";
+"delete.error_already_invalidated" = "錯誤: Tombstone已存在";
+"delete.error_event_not_active" = "錯誤: 事件不是活動狀態";
+"delete.error_signature_failed" = "錯誤: 簽名失敗";
+"delete.error_storage_failed" = "錯誤: 儲存Tombstone失敗";
+"delete.error_generic" = "刪除失敗: %@";
+"delete.error_auth_failed" = "認證失敗: %@";
+
+// Chain Error Details
+"chain.warning_badge" = "警告";
+"chain.event_label" = "事件: %@";
+"chain.deleted_event_gap_message" = "因刪除事件導致的間隙";
+"chain.expected_label" = "預期: %@";
+"chain.actual_label" = "實際: %@";
+
+// Detail View Labels
+"detail.invalidated_at" = "失效時間: %@";
+"detail.human_attestation" = "人員認證";
+"detail.proof_id" = "證據ID";
+"detail.asset_hash" = "資產雜湊";
+"detail.event_hash" = "事件雜湊";
+
+// Case Management
+"case.section_info" = "資訊";
+"case.section_events" = "事件";
+"case.section_technical" = "技術資訊";
+"case.no_events" = "暫無事件";
+"case.photo_singular" = "%d 張照片";
+"case.photo_plural" = "%d 張照片";
+"case.last_capture" = "最後: %@";
+
+// Settings - Cases
+"settings.cases.title" = "案例";
+"settings.cases.footer" = "按專案或地點整理您的拍攝。每個案例都有獨立的雜湊鏈。";
+
+// Capture View
+"capture.simulator_title" = "模擬器模式";
+"capture.simulator_message" = "點擊拍攝按鈕生成演示圖像";
+
+// Signer protection
+"verify.signer_name" = "簽名者";
+"verify.signer_protected" = "雜湊保護（可檢測篡改）";
+"verify.signer_not_protected" = "無雜湊保護（舊格式）";
+
+// === TSA Settings ===
+"tsa_settings.configured_providers" = "已配置的提供商";
+"tsa_settings.reorder_hint" = "拖曳以重新排序優先級。排在前面的將優先嘗試。";
+"tsa_settings.add_provider" = "新增TSA提供商";
+"tsa_settings.provider_name" = "提供商名稱";
+"tsa_settings.region" = "地區";
+"tsa_settings.custom_provider_hint" = "自訂TSA提供商應符合RFC 3161標準。在生產環境中使用前請測試連線。";
+"tsa_settings.cancel" = "取消";
+"tsa_settings.add" = "新增";
+
+// === Verify Additional ===
+"verify.attested_badge" = "已認證";
+"verify.verified_by_vericapture" = "由VeriCapture驗證";
+"verify.slogan" = "不要信任，要驗證。";
+"tsa.endpoint_url" = "端點URL";
+
+// === Missing TSA keys ===
+"delete.media_already_deleted" = "照片已刪除。捕獲記錄仍然保留。";
+"delete.media_deleted_badge" = "已刪除";
+"detail.signer_note" = "包含在法務匯出中";
+"tsa.add.custom" = "新增自訂提供商";
+"tsa.cps" = "憑證實務聲明";
+"tsa.eidas.qualified" = "eIDAS認證";
+"tsa.last_used_provider" = "上次使用：%@";
+"tsa.level.bestEffort" = "盡力服務（無SLA）";
+"tsa.level.demo" = "僅展示";
+"tsa.level.production" = "生產";
+"tsa.primary_provider" = "主要提供商";
+"tsa.provider_count" = "%d個提供商";
+"tsa.providers.title" = "TSA提供商";
+"tsa.region.apac" = "亞太";
+"tsa.region.eu" = "歐洲";
+"tsa.region.global" = "全球";
+"tsa.region.us" = "美國";
+"tsa.section.footer" = "時間戳由第三方機構提供，確保時間不可篡改。";
+"tsa.section.header" = "時間戳認證";
+"tsa.settings.enableRedundancy" = "啟用冗餘";
+"tsa.settings.enableRedundancyDesc" = "使用多個TSA提供商以提高可靠性";
+"tsa.settings.proOnly" = "需要Pro訂閱";
+"tsa.status.connected" = "已連線";
+"tsa.status.disabled" = "已停用";
+"tsa.status.rateLimited" = "速率受限";
+"tsa.tos" = "服務條款";
+"tsa.warning.commercialProhibited" = "禁止商業使用";
+"tsa.warning.dailyLimit" = "每日限制：%d次請求";
+"tsa.warning.interval" = "最小間隔：%d秒";
+"tsa.warning.monthlyLimit" = "每月限制：%d次請求";
+"tsa.warning.noSLA" = "無服務等級協議";
+"verify.tsa_pending" = "時間戳待驗證";
+"verify.tsa_status" = "TSA狀態";
+"verify.verify_proof_only" = "僅驗證證跡（跳過圖像驗證）";
+"paywall.loading_plans" = "載入方案中...";
