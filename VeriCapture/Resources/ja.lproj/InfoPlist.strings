@@ -1,0 +1,25 @@
+/*
+  InfoPlist.strings
+  VeriCapture
+
+  Japanese localization for Info.plist
+  © 2026 VeritasChain株式会社
+*/
+
+// App Name
+"CFBundleDisplayName" = "VeriCapture";
+
+// Camera Usage Description
+"NSCameraUsageDescription" = "VeriCaptureは撮影のためにカメラを使用します。撮影した写真の証跡を暗号学的に生成し、撮影瞬間を証明可能にします。";
+
+// Location Usage Description
+"NSLocationWhenInUseUsageDescription" = "VeriCaptureは撮影場所を証跡に記録するために位置情報を使用します。位置情報はハッシュ化されてプライバシーが保護されます。";
+
+// Motion Usage Description
+"NSMotionUsageDescription" = "VeriCaptureは撮影時のデバイス姿勢を証跡に記録するためにモーションセンサーを使用します。";
+
+// Face ID Usage Description  
+"NSFaceIDUsageDescription" = "VeriCaptureは証跡の削除や個人情報を含む完全証跡のエクスポート時に、不正操作を防ぐためFace IDを使用します。";
+
+// Photo Library Add Usage Description
+"NSPhotoLibraryAddUsageDescription" = "VeriCaptureは撮影した写真を写真ライブラリに保存するためにアクセスします。";
