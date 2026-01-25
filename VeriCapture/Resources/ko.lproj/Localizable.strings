@@ -1,0 +1,974 @@
+/* 
+  Localizable.strings (Korean)
+  VeriCapture
+  
+  © 2026 VeritasChain Co., Ltd.
+*/
+
+// MARK: - Tab Bar
+// MARK: - App Tagline
+"app.tagline" = "암호학적 증거 카메라";
+"tab.capture" = "촬영";
+"tab.gallery" = "증거";
+"tab.verify" = "검증";
+"tab.settings" = "설정";
+// MARK: - Camera View
+"camera.cpp_on" = "CPP 증거: 활성화";
+"camera.permission.title" = "카메라 접근";
+"camera.permission.message" = "VeriCapture는 사진 촬영을 위해 카메라 접근이 필요합니다.";
+"camera.permission.button" = "설정 열기";
+"camera.toast.captured" = "증거 생성됨";
+"camera.first_capture_hint" = "이 촬영 작업은 암호학적으로 기록됩니다";
+"camera.privacy_note" = "사진은 기기에서만 처리됩니다";
+"camera.first_capture_loading" = "최초 실행만 - 증거 생성에 잠시 시간이 걸립니다";
+"camera.cpp_proof_generation" = "CPP 증거 생성";
+"camera.auth_in_progress" = "인증 중...";
+"camera.keep_device_still" = "기기를 움직이지 마세요";
+// MARK: - Capture Result
+"result.title" = "촬영 결과";
+"result.close" = "닫기";
+"result.generated" = "생성됨";
+"result.anchored" = "외부 앵커됨";
+"result.pending" = "앵커링...";
+"result.error" = "오류";
+"result.proof_id" = "증거 ID";
+"result.filename" = "파일명";
+"result.filesize" = "파일 크기";
+"result.timestamp" = "촬영 시간";
+"result.hash_algo" = "해시 알고리즘";
+"result.sign_algo" = "서명 알고리즘";
+"result.anchor_status" = "외부 타임스탬프";
+"result.anchor_pending" = "대기 중 (~30분 내 앵커됨)";
+"result.anchor_complete" = "앵커됨";
+"result.third_party_verifiable" = "이 증거는 독립적인 제3자가 검증할 수 있습니다";
+"result.share" = "공유";
+"result.copy_proof_id" = "증거 ID 복사";
+"result.copy_proof_url" = "검증 URL 복사";
+// MARK: - Share Options
+"share.title" = "공유 방법 선택";
+"share.cancel" = "취소";
+"share.image_only" = "이미지만";
+"share.image_only.desc" = "일반 공유";
+"share.with_proof" = "증거 포함";
+"share.with_proof.desc" = "최소 검증 데이터만 (PII 없음)";
+"share.with_qr" = "검증 QR 포함";
+"share.with_qr.desc" = "검증 URL이 포함된 QR 코드 추가";
+"share.sns_note" = "⚠️ 이 증거는 촬영 작업이 기록되었음을 보여줍니다.\n콘텐츠의 진실성이나 유효성을 보장하지 않습니다.";
+// MARK: - QR Preview
+"qr.title" = "QR 미리보기";
+"qr.position" = "QR 위치";
+"qr.position.bottom_right" = "오른쪽 하단";
+"qr.position.bottom_left" = "왼쪽 하단";
+"qr.opacity" = "불투명도";
+"qr.share_this" = "이 이미지 공유";
+"qr.verify_note" = "QR을 스캔하여 이 증거를 검증하세요";
+"qr.verify_desc" = "QR 코드는 검증의 진입점입니다";
+// MARK: - Gallery
+"gallery.title" = "증거 목록";
+"gallery.empty.title" = "아직 증거가 없습니다";
+"gallery.empty.message" = "촬영 탭에서 사진을 찍어\n암호학적 증거를 생성하세요";
+"gallery.status.generated" = "생성됨";
+"gallery.status.anchored" = "앵커됨";
+"gallery.status.pending" = "앵커링...";
+"gallery.status.failed" = "실패";
+"gallery.status_legend.anchored" = "앵커됨: 제3자 타임스탬프 획득";
+"gallery.status_legend.pending" = "대기 중: 타임스탬프 제출 대기";
+"gallery.group.pinned" = "📌 고정됨";
+"gallery.group.today" = "오늘";
+"gallery.group.yesterday" = "어제";
+"gallery.group.this_week" = "이번 주";
+"gallery.group.this_month" = "이번 달";
+// MARK: - Event Detail
+"detail.title" = "증거 상세";
+"detail.share" = "증거 공유";
+"detail.delete" = "이 증거 삭제";
+"detail.delete.confirm_title" = "증거 삭제";
+"detail.delete.confirm_message" = "이 증거를 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.";
+"detail.delete.confirm_delete" = "삭제";
+"detail.delete.confirm_cancel" = "취소";
+"detail.section.basic" = "기본 정보";
+"detail.section.crypto" = "암호학적 정보";
+"detail.section.anchor" = "외부 타임스탬프";
+"detail.capture_location" = "촬영 위치";
+"detail.capture_location_marker" = "촬영 지점";
+"detail.location_privacy_note" = "* 위치는 기기에만 저장됩니다 (Proof JSON에는 해시만 포함)";
+"detail.proof_id_note" = "(제3자 검증에 사용)";
+"detail.forensic_export" = "포렌식 내보내기";
+"detail.preparing_proof" = "증거 준비 중...";
+// MARK: - Verify
+"verify.title" = "VeriCheck";
+"verify.subtitle" = "CPP v1.0 증거 검증";
+"verify.scan_qr" = "QR 코드 스캔";
+"verify.scan_qr_desc" = "VeriCapture QR 읽기";
+"verify.select_file" = "파일 선택";
+"verify.input_json" = "JSON 입력";
+"verify.input_json_title" = "Proof JSON 입력";
+"verify.recent_verifications" = "최근 검증";
+"verify.clear" = "지우기";
+"verify.paste" = "붙여넣기";
+"verify.verify" = "검증";
+"verify.cancel" = "취소";
+"verify.check_items" = "검증 항목";
+"verify.check_event_hash" = "EventHash 무결성";
+"verify.check_signature" = "ES256 디지털 서명";
+"verify.check_image_hash" = "이미지 해시 검증";
+"verify.check.video_hash" = "동영상 해시 검증";
+"verify.check_timestamp" = "RFC 3161 타임스탬프";
+"verify.check_merkle" = "Merkle 증명 검증";
+"verify.qr_instruction" = "QR 코드를 프레임 내에 위치시키세요";
+"verify.result_title" = "검증 결과";
+"verify.items_passed" = "항목 통과";
+"verify.proof_info" = "증거 정보";
+"verify.capture_time" = "촬영 시간";
+"verify.device" = "기기";
+"verify.generated_by" = "생성 앱";
+"verify.tsa_time" = "TSA 시간";
+"verify.tsa_service" = "TSA 서비스";
+"verify.flash_mode" = "플래시";
+"verify.error_title" = "오류";
+"verify.instruction_text" = "QR 코드를 스캔하거나 Proof JSON 파일을 읽어 검증합니다";
+"verify.status.verified" = "증거 검증 완료";
+"verify.status.signature_invalid" = "서명 무효";
+"verify.status.hash_mismatch" = "해시 불일치 (변조 감지)";
+"verify.status.anchor_pending" = "타임스탬프 대기 중";
+"verify.status.anchor_verified" = "TSA 검증됨";
+"verify.status.asset_mismatch" = "이미지 해시 불일치";
+"verify.status.pending" = "검증 중...";
+"verify.status.error" = "오류";
+// MARK: - Settings
+"settings.title" = "설정";
+"settings.version" = "버전";
+"settings.about.title" = "이 앱에 대해";
+"settings.about.description" = "VeriCapture는 촬영 작업과 데이터 출처를\n변조 방지 형식으로 기록하는\n증거 생성 도구입니다.\n기록은 독립적인 제3자가 검증할 수 있습니다.\n암호학적 증거 생성과 제3자 검증을 결합한\n세계 최초의 소비자 앱 디자인입니다.\n콘텐츠의 진실성이나 유효성을 보장하지 않습니다.";
+"settings.timestamp.title" = "제3자 타임스탬프";
+"settings.timestamp.pending" = "대기 중인 증거";
+"settings.timestamp.last" = "마지막 앵커";
+"settings.timestamp.trigger" = "지금 앵커";
+"settings.timestamp.footer" = "기록 존재 시간은 외부 타임스탬프 기관에 의해 앵커됩니다. ~30분마다 자동 앵커됩니다.";
+"settings.timestamp.offline_note" = "증거는 오프라인에서 대기열에 추가되고 온라인 복귀 시 자동 전송됩니다.";
+"settings.location.title" = "위치";
+"settings.location.note" = "위치는 선택 사항입니다. 위치 접근 권한 없이도 촬영하고 증거를 생성할 수 있습니다.";
+"settings.location.status_title" = "현재 설정";
+"settings.location.status_on" = "허용됨 - 증거에 위치 포함";
+"settings.location.status_off" = "허용 안 됨 - 위치 기록 안 함";
+"settings.location.open_settings" = "위치 설정 변경";
+"settings.location.on_desc" = "【켜짐】위도/경도가 기록되어 '촬영 위치'가 검증 가능합니다.";
+"settings.location.off_desc" = "【꺼짐】위치가 기록되지 않습니다. 촬영과 증거는 정상 작동합니다. 개인정보 보호를 위해 끄세요.";
+"settings.use_cases.title" = "사용 사례";
+"settings.use_cases.view" = "활용 시나리오 보기";
+"settings.use_cases.desc" = "VeriCapture는 출처가 필요한 법률, 감사, 저널리즘에 유용합니다. 콘텐츠 진실성은 별도 검증이 필요합니다.";
+"settings.data.title" = "데이터 관리";
+"settings.data.storage_used" = "사용 중인 저장공간";
+"settings.data.photo_count" = "저장된 증거";
+"settings.data.export_all" = "모두 내보내기";
+"settings.data.delete_all" = "모두 삭제";
+"settings.data.delete_confirm_title" = "모든 증거 삭제";
+"settings.data.delete_confirm_message" = "모든 증거를 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.";
+// MARK: - Use Cases
+"use_cases.title" = "사용 사례";
+"use_cases.subtitle" = "VeriCapture 활용 예시";
+"use_cases.legal_title" = "법률 및 소송";
+"use_cases.legal_desc" = "증거 사진의 날짜와 비변조 증명";
+"use_cases.audit_title" = "감사 및 컴플라이언스";
+"use_cases.audit_desc" = "현장 사진 기록 및 출처 관리";
+"use_cases.journalism_title" = "저널리즘";
+"use_cases.journalism_desc" = "보도 사진의 원본성 보장";
+"use_cases.insurance_title" = "보험 및 평가";
+"use_cases.insurance_desc" = "사고/손해 사진 날짜 증명";
+"use_cases.real_estate_title" = "부동산 및 건설";
+"use_cases.real_estate_desc" = "부동산/건설 프로젝트 기록 관리";
+"use_cases.medical_title" = "의료 및 건강";
+"use_cases.medical_desc" = "의료 기록 사진 변조 방지";
+"use_cases.footer" = "※VeriCapture는 촬영 작업을 기록합니다. 콘텐츠 진실성을 보장하지 않습니다.";
+// MARK: - Paywall
+"paywall.title" = "VeriCapture Pro";
+"paywall.subtitle" = "전문가 기능";
+"paywall.feature.unlimited" = "무제한 증거 생성";
+"paywall.feature.priority" = "우선 타임스탬프";
+"paywall.feature.export" = "일괄 내보내기";
+"paywall.feature.support" = "우선 지원";
+"paywall.price.monthly" = "월간";
+"paywall.price.yearly" = "연간";
+"paywall.price.save" = "절약";
+"paywall.subscribe" = "구독하기";
+"paywall.restore" = "구매 복원";
+"paywall.terms" = "이용약관";
+"paywall.privacy" = "개인정보 처리방침";
+// Paywall Additional Keys
+"paywall.close" = "닫기";
+"paywall.error" = "오류";
+"paywall.limit_reached_title" = "무료 한도 도달";
+"paywall.limit_reached_message" = "현재 %d / 50 개의 증거를 저장 중입니다.\n새 증거를 저장하려면 이전 증거를 삭제하거나 Pro로 업그레이드하세요.";
+"paywall.unlimited_storage" = "증거 저장: 무제한";
+"paywall.tsa_redundancy" = "TSA 이중화";
+"paywall.tsa_redundancy_desc" = "여러 타임스탬프 제공자로 안정성 보장";
+"paywall.free_limit" = "무료 버전: 50개";
+"paywall.load_failed" = "상품 정보를 불러올 수 없습니다";
+"paywall.reload" = "다시 불러오기";
+"paywall.reference_price_note" = "참고 가격 (App Store Connect 연결 후 유효)";
+"paywall.monthly_plan" = "월간 플랜";
+"paywall.yearly_plan" = "연간 플랜";
+"paywall.save_percent" = "추천";
+"paywall.per_month" = "/월";
+"paywall.per_year" = "/년";
+"paywall.upgrade_button" = "Pro로 업그레이드";
+"paywall.loading_plans" = "플랜 로딩 중...";
+"paywall.restore_purchases" = "구매 복원";
+"paywall.limit_reached_capture_title" = "무료 한도 도달";
+"paywall.limit_reached_capture_message" = "증거가 생성되었지만 무료 한도(50개)로 인해 저장할 수 없습니다.";
+"paywall.current_count" = "현재: %d / %d 개";
+"paywall.pro_unlimited" = "Pro로 무제한";
+"paywall.make_space" = "공간 확보";
+"paywall.later" = "나중에";
+"paywall.free_tier" = "무료: 월 50장";
+// MARK: - Errors
+"error.generic" = "오류가 발생했습니다";
+"error.network" = "네트워크 오류";
+"error.storage" = "저장소 오류";
+"error.crypto" = "암호화 오류";
+"error.camera" = "카메라 오류";
+"error.permission" = "권한이 필요합니다";
+// MARK: - Common
+"common.ok" = "확인";
+"common.cancel" = "취소";
+"common.done" = "완료";
+"common.delete" = "삭제";
+"common.share" = "공유";
+"common.copy" = "복사";
+"common.copied" = "복사됨";
+"common.save" = "저장";
+"common.loading" = "로딩 중...";
+"common.error" = "오류";
+"common.success" = "성공";
+"common.retry" = "재시도";
+// MARK: - Subscription Status
+"subscription.status.free" = "무료";
+"subscription.status.pro" = "Pro";
+"subscription.status.expired" = "만료됨";
+"subscription.limit.title" = "월간 한도 도달";
+"subscription.limit.message" = "무료는 월 50장입니다. Pro로 업그레이드하면 무제한입니다.";
+"subscription.limit.upgrade" = "Pro로 업그레이드";
+"subscription.limit.wait" = "다음 달까지 대기";
+// MARK: - Photo Library
+"photo.save.success" = "사진 저장됨";
+"photo.save.error" = "사진 저장 실패";
+"photo.permission.title" = "사진 라이브러리 접근";
+"photo.permission.message" = "사진을 저장하려면 권한이 필요합니다";
+// MARK: - Timestamp
+"timestamp.none" = "없음";
+"timestamp.pending" = "대기 중";
+"timestamp.verified" = "검증됨";
+"timestamp.error" = "오류";
+// MARK: - File Size
+"filesize.bytes" = "%d 바이트";
+"filesize.kb" = "%.1f KB";
+"filesize.mb" = "%.1f MB";
+// MARK: - Date Format
+"date.today" = "오늘";
+"date.yesterday" = "어제";
+"date.format" = "yyyy/MM/dd HH:mm";
+// MARK: - Internal Export
+"share.internal_proof" = "포렌식 내보내기";
+"share.internal_proof.desc" = "법률/제출용 (PII 포함 가능)";
+"share.internal_warning" = "⚠️ 법률/내부 제출용만";
+"share.internal_warning_detail" = "위치, 센서 데이터, 기기 상세 정보를 포함합니다. 공유 시 개인정보에 주의하세요.";
+"share.internal_export_button" = "전체 증거 내보내기";
+"share.internal_auth_required" = "인증 필요";
+"share.internal_auth_message" = "전체 증거 데이터에 접근하려면 인증이 필요합니다";
+// MARK: - Gallery Delete
+"gallery.delete.title" = "증거 삭제";
+"gallery.delete.message" = "이 증거를 삭제하시겠습니까?\n인증이 필요합니다.";
+"gallery.delete.auth_error" = "인증 오류";
+// MARK: - Human Attestation
+"attestation.auth_method" = "인증 방법";
+"attestation.auth_time" = "인증 시간";
+"attestation.time_offset" = "촬영으로부터 오프셋";
+"attestation.disclaimer" = "이것은 신원 확인이 아닙니다. 인증을 통과한 사람이 촬영을 수행했음을 기록합니다.";
+// MARK: - Export Messages
+"export.share_sheet" = "공유 시트 표시 중";
+"export.failed" = "내보내기 실패";
+"export.no_proofs" = "내보낼 증거가 없습니다";
+"export.error" = "내보내기 오류: %@";
+// MARK: - Subscription
+"subscription.until" = "%@까지";
+"subscription.restore_title" = "구매 복원";
+"subscription.restore_success" = "구매가 복원되었습니다. Pro가 활성화되었습니다.";
+"subscription.restore_failed" = "복원 가능한 구매를 찾을 수 없습니다";
+"subscription.auth_failed" = "인증 실패: %@";
+// MARK: - Settings Developer
+"settings.developer_lead" = "개발 책임자";
+// MARK: - Forensic Settings
+"settings.forensic.title" = "포렌식 설정";
+"settings.forensic.footer" = "포렌식 내보내기에 포함할 서명자 정보를 설정합니다.";
+"settings.forensic.signer_name_label" = "서명자 이름";
+"settings.forensic.signer_name_placeholder" = "예: 홍길동";
+"settings.forensic.signer_name_hint" = "포렌식 Proof JSON에 서명자로 기록됩니다";
+// MARK: - World First
+"world_first.comparison_title" = "기존 솔루션과의 비교";
+"world_first.c2pa_products" = "Leica M11-P, Sony, Nikon 등";
+"world_first.c2pa_quote" = "서명자의 신원이 반드시 인간 행위자는 아님";
+"world_first.c2pa_gap" = "인간 신원 연결 의도적으로 제외";
+"world_first.truepic_quote" = "사용자를 고유하게 식별할 필요성 포기";
+"world_first.truepic_gap" = "기기 인증만, 인간 존재 확인 없음";
+"world_first.numbers_quote" = "지갑 기반 신원";
+"world_first.numbers_gap" = "소유권 증명만, 물리적 존재 없음";
+"world_first.witness_quote" = "콘텐츠를 기기와 시간에 서명";
+"world_first.witness_gap" = "인권 문서용, 인간 연결 없음";
+"world_first.starling_quote" = "개인 정보 저장을 의도적으로 회피";
+"world_first.starling_gap" = "개인정보 보호 우선, 인간 식별 없음";
+"world_first.findings_title" = "연구 결과 요약";
+"world_first.finding1_title" = "5개 연구 모두 동일한 결론";
+"world_first.finding1_detail" = "5가지 요구사항을 모두 충족하는 기존 시스템 없음";
+"world_first.finding2_title" = "인간 존재 연결이 핵심";
+"world_first.finding2_detail" = "C2PA, Truepic 등은 의도적으로 제외";
+"world_first.finding3_title" = "선택적 녹화 방지 미해결";
+"world_first.finding3_detail" = "학술 문헌에서도 해결책 없음";
+"world_first.finding4_title" = "새로운 카테고리 창출";
+"world_first.finding4_detail" = "점진적 개선이 아닌 아키텍처 혁신";
+"world_first.tech_notes_title" = "기술 노트";
+"world_first.who_equals_device" = "\"누가\" = 기기 키";
+"world_first.who_explanation" = "현재 구현에서 '누가'는 Secure Enclave의 기기별 키로 증명됩니다.";
+"world_first.device_proof" = "이것은 '이 기기에서 촬영됨'을 증명하며, 생체 인증을 통한 '이 인간이 촬영함'이 아닙니다.";
+"world_first.future_updates" = "향후 업데이트 예정";
+"world_first.future_explanation" = "Apple App Attest와 Face ID/Touch ID 통합을 통한 진정한 인간 존재 증명 계획 중.";
+"world_first.references_title" = "참고문헌";
+"world_first.github_report" = "World First 보고서 (GitHub)";
+"world_first.cap_spec" = "CPP 명세서 (GitHub)";
+"world_first.conclusion_title" = "결론";
+"world_first.conclusion_text" = "VeriCapture는 미디어 촬영을 검증된 인간 존재에 암호학적으로 연결하고, 선택적 녹화를 방지하며, 신뢰 없는 제3자 검증을 가능하게 하는 **세계 최초**의 소비자 카메라 애플리케이션입니다.";
+"world_first.conclusion_detail" = "5개의 독립 연구 모두 동일한 결론에 도달했습니다. 5가지 핵심 기술 요구사항을 동시에 충족하는 기존 시스템은 없습니다.";
+"world_first.requirements_title" = "5가지 평가 요구사항";
+"world_first.req1_title" = "촬영 시 암호학적 증거";
+"world_first.req1_desc" = "셔터 시점에 증거 생성 (촬영 후가 아님)";
+"world_first.req2_title" = "인간 존재 연결";
+"world_first.req2_desc" = "기기나 지갑만이 아닌 검증된 실제 인간에 대한 암호학적 연결";
+"world_first.req3_title" = "선택적 녹화 방지";
+"world_first.req3_desc" = "생략된 촬영이 암호학적으로 감지 가능";
+"world_first.req4_title" = "독립적 제3자 검증";
+"world_first.req4_desc" = "플랫폼이나 생성자에 의존하지 않는 신뢰 없는 검증";
+"world_first.req5_title" = "소비자 배포";
+"world_first.req5_desc" = "소비자 카메라 앱으로 배포 가능";
+"world_first.doc_id" = "문서 ID: VC-RESEARCH-FINAL-001";
+"world_first.research_date" = "연구 완료: 2026년 1월 15일";
+"world_first.research_note" = "5개 독립 연구 기반";
+"world_first.nav_title" = "세계 최초 증거";
+"world_first.done" = "완료";
+// MARK: - Pro Remaining
+"pro.remaining_format" = "%d / 50 남음";
+"pro.until_format" = "%@까지";
+// Export Alert
+"settings.export" = "내보내기";
+"export.forensic_subtitle" = "법률/제출용 (PII 포함 가능)";
+// MARK: - Share Options Additional
+"share.internal_about_title" = "전체 증거 정보";
+"share.internal_about_desc" = "법률/제출용만\n위치 등 개인정보 포함 가능";
+"share.privacy_design_title" = "프라이버시 설계";
+"share.privacy_design_desc" = "최소 검증 정보만 공유\n위치, 센서, 기기 상세 제외";
+"share.sns_warning_title" = "중요 공지";
+"share.sns_warning_desc" = "메타데이터가 제거됩니다\nQR 공유 권장";
+"share.recommended_badge" = "권장";
+"share.ecosystem_warning_title" = "증거 데이터가 손실됩니다";
+"share.ecosystem_warning_desc" = "SNS나 다른 플랫폼에 업로드하면 증거 데이터가 제거되어 재다운로드 후 검증이 불가능합니다.";
+"share.ecosystem_recommendation" = "법률/감사용으로 '검증 QR 포함' 또는 '포렌식 내보내기' 사용";
+// MARK: - QR Style
+"qr.style_title" = "스타일";
+"qr.style_standard" = "스탠다드";
+"qr.style_rounded" = "라운드";
+"qr.style_branded" = "브랜드";
+"qr.preparing_image" = "이미지 준비 중...";
+// MARK: - Disclaimer
+"disclaimer.title" = "중요 공지";
+"disclaimer.content_not_guaranteed" = "⚠️ 콘텐츠의 진실성이나 유효성은 보장되지 않습니다";
+"disclaimer.records_operation_only" = "촬영 작업이 발생했고 데이터 출처만 기록합니다";
+"disclaimer.requires_verification" = "콘텐츠 진실성 판단은 별도 검증이 필요합니다";
+"disclaimer.not_identity_proof" = "이 앱은 신원 확인이나 인증을 수행하지 않습니다";
+"disclaimer.share_notice" = "⚠️ 이 증거는 촬영 작업이 기록되었음을 보여줍니다. 콘텐츠의 진실성이나 유효성을 보장하지 않습니다.";
+"disclaimer.verification_notice" = "검증은 기록 무결성만 확인합니다. 콘텐츠 진실성은 검증되지 않습니다.";
+// MARK: - About App
+"about.tool_definition" = "증거 생성 도구";
+"about.what_it_records" = "촬영 작업과 데이터 출처를 변조 방지 형식으로 기록";
+"about.what_it_does_not" = "콘텐츠의 진실성, 유효성, 법적 증거능력을 보장하지 않습니다";
+"about.intended_use" = "출처가 필요한 법적 제출, 감사 추적, 업무 기록용";
+// MARK: - Attested Capture Mode
+"attested_capture.section_title" = "촬영 인증 모드";
+"attested_capture.toggle_title" = "Attested Capture";
+"attested_capture.enabled" = "활성화됨";
+"attested_capture.disabled" = "비활성화됨";
+"attested_capture.auth_method" = "인증 방법";
+"attested_capture.description" = "촬영 전 생체 인증(%@)을 시도하고 결과를 기록합니다.";
+"attested_capture.disclaimer" = "⚠️ 이것은 신원 확인이 아닙니다";
+"attested_capture.disclaimer_full" = "이것은 기기 생체 인증이 시도되었음만 기록합니다.\n\n다음을 확인하지 않습니다:\n• 사진작가가 누구인지\n• 기기 소유자가 사진을 찍었는지\n• 인간이 사진을 찍었는지\n\n'Attested'를 '신원 확인됨'으로 해석하지 마세요.";
+"attested_capture.not_available" = "이 기기에서 생체 인증이 설정되지 않았습니다";
+"attested_capture.auth_failed" = "인증 실패";
+"attested_capture.auth_cancelled" = "인증 취소됨";
+"attested_capture.badge" = "Attested";
+"attested_capture.badge_tooltip" = "이 배지는 촬영 전 기기 생체 인증이 시도되었음을 나타냅니다.\n\n사진작가의 신원이나 콘텐츠 진실성을 확인하지 않습니다.";
+"attested_capture.attestation_title" = "Human Attestation";
+"attested_capture.attestation_method" = "방법";
+"attested_capture.attestation_time" = "인증 시간";
+"attested_capture.attestation_offset" = "촬영으로부터 오프셋";
+"attested_capture.attestation_disclaimer" = "이것은 신원 확인이 아닙니다. 인증을 통과한 사람이 촬영을 수행했음을 기록합니다.";
+// MARK: - Additional Settings
+"settings.location.status_not_determined" = "미설정 - 촬영 시 요청됨";
+"settings.language.title" = "언어";
+"settings.language.current" = "앱 언어 변경";
+"settings.language.note" = "시스템 설정에서 언어를 변경하세요. 변경 후 앱을 재시작하세요.";
+"settings.spec.title" = "사양";
+"settings.spec.about" = "VeriCapture 정보";
+"settings.spec.cpp" = "CPP 사양";
+"settings.spec.world_first" = "World-First 보고서 정보";
+"settings.usecases.title" = "사용 사례";
+"settings.usecases.browse" = "사용 사례 찾아보기";
+"settings.usecases.footer" = "VeriCapture는 출처 기록이 필요한 법률, 감사, 저널리즘 사례에 유용합니다. 콘텐츠 진실성은 별도 검증이 필요합니다.";
+"settings.philosophy" = "Verify, Don't Trust.";
+"settings.philosophy.desc" = "증거는 특정 조직을 신뢰하지 않고 독립적인 제3자가 검증할 수 있습니다.";
+"settings.developer" = "개발자";
+"settings.developer.name" = "VeritasChain Co., Ltd.";
+"settings.support_message" = "버그나 문제가 있으시면 developers@veritaschain.org 또는 개발 책임자의 LinkedIn 메시지로 연락해 주세요. 일반적으로 24시간 이내에 수정됩니다.";
+"settings.open_source_message" = "CPP is open source. We actively support participation in VAP framework development including CPP/CAP/VCP.";
+"settings.plan_section" = "플랜";
+"settings.free_plan" = "무료 플랜";
+"settings.pro_active" = "Pro 활성";
+"settings.manage_subscription" = "구독 관리";
+"settings.remaining_slots" = "남은 %d / %d 장";
+"settings.approaching_limit" = "한도에 근접";
+"settings.upgrade_to_pro" = "Pro로 업그레이드";
+"settings.restore_purchases" = "구매 복원";
+"settings.data_management" = "데이터 관리";
+"settings.export_all_forensic" = "모든 증거 내보내기 (포렌식)";
+"settings.export_all_forensic_desc" = "위치, 센서 및 삭제 기록을 포함한 완전한 데이터";
+"settings.export_all_forensic_footer" = "Tombstone(삭제 기록) 포함 완전 내보내기. 모든 삭제는 암호학적으로 기록됩니다.";
+"settings.exporting_all" = "모든 증거 내보내기 중...";
+"settings.technical_advantage" = "기술적 장점";
+"settings.world_first_evidence" = "World-First 증거";
+"settings.world_first_evidence_desc" = "5개 독립 연구로 검증됨";
+"settings.world_first_evidence_footer" = "C2PA, Truepic, Numbers Protocol 등과 비교하여 VeriCapture가 세계 최초 구현인 이유를 알아보세요.";
+// MARK: - Export Additional
+"export.forensic_title" = "포렌식 내보내기";
+"export.forensic_confirm_title" = "포렌식 내보내기";
+"export.forensic_confirm_message" = "위치, 센서 데이터, 기기 상세 정보를 포함한 전체 Proof JSON을 내보냅니다.\n\n⚠️ 제3자 공유시 \"증거 포함 공유\"를 사용하세요.";
+"export.forensic_button" = "내보내기";
+"export.complete_title" = "내보내기 완료";
+"export.auth_error_title" = "인증 오류";
+"export.auth_failed_message" = "인증 실패: %@";
+// MARK: - World First Additional
+"world_first.title" = "World-First 증거";
+"world_first.subtitle" = "5개 독립 연구로 검증됨";
+"world_first.conclusion_subtext" = "5개의 독립 연구 모두 동일한 결론에 도달했습니다. 5가지 핵심 기술 요구사항을 동시에 충족하는 기존 시스템은 없습니다.";
+"world_first.document_id" = "문서 ID: VC-RESEARCH-FINAL-001";
+"world_first.based_on_research" = "5개 독립 연구 기반";
+// MARK: - Initialization
+"init.title" = "VeriCapture";
+"init.subtitle" = "암호 증거 카메라";
+"init.error" = "초기화 오류";
+// MARK: - Common Additional
+"common.unknown" = "알 수 없음";
+// MARK: - Error Additional
+"error.title" = "오류";
+"error.ok" = "확인";
+"error.unknown" = "알 수 없는 오류";
+// MARK: - Camera Info Popover
+"camera.info.title" = "CPP 증거 생성";
+"camera.info.feature1" = "촬영 시 암호 증거 생성";
+"camera.info.feature2" = "이미지는 나중에 변조할 수 없습니다";
+"camera.info.feature3" = "제3자가 독립적으로 검증 가능";
+"camera.info.secure_enclave" = "Secure Enclave에서 서명";
+"camera.info.disclaimer" = "※ 내용의 진위 또는 정당성을 보장하지 않습니다";
+// MARK: - Permission Screen
+"permission.camera_access" = "카메라 접근";
+"permission.camera_message" = "VeriCapture는 사진의 암호 증거를\n생성합니다.\n카메라 접근을 허용해 주세요.";
+"permission.allow_camera" = "카메라 허용";
+"permission.open_settings" = "설정 열기";
+// MARK: - Gallery Additional
+"gallery.context.delete" = "삭제";
+"gallery.remaining" = "%d 남음";
+// MARK: - Gallery Pinning
+"gallery.pin.pin" = "고정";
+"gallery.pin.unpin" = "고정 해제";
+// MARK: - Gallery Search
+"gallery.search.placeholder" = "검색...";
+"gallery.search.no_results" = "일치하는 증거가 없습니다";
+"gallery.search.clear_filter" = "필터 지우기";
+// MARK: - Gallery Filter
+"gallery.filter.all" = "전체";
+"gallery.filter.attested" = "Attested만";
+"gallery.filter.anchored" = "앵커링됨";
+"gallery.filter.pending" = "보류 중";
+// MARK: - Gallery Selection
+"gallery.select.title" = "%d개 선택됨";
+"gallery.select.select_all" = "전체 선택";
+"gallery.select.deselect_all" = "선택 해제";
+"gallery.select.delete_title" = "%d개 삭제";
+"gallery.select.delete_message" = "선택한 증거를 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.";
+// MARK: - Share Options (Location)
+"share.include_location" = "촬영 위치 포함";
+"share.include_location_note" = "※ 위도/경도를 포함합니다\n※ 개인정보에 해당할 수 있습니다";
+"share.include_c2pa" = "C2PA 매니페스트 포함";
+"share.include_c2pa_desc" = "다른 도구와의 상호 운용성을 위해";
+// MARK: - Verification (JSON Input)
+"verify.json_input.title" = "증거 JSON 입력";
+"verify.json_input.description" = "'증거 포함 공유'를 통해 받은 Proof JSON을 붙여넣으세요";
+// MARK: - Verification Result
+"verify.result.authentic_message" = "이 사진은 촬영 시점에 진정하게 기록되었습니다";
+"verify.result.authentic_video_message" = "이 동영상은 촬영 시점에 정품으로 기록되었습니다";
+"verify.result.hash_mismatch_message" = "해시 불일치. 데이터가 수정되었습니다";
+"verify.result.attestation_section" = "촬영 인증";
+"verify.result.attestation_description" = "촬영 시 생체 인증이 시도되었습니다";
+"verify.result.location_section" = "촬영 위치";
+"verify.result.latitude" = "위도";
+"verify.result.longitude" = "경도";
+"verify.result.location_warning" = "이 위치 정보는 법적 내보내기에 포함되었습니다. 개인정보에 해당할 수 있습니다.";
+// MARK: - Verification Checks
+"verify.check.json_parse" = "JSON 파싱";
+"verify.check.version" = "버전 확인";
+"verify.check.event_hash" = "EventHash 검증";
+"verify.check.signature" = "서명 검증";
+"verify.check.image_hash" = "이미지 해시 검증";
+"verify.check.step1" = "1/4단계: JSON 파싱 중...";
+"verify.check.step2" = "2/4단계: 버전 확인 중...";
+"verify.check.step3" = "3/4단계: EventHash 검증 중...";
+"verify.check.step4" = "4/4단계: 서명 검증 중...";
+"verify.check.step_image" = "추가: 이미지 해시 검증 중...";
+"verify.check.version_supported" = "지원됨";
+"verify.check.version_unsupported" = "미지원";
+"verify.check.hash_match" = "SHA-256 해시: 일치";
+"verify.check.hash_mismatch" = "SHA-256 해시: 불일치";
+"verify.check.hash_format_ok" = "SHA-256 해시: 형식 정상";
+"verify.check.hash_format_invalid" = "해시 형식 오류";
+"verify.check.image_not_provided" = "이미지 미제공 - 건너뜀";
+"verify.check.video_not_provided" = "동영상 미제공 - 건너뜀";
+"verify.check.event_hash_desc" = "이벤트 해시 무결성 확인";
+"verify.check.event_hash_format_desc" = "이벤트 해시 형식 확인";
+"share.location_no_data" = "이 증거에는 위치 데이터가 포함되어 있지 않습니다. 위치를 포함하려면 설정에서 위치 접근을 허용하세요.";
+"verify.check.json_parse_desc" = "Proof JSON 구조 검증";
+"verify.check.version_desc" = "지원 버전 확인";
+"verify.check.signature_desc" = "ECDSA P-256 (ES256) 서명 검증";
+"verify.check.image_hash_desc" = "자산 무결성 확인";
+"verify.check.signature_valid" = "ES256 서명: 유효";
+"verify.check.signature_invalid" = "ES256 서명: 무효";
+"verify.check.image_match" = "SHA-256: 일치";
+"verify.check.image_mismatch" = "SHA-256: 불일치 (변조 가능성)";
+"verify.check.verification_error" = "검증 오류: %@";
+"verify.check.step_tsa" = "추가: TSA 검증 중...";
+"verify.check.merkle" = "Merkle Proof 검증";
+"verify.check.merkle_desc" = "머클 증명 검증";
+"verify.check.merkle_match" = "머클 루트: 일치";
+"verify.check.merkle_mismatch" = "머클 루트: 불일치";
+"verify.check.tsa" = "TSA 타임스탬프";
+"verify.check.tsa_desc" = "RFC 3161 타임스탬프 검증";
+"verify.check.signature_presence_desc" = "ES256 서명 존재 확인";
+"verify.check.signature_present" = "ES256 서명: 존재함";
+"verify.check.signature_missing" = "서명 오류";
+"verify.check.shareable_format" = "Shareable 형식 v%@";
+"verify.check.unknown" = "알 수 없음";
+"verify.error.invalid_format" = "잘못된 Proof JSON 형식";
+// QR 스캔 요청 메시지
+"verify.proof_needed_title" = "증거 데이터가 필요합니다";
+"verify.proof_needed_message" = "이 QR은 증거 식별자만 포함합니다.\n검증을 위해 촬영자에게 \"증거와 함께 공유(Proof JSON)\"를 요청하세요.";
+"verify.request_data" = "데이터 요청";
+"verify.request_proof_line1" = "이 이미지/동영상의 증거를 확인하고 싶습니다.";
+"verify.request_proof_line2" = "VeriCapture로 촬영한 경우, \"증거와 함께 공유(Proof JSON)\"를 선택하여 보내주세요.";
+"verify.request_proof_footer" = "(이 증거는 제3자가 오프라인으로 검증할 수 있습니다)";
+"verify.request_proof_disclaimer" = "(내용의 진실성이나 정당성을 보장하지 않습니다)";
+"verify.result.signature_invalid_message" = "서명이 무효합니다. 데이터가 변조되었을 수 있습니다";
+"verify.result.asset_mismatch_message" = "이미지가 원본 데이터와 일치하지 않습니다";
+"verify.result.anchor_pending_message" = "검증 완료. 타임스탬프 대기 중";
+"verify.result.pending_message" = "검증 중...";
+"verify.result.error_message" = "검증 중 오류가 발생했습니다";
+// MARK: - Paywall Additional
+"paywall.tagline" = "암호학적 증거의 힘을 완전히 활용하세요.";
+"paywall.pro_benefits_title" = "Pro로 바뀌는 것";
+"paywall.free_features_title" = "무료 기능";
+"paywall.free_feature.capture" = "촬영";
+"paywall.free_feature.proof" = "증거 생성";
+"paywall.free_feature.qr" = "QR 공유";
+"paywall.free_feature.json" = "JSON 내보내기";
+"paywall.select_plan" = "플랜 선택";
+"paywall.subscription_info_title" = "구독 정보";
+"paywall.subscription_info_body" = "• 확인 시 Apple ID로 결제됩니다\n• 현재 기간 종료 24시간 전까지 취소하지 않으면 자동 갱신됩니다\n• 설정 앱에서 구독을 관리하거나 취소할 수 있습니다";
+// Onboarding
+"onboarding.title1" = "VeriCapture에 오신 것을 환영합니다";
+"onboarding.desc1" = "촬영을 암호학적으로 기록하여 언제 무엇을 촬영했는지 증명할 수 있는 카메라 앱입니다.";
+"onboarding.title2" = "위변조 감지";
+"onboarding.desc2" = "Secure Enclave에서 디지털 서명 생성. 사진 수정 시 감지 가능합니다.";
+"onboarding.title3" = "외부 타임스탬프";
+"onboarding.desc3" = "제3자 타임스탬프 기관이 촬영 시간 검증. 누구나 독립적으로 사진 촬영 시간을 확인할 수 있습니다.";
+"onboarding.title4" = "오픈 표준";
+"onboarding.desc4" = "CPP v1.0 준수. 누구나 검증할 수 있는 벤더 중립적인 개방형 사양입니다.";
+"onboarding.next" = "다음";
+"onboarding.start" = "시작하기";
+"onboarding.skip" = "건너뛰기";
+// MARK: - CPP Additional Spec Localization
+// Media Status
+"media_status.present" = "미디어 존재";
+"media_status.purged" = "삭제됨";
+"media_status.corrupted" = "손상됨";
+"media_status.migrated" = "마이그레이션됨";
+// Event Status
+"event_status.active" = "활성";
+"event_status.invalidated" = "무효화됨";
+"event_status.superseded" = "대체됨";
+// Anchor Status
+"anchor_status.pending" = "앵커 대기 중";
+"anchor_status.anchored" = "앵커됨";
+"anchor_status.failed" = "앵커 실패";
+"anchor_status.skipped" = "건너뜀";
+"anchor_status.pending_description" = "기기 서명이 완료되었습니다. 다음 배치에서 외부 앵커됩니다.";
+"anchor_status.anchored_description" = "RFC 3161 준수 타임스탬프 기관에서 존재 증명을 획득했습니다.";
+"anchor_status.failed_description" = "외부 앵커링 실패. 재시도할 수 있습니다.";
+"anchor_status.trigger_now" = "지금 앵커";
+// Invalidation Reason
+"invalidation_reason.privacy" = "개인정보 보호";
+"invalidation_reason.accidental" = "실수로 촬영한 것 수정";
+"invalidation_reason.inappropriate" = "부적절한 콘텐츠";
+"invalidation_reason.court_order" = "법원 명령";
+"invalidation_reason.gdpr" = "GDPR 삭제 요청";
+"invalidation_reason.duplicate" = "중복 감지됨";
+"invalidation_reason.integrity" = "무결성 손상";
+// Delete / Purge / Invalidate
+"delete.sheet_title" = "삭제 옵션";
+"delete.media_title" = "사진 삭제";
+"delete.media_description" = "이미지 데이터만 삭제됩니다. 촬영 기록은 남습니다.";
+"delete.media_confirm" = "이 사진을 삭제하시겠습니까?";
+"delete.media_confirm_message" = "이미지 데이터는 삭제되지만 촬영 기록은 남습니다.\n\nAssetHash를 통해 향후 동일 이미지 매칭이 가능합니다.";
+"delete.media_button" = "삭제";
+"delete.invalidate_title" = "증거 무효화";
+"delete.invalidate_description" = "이 증거를 무효화합니다 (취소 불가). 무효화 사실은 기록으로 남습니다.";
+"delete.invalidate_confirm" = "이 증거를 무효화하시겠습니까?";
+"delete.invalidate_confirm_message" = "이 작업은 취소할 수 없습니다.\n\n증거는 '무효화됨'으로 기록되며 법적 증거 가치를 잃게 됩니다.\n\n무효화 사실은 감사 추적으로 남습니다.";
+"delete.invalidate_button" = "무효화";
+"delete.invalidate_select_reason" = "무효화 이유 선택";
+"delete.confirm_title" = "이 증거를 삭제하시겠습니까?";
+"delete.confirm_message" = "사진과 증거가 삭제됩니다. 이 작업은 취소할 수 없습니다.\n\n삭제는 감사 추적에 기록됩니다.";
+"delete.confirm_button" = "삭제";
+"delete.nothing_deleted" = "두 가지 작업 모두 '일어나지 않은 것'으로 만들 수 없습니다";
+"delete.record_remains" = "촬영 사실이 기록되었습니다";
+// Forensic Export Warnings
+"forensic_warning.pending_title" = "외부 앵커 대기 중인 증거";
+"forensic_warning.pending_message" = "법적 목적을 위해 모든 증거의 외부 앵커링을 권장합니다.";
+"forensic_warning.anchor_all" = "지금 모두 앵커";
+"forensic_warning.export_anyway" = "그래도 내보내기";
+"forensic_warning.what_is_anchor" = "외부 앵커란?";
+"forensic_warning.anchor_explanation" = "RFC 3161 준수 타임스탬프 기관(TSA)이 증거의 존재 시간을 독립적으로 증명합니다. 이를 통해 법적 증거로서의 신뢰성이 향상됩니다.";
+// Gallery Status Badges
+"gallery_status.anchored" = "앵커됨";
+"gallery_status.pending" = "대기 중";
+"gallery_status.failed" = "실패";
+"gallery_status.invalidated" = "무효화됨";
+"gallery_status.media_purged" = "미디어 삭제됨";
+// QR 스캐너 오류
+"verify.qr_error.camera_unavailable" = "카메라를 사용할 수 없습니다";
+"verify.qr_error.permission_denied" = "카메라 권한이 부여되지 않았습니다";
+// MARK: - 체인 무결성 검증
+"chain.title" = "체인 무결성";
+"chain.statistics_title" = "체인 통계";
+"chain.verification_title" = "무결성 검증";
+"chain.verification_footer" = "모든 이벤트가 올바르게 연결되어 있고 변조가 발생하지 않았는지 확인합니다.";
+"chain.run_verification" = "검증 실행";
+"chain.error_details_title" = "오류 세부 정보";
+"chain.how_it_works" = "작동 방식";
+"chain.total_events" = "총계";
+"chain.active_events" = "활성";
+"chain.invalidated_events" = "무효화됨";
+"chain.tombstones" = "톰스톤";
+"chain.anchored" = "앵커됨";
+"chain.pending_anchor" = "대기 중";
+"chain.date_range" = "날짜 범위";
+"chain.verification_passed" = "체인 무결성 확인됨";
+"chain.verification_failed" = "무결성 문제 감지됨";
+"chain.checked_format" = "%d개의 이벤트, %d개의 톰스톤 검사됨";
+"chain.verified_at" = "검증 시간: %@";
+"chain.errors_found" = "%d개의 오류 발견";
+"chain.error_prev_hash" = "이전 해시 불일치";
+"chain.error_event_hash" = "이벤트 해시 불일치";
+"chain.error_signature" = "서명 무효";
+"chain.error_tombstone_target" = "톰스톤 대상 불일치";
+"chain.error_orphaned_tombstone" = "고아 톰스톤";
+"chain.error_timestamp" = "타임스탬프 이상";
+"chain.explain_prev_hash" = "해시 체인 연결";
+"chain.explain_prev_hash_desc" = "각 이벤트는 이전 이벤트의 해시를 포함하여 끊을 수 없는 체인을 형성합니다. 이벤트가 수정되면 모든 후속 해시가 무효화됩니다.";
+"chain.explain_event_hash" = "이벤트 해시 무결성";
+"chain.explain_event_hash_desc" = "각 이벤트의 콘텐츠는 SHA-256으로 해시됩니다. 이벤트 데이터에 대한 모든 수정은 다른 해시를 생성합니다.";
+"chain.explain_tombstone" = "톰스톤 기록";
+"chain.explain_tombstone_desc" = "증거가 무효화되면 톰스톤 이벤트가 체인에 기록됩니다. 원래 이벤트는 남아 있지만 무효로 표시됩니다.";
+// Chain Reset
+"chain.danger_zone" = "위험 구역";
+"chain.reset_chain" = "체인 재설정";
+"chain.reset_chain_footer" = "모든 이벤트, 증거 및 미디어를 삭제합니다. 이 작업은 되돌릴 수 없습니다. 앱 업데이트 후 체인 무결성 문제를 해결하는 데 사용하세요.";
+"chain.reset_confirm_title" = "체인을 재설정하시겠습니까?";
+"chain.reset_confirm_message" = "모든 이벤트, 묘비, 앵커 및 미디어 파일이 영구적으로 삭제됩니다. 체인은 GENESIS에서 새로 시작됩니다. 이 작업은 되돌릴 수 없습니다.";
+"chain.reset_confirm_button" = "체인 재설정";
+"chain.auth_error" = "인증 오류";
+"chain.auth_failed" = "인증 실패: %@";
+// v36 TSA Redundancy & Chain Integrity
+"settings.tsa.provider" = "타임스탬프 제공자";
+"settings.tsa.configure" = "설정";
+"detail.anchor_info" = "타임스탬프 정보";
+"detail.anchor_provider" = "타임스탬프 제공자";
+"detail.anchor_time" = "앵커 시간";
+"detail.anchor_id" = "앵커 ID";
+"chain.verification_passed_with_warnings" = "무결성 확인 (경고 있음)";
+"chain.warnings_found" = "%d개의 경고";
+"chain.error_deleted_gap" = "삭제로 인한 갭";
+"settings.timestamp.footer_pro" = "자동 장애 조치: DigiCert → Sectigo. 약 30분마다 자동 앵커링됩니다.";
+"verify.check.signature_no_public_key" = "검증 불가 - 증명에 public_key가 없습니다";
+// MARK: - Image Verification (AssetHash)
+"verify.image_verification_title" = "이미지 검증";
+"verify.image_verification_desc" = "원본 이미지를 선택하여 증명과 일치하는지 확인합니다. 이미지가 수정되지 않았음을 확인합니다.";
+"verify.expected_asset_hash" = "예상 AssetHash:";
+"verify.select_image_to_verify" = "검증할 이미지 선택";
+"verify.select_image_hint" = "증명과 비교할\n원본 이미지 파일을 선택하세요";
+"verify.image_selected" = "이미지가 선택되었습니다";
+"verify.change_image" = "이미지 변경";
+"verify.verify_with_image" = "이미지와 함께 검증";
+"verify.verify_with_video" = "동영상과 함께 검증";
+"verify.verify_without_image" = "증명만 검증";
+"verify.skip_image_verification" = "이미지 검증 건너뛰기";
+"verify.image_verification_note" = "이미지 검증은 사진이 증명의 AssetHash와 일치하는지 확인합니다. 이것이 없으면 증명 구조만 검증됩니다.";
+"verify.asset_hash_verification" = "AssetHash 검증";
+"verify.select_image_from_files" = "파일 앱에서 선택（원본 파일, 사진 아님）";
+// MARK: - Raw Data Export
+"share.raw_data_export" = "파일에 저장";
+"share.raw_data_export_desc" = "파일 앱에 직접 저장 (카카오톡 등 X)";
+"share.raw_data_export_note" = "카카오톡/AirDrop은 이미지를 압축합니다. 파일 앱에서 공유하세요";
+"share.for_verification" = "검증 지원";
+"verify.proof_file" = "VeriCapture 증거";
+// MARK: - Full Chain Export with Tombstones
+"export.full_chain_title" = "전체 체인 내보내기";
+"export.full_chain_desc" = "삭제 기록(Tombstone)을 포함한 모든 증거 내보내기";
+"export.include_tombstones" = "Tombstone 포함";
+"export.include_tombstones_desc" = "삭제가 의도적임을 증명하는 무효화 기록 포함";
+"export.shareable_package" = "공유용 패키지";
+"export.shareable_package_desc" = "제3자 검증용 (최소 데이터, 개인정보 보호 우선)";
+"export.internal_package" = "내부용 패키지";
+"export.internal_package_desc" = "완전한 감사 추적 (포렌식, 법적 목적)";
+"export.tombstone_note" = "Tombstone은 삭제가 조작이 아닌 의도적임을 증명합니다";
+"export.tombstone_count" = "%d개의 tombstone 포함";
+"export.package_generated" = "내보내기 패키지 생성됨";
+"export.package_includes" = "%d개 이벤트와 %d개 tombstone 포함";
+// Chain Statistics Labels
+"chain.stats_note" = "총 = 활성 + 무효화된 이벤트 (Tombstone은 별도 계산)";
+"chain.active_note" = "유효한 증거";
+"chain.invalidated_note" = "Tombstone으로 무효화된 증거";
+// MARK: - Case Management (v40)
+"case.title" = "케이스";
+"case.create_new" = "새 케이스 만들기";
+"case.empty_title" = "케이스 없음";
+"case.empty_message" = "프로젝트나 현장별로 촬영을 정리하려면 케이스를 만드세요.";
+"case.current" = "현재 케이스";
+"case.other" = "다른 케이스";
+"case.archived" = "보관됨";
+"case.show_archived" = "보관된 항목 표시";
+"case.name" = "이름";
+"case.name_placeholder" = "케이스 이름 입력";
+"case.description" = "설명";
+"case.description_placeholder" = "선택적 메모";
+"case.icon" = "아이콘";
+"case.color" = "색상";
+"case.select" = "선택";
+"case.edit" = "편집";
+"case.archive" = "보관";
+"case.unarchive" = "보관 해제";
+"case.delete" = "삭제";
+"case.export" = "내보내기";
+"case.create_title" = "케이스 만들기";
+"case.edit_title" = "케이스 편집";
+"case.save" = "저장";
+"case.create" = "만들기";
+"case.tap_to_change" = "탭하여 케이스 변경";
+"case.delete_confirm_title" = "케이스 삭제";
+"case.delete_confirm_message" = "이 케이스를 삭제하시겠습니까?";
+"case.delete_has_events" = "이 케이스에 %d개의 이벤트가 있습니다. 그래도 삭제하시겠습니까?";
+"case.stats_title" = "케이스 통계";
+"case.stats_total" = "총 이벤트";
+"case.stats_active" = "활성";
+"case.stats_invalidated" = "무효화됨";
+"case.stats_anchored" = "앵커됨";
+"case.stats_pending" = "대기 중";
+"case.stats_date_range" = "기간";
+"case.stats_size" = "저장 용량";
+"case.export_title" = "케이스 내보내기";
+"case.export_success" = "케이스를 성공적으로 내보냈습니다";
+"case.export_include_location" = "위치 데이터 포함";
+"case.export_metadata_only" = "메타데이터만 (JSON)";
+"case.export_full_package" = "사진 포함 전체 패키지 (ZIP)";
+"case.export_message" = "내보내기 형식을 선택하세요. 전체 패키지에는 암호화 증명이 포함된 모든 사진이 포함됩니다.";
+"case.quick_capture" = "빠른 촬영";
+"case.selector_title" = "케이스 선택";
+"case.default_name" = "기본";
+"common.edit" = "편집";
+// Biometric Authentication
+"biometric.delete_proof" = "증거 삭제에는 인증이 필요합니다";
+"biometric.export_full_proof" = "개인 데이터가 포함된 전체 증거 내보내기에는 인증이 필요합니다";
+"biometric.verified_capture" = "촬영 작업 인증";
+"biometric.reset_chain" = "체인 재설정에는 인증이 필요합니다";
+// Delete Errors
+"delete.error_target_not_found" = "오류: 대상 이벤트를 찾을 수 없습니다";
+"delete.error_already_invalidated" = "오류: Tombstone이 이미 존재합니다";
+"delete.error_event_not_active" = "오류: 이벤트가 활성 상태가 아닙니다";
+"delete.error_signature_failed" = "오류: 서명 실패";
+"delete.error_storage_failed" = "오류: Tombstone 저장 실패";
+"delete.error_generic" = "삭제 실패: %@";
+"delete.error_auth_failed" = "인증 실패: %@";
+// Chain Error Details
+"chain.warning_badge" = "경고";
+"chain.event_label" = "이벤트: %@";
+"chain.deleted_event_gap_message" = "삭제된 이벤트로 인한 간격";
+"chain.expected_label" = "예상: %@";
+"chain.actual_label" = "실제: %@";
+// Detail View Labels
+"detail.invalidated_at" = "무효화 시간: %@";
+"detail.human_attestation" = "본인 인증";
+"detail.proof_id" = "증거 ID";
+"detail.asset_hash" = "자산 해시";
+"detail.event_hash" = "이벤트 해시";
+// Case Management
+"case.section_info" = "정보";
+"case.section_events" = "이벤트";
+"case.section_technical" = "기술 정보";
+"case.no_events" = "이벤트 없음";
+"case.photo_singular" = "%d 장";
+"case.photo_plural" = "%d 장";
+"case.last_capture" = "마지막: %@";
+// Settings - Cases
+"settings.cases.title" = "케이스";
+"settings.cases.footer" = "프로젝트나 현장별로 촬영을 정리하세요. 각 케이스는 독립적인 해시 체인을 가집니다.";
+// Capture View
+"capture.simulator_title" = "시뮬레이터 모드";
+"capture.simulator_message" = "캡처 버튼을 탭하여 데모 이미지 생성";
+// Signer protection
+"verify.signer_name" = "서명자";
+"verify.signer_protected" = "해시 보호됨 (위변조 감지 가능)";
+"verify.signer_not_protected" = "해시 보호 없음 (레거시 형식)";
+// === TSA Settings ===
+"tsa_settings.configured_providers" = "구성된 제공자";
+"tsa_settings.reorder_hint" = "드래그하여 우선순위를 변경하세요. 위에 있는 항목이 먼저 시도됩니다.";
+"tsa_settings.add_provider" = "TSA 제공자 추가";
+"tsa_settings.provider_name" = "제공자 이름";
+"tsa_settings.region" = "지역";
+"tsa_settings.custom_provider_hint" = "사용자 정의 TSA 제공자는 RFC 3161을 준수해야 합니다. 프로덕션 환경에서 사용하기 전에 연결을 테스트하세요.";
+"tsa_settings.cancel" = "취소";
+"tsa_settings.add" = "추가";
+// === Verify Additional ===
+"verify.attested_badge" = "인증됨";
+"verify.verified_by_vericapture" = "VeriCapture로 검증됨";
+"verify.slogan" = "신뢰하지 말고, 검증하세요.";
+"tsa.endpoint_url" = "엔드포인트 URL";
+// === Missing TSA keys ===
+"delete.media_already_deleted" = "사진이 삭제되었습니다. 캡처 기록은 유지됩니다.";
+"delete.media_deleted_badge" = "삭제됨";
+"detail.signer_note" = "포렌식 내보내기에 포함됨";
+"tsa.add.custom" = "사용자 정의 제공자 추가";
+"tsa.cps" = "인증서 관행 선언";
+"tsa.eidas.qualified" = "eIDAS 인증";
+"tsa.last_used_provider" = "마지막 사용: %@";
+"tsa.level.bestEffort" = "최선 노력 (SLA 없음)";
+"tsa.level.demo" = "데모 전용";
+"tsa.level.production" = "프로덕션";
+"tsa.primary_provider" = "기본 제공자";
+"tsa.provider_count" = "%d개 제공자";
+"tsa.providers.title" = "TSA 제공자";
+"tsa.region.apac" = "아시아태평양";
+"tsa.region.eu" = "유럽";
+"tsa.region.global" = "글로벌";
+"tsa.region.us" = "미국";
+"tsa.section.footer" = "타임스탬프는 제3자 기관에서 제공하여 시간 무결성을 보장합니다.";
+"tsa.section.header" = "타임스탬프 인증";
+"tsa.settings.enableRedundancy" = "이중화 활성화";
+"tsa.settings.enableRedundancyDesc" = "여러 TSA 제공자를 사용하여 안정성 향상";
+"tsa.settings.proOnly" = "Pro 구독 필요";
+"tsa.status.connected" = "연결됨";
+"tsa.status.disabled" = "비활성화됨";
+"tsa.status.rateLimited" = "속도 제한됨";
+"tsa.tos" = "서비스 약관";
+"tsa.warning.commercialProhibited" = "상업적 사용 금지";
+"tsa.warning.dailyLimit" = "일일 제한: %d회 요청";
+"tsa.warning.interval" = "최소 간격: %d초";
+"tsa.warning.monthlyLimit" = "월간 제한: %d회 요청";
+"tsa.warning.noSLA" = "SLA 없음";
+"verify.tsa_pending" = "타임스탬프 대기 중";
+"verify.tsa_status" = "TSA 상태";
+"verify.verify_proof_only" = "증적만 검증 (이미지 검증 건너뛰기)";
+// === Export Media Options ===
+"settings.export_include_media" = "미디어 파일 포함";
+"settings.export_include_media_desc" = "내보내기 패키지에 원본 사진 파일 추가";
+"settings.export_all_forensic_desc_with_media" = "이미지, 센서 및 삭제 기록을 포함한 완전한 데이터";
+// === Video Recording ===
+"video.mode.photo" = "사진";
+"video.mode.video" = "동영상";
+"video.recording" = "녹화 중...";
+"video.tap_to_record" = "탭하여 녹화";
+"video.tap_to_stop" = "탭하여 정지";
+"video.processing" = "동영상 처리 중...";
+"video.hashing_progress" = "해시 계산: %d%%";
+"video.duration" = "길이";
+"video.resolution" = "해상도";
+"video.max_duration" = "최대 %d초";
+"video.saved" = "동영상 증거 저장됨";
+"video.cancelled" = "녹화 취소됨";
+// Video Share (v42)
+"share.video_only" = "동영상만 공유";
+"share.video_only.desc" = "동영상 파일 공유 (증거 데이터 없음)";
+"share.video_warning.desc" = "동영상 파일에는 증거 데이터가 포함되지 않습니다. 검증용으로는 '법무용 내보내기'를 사용하세요.";
+// Media Verification (v42 - Video Support)
+"verify.media_verification_title" = "미디어 검증";
+"verify.media_verification_desc" = "원본 미디어 파일을 선택하여 증거와 일치하는지 확인합니다. 파일이 수정되지 않았음을 확인합니다.";
+"verify.select_media_title" = "검증할 미디어 선택";
+"verify.select_media_from_files" = "파일 앱에서 선택（원본 파일, 사진 아님）";
+"verify.media_selected" = "미디어 파일이 선택됨";
+"verify.change_media" = "미디어 변경";
+"verify.skip_media_verification" = "증거만 검증（미디어 검증 건너뛰기）";
+"verify.skip_media_verification_desc" = "미디어 검증은 파일이 증거의 AssetHash와 일치하는지 확인합니다. 건너뛰면 증거 구조만 검증됩니다.";
+
+// Video verification (v42)
+"verify.media_verification_title" = "동영상 검증";
+"verify.media_verification_desc" = "원본 동영상을 선택하여 증거와 일치하는지 검증합니다. 동영상이 변조되지 않았음을 확인합니다.";
+"verify.select_media_title" = "검증할 동영상 선택";
+"verify.select_media_from_files" = "파일 앱에서 선택（원본 동영상 파일）";
+"verify.verify_proof_only_video" = "증거만 검증（동영상 검증 건너뛰기）";
+"verify.skip_video_verification" = "동영상 검증 건너뛰기";
+"verify.video_verification_note" = "동영상 검증은 동영상이 증거의 AssetHash와 일치하는지 확인합니다. 이것이 없으면 증거 구조만 검증됩니다.";
+
+// Media type (v42)
+"verify.media_type" = "미디어 유형";
+"verify.media_type_image" = "이미지";
+"verify.media_type_video" = "동영상";
+
+// v42: Verification warning message
+"verify.tamper_warning" = "The information below may be incorrect or tampered with. Please request the correct data from the owner of the original data.";
+
+// v42: Simplified share options
+"share.export_zip" = "Export for Verification";
+"share.export_zip_desc" = "ZIP file with media and proof";
+"share.qr_preview_title" = "QR Code Preview";
+"share.qr_added_explanation" = "Verification QR code added";
+"share.qr_scan_instruction" = "Scan the QR code to verify";
+"share.share_with_qr" = "Share with QR";
+"share.generating_qr" = "Generating QR code...";
+"share.verification_badge" = "Verifiable";
+"share.proof_lost_warning" = "Proof data will be lost. Re-download will not be verifiable.";
+"settings.view_on_github" = "GitHub에서 보기";
+"share.c2pa_export" = "C2PA 내보내기";
+"share.c2pa_export_desc" = "C2PA 호환 매니페스트 (다른 도구용)";
+"settings.export_include_c2pa" = "C2PA 매니페스트 포함";
+"settings.export_include_c2pa_desc" = "내보내기에 C2PA 호환 매니페스트 추가";
+"settings.c2pa_mapping_title" = "CPP ↔ C2PA 매핑";
+"settings.c2pa_mapping_header" = "C2PA 호환성";
+"settings.c2pa_mapping_desc" = "CPP 증명 데이터가 C2PA 형식으로 변환됩니다. Adobe Content Authenticity 등 다른 C2PA 도구와의 상호 운용에 사용하세요.";
+"common.close" = "닫기";
+"c2pa_info.title" = "C2PA 호환성";
+"c2pa_info.what_is_c2pa" = "C2PA란?";
+"c2pa_info.what_is_c2pa_desc" = "C2PA(콘텐츠 출처 및 진위 연합)는 Adobe, Microsoft, Google 등이 지원하는 미디어 진위성 개방 표준입니다. 출처 데이터를 미디어 파일에 직접 삽입합니다.";
+"c2pa_info.how_to_use" = "사용 방법";
+"c2pa_info.how_to_use_desc" = "VeriCapture에서 내보낸 C2PA 매니페스트는 Adobe Content Authenticity, Verify.contentauthenticity.org 및 기타 C2PA 호환 도구로 검증할 수 있습니다.";
+"c2pa_info.learn_more" = "C2PA에 대해 자세히 알아보기";
+
+// MARK: - TSA Anchor Verification (v42.2)
+"verify.tsa.message_imprint" = "TSA MessageImprint";
+"verify.tsa.message_imprint_desc" = "TSA signature verification";
+"verify.tsa.message_imprint_match" = "AnchorDigest == messageImprint";
+"verify.tsa.message_imprint_mismatch" = "AnchorDigest != messageImprint";
+"verify.tsa.single_leaf" = "Single-leaf Merkle verified";
+"verify.tsa.pre_v42_warning" = "TSA timestamp exists but messageImprint not stored (pre-v42.2)";
+"verify.tsa.anchor_digest" = "Anchor Digest";
+"verify.tsa.tree_size" = "Tree Size";
