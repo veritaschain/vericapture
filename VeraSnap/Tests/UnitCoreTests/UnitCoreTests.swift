@@ -85,16 +85,9 @@ final class UnitCoreTests: XCTestCase {
         let (privateKey, publicKey) = try SecKeyFactory.generateKeyPair()
         let payload = Data("payload".utf8)
         let payloadHash = CryptoVerificationService.sha256(payload)
-        let messageHash = Data(verifyHexString: payloadHash)
-        XCTAssertNotNil(messageHash)
-
-        let signature = try SecKeyFactory.sign(
-            messageHash: messageHash ?? Data(),
-            privateKey: privateKey
-        )
         let publicKeyBase64 = try SecKeyFactory.publicKeyBase64(publicKey: publicKey)
 
-        let event = CPPEventJSON(
+        var event = CPPEventJSON(
             eventID: "evt-test",
             chainID: "chain-test",
             prevHash: "GENESIS",
@@ -122,7 +115,33 @@ final class UnitCoreTests: XCTestCase {
             sensorData: nil,
             cameraSettings: nil,
             signerInfo: nil,
-            eventHash: "sha256:\(payloadHash)",
+            eventHash: "",
+            signature: ""
+        )
+
+        let eventHash = try CryptoVerificationService.computeEventHash(event: event)
+        let messageHash = Data(verifyHexString: eventHash.replacingOccurrences(of: "sha256:", with: ""))
+        XCTAssertNotNil(messageHash)
+
+        let signature = try SecKeyFactory.sign(
+            messageHash: messageHash ?? Data(),
+            privateKey: privateKey
+        )
+
+        event = CPPEventJSON(
+            eventID: event.eventID,
+            chainID: event.chainID,
+            prevHash: event.prevHash,
+            timestamp: event.timestamp,
+            eventType: event.eventType,
+            hashAlgo: event.hashAlgo,
+            signAlgo: event.signAlgo,
+            asset: event.asset,
+            captureContext: event.captureContext,
+            sensorData: event.sensorData,
+            cameraSettings: event.cameraSettings,
+            signerInfo: event.signerInfo,
+            eventHash: eventHash,
             signature: "es256:\(signature.base64EncodedString())"
         )
 

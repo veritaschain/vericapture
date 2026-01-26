@@ -98,19 +98,25 @@ class CryptoVerificationService {
         return result
     }
 
-    // MARK: - EventHash Verification
+    // MARK: - EventHash Calculation (Shared)
 
-    /// Verify EventHash by recalculating from event data
-    /// Uses JSONCanonicalizer for consistency with event generation
-    static func verifyEventHash(event: CPPEventJSON) throws -> Bool {
+    static func computeEventHash(event: CPPEventJSON) throws -> String {
         var eventDict = try eventToDictionary(event)
         eventDict.removeValue(forKey: "EventHash")
         eventDict.removeValue(forKey: "Signature")
 
         let canonicalString = try jcsCanonize(eventDict)
         let canonicalData = canonicalString.data(using: .utf8) ?? Data()
-        let calculatedHash = "sha256:" + sha256(canonicalData)
+        return "sha256:" + sha256(canonicalData)
+    }
 
+    // MARK: - EventHash Verification
+
+    /// Verify EventHash by recalculating from event data
+    /// Uses JSONCanonicalizer for consistency with event generation
+    static func verifyEventHash(event: CPPEventJSON) throws -> Bool {
+        let calculatedHash = try computeEventHash(event: event)
+        
         return calculatedHash.lowercased() == event.eventHash.lowercased()
     }
 
@@ -170,12 +176,8 @@ class CryptoVerificationService {
 
         // 5. SECURITY FIX: EventHashを再計算（JSONに書かれている値を信用しない）
         // これにより、Eventの内容を改ざんしてEventHashをそのままにしても検証が失敗する
-        var eventDict = try eventToDictionary(event)
-        eventDict.removeValue(forKey: "EventHash")
-        eventDict.removeValue(forKey: "Signature")
-        let canonicalString = try jcsCanonize(eventDict)
-        let canonicalData = canonicalString.data(using: .utf8) ?? Data()
-        let recalculatedHashHex = sha256(canonicalData)
+        let recalculatedHash = try computeEventHash(event: event)
+        let recalculatedHashHex = recalculatedHash.replacingOccurrences(of: "sha256:", with: "")
 
         guard let messageHash = Data(verifyHexString: recalculatedHashHex) else {
             throw VerifyCryptoError.invalidHash
