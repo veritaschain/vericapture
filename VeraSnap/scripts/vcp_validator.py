@@ -16,8 +16,9 @@ def main() -> int:
     parser.add_argument("--input-dir", required=True)
     args = parser.parse_args()
 
-    pattern = os.path.join(args.input_dir, "*.json")
-    files = glob.glob(pattern)
+    # Search JSON recursively (download-artifact preserves directory structure)
+    pattern = os.path.join(args.input_dir, "**", "*.json")
+    files = glob.glob(pattern, recursive=True)
     if not files:
         print(f"No proof JSON files found in: {args.input_dir}")
         return 1
@@ -27,6 +28,8 @@ def main() -> int:
         with open(path, "r", encoding="utf-8") as f:
             json.load(f)
         print(f"OK: {path}")
+
+    print(f"Total proofs: {len(files)}")
 
     return 0
 
