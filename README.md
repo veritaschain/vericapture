@@ -1,4 +1,4 @@
-# VeriCapture
+# VeraSnap
 
 iOS cryptographic evidence camera app implementing Content Provenance Protocol (CPP). Captures photos and videos with RFC 3161 timestamps, Merkle tree integrity logging, and biometric authentication.
 
@@ -8,13 +8,13 @@ iOS cryptographic evidence camera app implementing Content Provenance Protocol (
 
 ## Overview
 
-VeriCapture is a world-first consumer application that cryptographically binds media capture to verified human presence while maintaining privacy through local processing. It provides tamper-evident digital evidence for legal documentation, real estate verification, construction progress tracking, and audit compliance.
+VeraSnap is a world-first consumer application that cryptographically binds media capture to verified human presence while maintaining privacy through local processing. It provides tamper-evident digital evidence for legal documentation, real estate verification, construction progress tracking, and audit compliance.
 
 ### Core Principle
 
 > **"Provenance ≠ Truth"**
 > 
-> VeriCapture proves *when* and *by what device* media was captured, but does not guarantee the truth or validity of the content itself.
+> VeraSnap proves *when* and *by what device* media was captured, but does not guarantee the truth or validity of the content itself.
 
 ## Features
 
@@ -55,7 +55,7 @@ VeriCapture is a world-first consumer application that cryptographically binds m
 ## Architecture
 
 ```
-VeriCapture/
+VeraSnap/
 ├── Sources/
 │   ├── App/                 # App entry point
 │   ├── Models/              # Data models (CPPEvent, Case, etc.)
@@ -76,17 +76,17 @@ VeriCapture/
 
 ## Specifications
 
-VeriCapture implements the following specifications:
+VeraSnap implements the following specifications:
 
 | Specification | Version | Description |
 |--------------|---------|-------------|
 | [CPP](https://github.com/veritaschain/cpp-spec) | 1.2 | Content Provenance Protocol |
-| [VCP](https://github.com/veritaschain/vcp-spec) | 1.1 | VeriCapture Protocol |
+| [VCP](https://github.com/veritaschain/vcp-spec) | 1.1 | VeraSnap Protocol |
 | [VAP Framework](https://github.com/veritaschain/vap-spec) | 1.2 | Verifiable AI Provenance Framework |
 
 ## Localization
 
-VeriCapture supports 10 languages:
+VeraSnap supports 10 languages:
 
 | Language | Code |
 |----------|------|
@@ -110,19 +110,19 @@ VeriCapture supports 10 languages:
 
 ## Installation
 
-VeriCapture is available on the [App Store](https://apps.apple.com/app/vericapture).
+VeraSnap is available on the [App Store](https://apps.apple.com/app/VeraSnap).
 
 ### For Development
 
 1. Clone the repository
 ```bash
-git clone https://github.com/veritaschain/vericapture.git
-cd vericapture
+git clone https://github.com/veritaschain/VeraSnap.git
+cd VeraSnap
 ```
 
 2. Open in Xcode
 ```bash
-open VeriCapture.xcodeproj
+open VeraSnap.xcodeproj
 ```
 
 3. Configure signing
@@ -147,13 +147,13 @@ open VeriCapture.xcodeproj
 
 ### Threat Model
 
-VeriCapture protects against:
+VeraSnap protects against:
 - Post-capture tampering
 - Timestamp falsification
 - Device spoofing
 - Chain manipulation
 
-VeriCapture does NOT protect against:
+VeraSnap does NOT protect against:
 - Pre-capture staging
 - Content authenticity
 - Physical world verification
@@ -180,7 +180,7 @@ See [LICENSE](./LICENSE) for details.
 
 ## Related Projects
 
-- [VeriCapture Web](https://veritaschain.org/vap/cpp/vericapture/) - Online verification tool
+- [VeraSnap Web](https://veritaschain.org/vap/cpp/vericapture/) - Online verification tool
 - [VAP Framework](https://github.com/veritaschain/vap-spec) - Verifiable AI Provenance specifications
 
 ## Contact
