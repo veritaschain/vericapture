@@ -116,7 +116,7 @@ class CryptoVerificationService {
     /// Uses JSONCanonicalizer for consistency with event generation
     static func verifyEventHash(event: CPPEventJSON) throws -> Bool {
         let calculatedHash = try computeEventHash(event: event)
-        
+
         return calculatedHash.lowercased() == event.eventHash.lowercased()
     }
 
