@@ -1,0 +1,44 @@
+{
+  "ProofVersion": "1.0",
+  "ProofType": "CPP",
+  "GeneratedAt": "2026-01-21T00:00:01Z",
+  "GeneratedBy": "fixture",
+  "Event": {
+    "EventID": "evt-0001",
+    "ChainID": "chain-0001",
+    "PrevHash": "GENESIS",
+    "Timestamp": "2026-01-21T00:00:00Z",
+    "EventType": "CAPTURE",
+    "HashAlgo": "SHA-256",
+    "SignAlgo": "ES256",
+    "Asset": {
+      "AssetID": "asset-0001",
+      "AssetType": "image",
+      "AssetHash": "sha256:6f8eabc17147df93de5ff4b2aa8742b0158356ef71311c17af588798f7f2e4f8",
+      "AssetName": "fixture.jpg",
+      "AssetSize": 25,
+      "MimeType": "image/jpeg"
+    },
+    "CaptureContext": {
+      "DeviceID": "device-0001",
+      "DeviceModel": "iPhone15,3",
+      "OSVersion": "iOS 17.0",
+      "AppVersion": "0.1.0"
+    },
+    "EventHash": "sha256:c9d7f2f442b2ef63f9a765ca559c91fee4e21604b58e347bcafc9ae3c3ac9f63",
+    "Signature": "es256:AA=="
+  },
+  "Anchor": null,
+  "Verification": {
+    "PublicKey": "AA==",
+    "KeyAttestation": null,
+    "VerificationEndpoint": null,
+    "Signer": null
+  },
+  "Metadata": {
+    "OriginalFilename": "fixture.jpg",
+    "OriginalSize": 25,
+    "ThumbnailHash": null,
+    "Location": null
+  }
+}

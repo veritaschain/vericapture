@@ -1,0 +1,3 @@
+# Minimal Appfile stub. Fill in with your app identifiers.
+app_identifier("com.example.vericapture")
+team_id("YOUR_TEAM_ID")
