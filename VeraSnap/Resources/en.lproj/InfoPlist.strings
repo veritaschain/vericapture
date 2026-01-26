@@ -1,0 +1,25 @@
+/*
+  InfoPlist.strings
+  VeraSnap
+
+  English localization for Info.plist
+  © 2026 VeritasChain株式会社
+*/
+
+// App Name
+"CFBundleDisplayName" = "VeraSnap";
+
+// Camera Usage Description
+"NSCameraUsageDescription" = "VeraSnap uses the camera to take photos and cryptographically generate proof of capture, making the moment of capture verifiable.";
+
+// Location Usage Description
+"NSLocationWhenInUseUsageDescription" = "VeraSnap uses location to record the capture location in the proof. Location data is hashed to protect your privacy.";
+
+// Motion Usage Description
+"NSMotionUsageDescription" = "VeraSnap uses motion sensors to record device orientation at the time of capture in the proof.";
+
+// Face ID Usage Description  
+"NSFaceIDUsageDescription" = "VeraSnap uses Face ID to prevent unauthorized operations when deleting proofs or exporting full proofs containing personal information.";
+
+// Photo Library Add Usage Description
+"NSPhotoLibraryAddUsageDescription" = "VeraSnap needs access to save captured photos to your photo library.";
