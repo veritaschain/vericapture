@@ -1,0 +1,9 @@
+# Minimal Fastlane stub. Replace with real lanes and signing config.
+default_platform(:ios)
+
+platform :ios do
+  desc "Build and upload to TestFlight"
+  lane :beta do
+    UI.message("TODO: configure build and upload steps")
+  end
+end

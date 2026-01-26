@@ -1,0 +1,70 @@
+name: VeriCapture-QA-Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  logic-integrity-check:
+    name: SwiftPM Unit Core Test
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install SwiftLint
+        run: brew install swiftlint
+
+      - name: Run SwiftLint
+        run: swiftlint lint --strict --reporter github-actions-logging
+
+      - name: Run Swift Unit Tests
+        # Verifies core crypto and proof integrity with SwiftPM
+        run: swift test
+
+      - name: Upload Fixture Proofs
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-proofs
+          path: Tests/Fixtures/**/proof*.json
+
+  vcp-protocol-validation:
+    name: VCP Standard Compliance (Python)
+    needs: logic-integrity-check
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: generated-proofs
+          path: proofs
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install cryptography
+
+      - name: Validate Proof Integrity
+        # Independently validate app-produced JSON using SHA-256/ES256 rules
+        run: python3 scripts/vcp_validator.py --input-dir proofs
+
+  deploy-testflight:
+    name: Deliver to TestFlight
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: vcp-protocol-validation
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fastlane Beta
+        # Auto-distribute via Fastlane
+        run: fastlane beta
+        env:
+          APP_STORE_CONNECT_API_KEY: ${{ secrets.ASC_API_KEY }}
