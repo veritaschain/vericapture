@@ -152,6 +152,16 @@ final class UnitCoreTests: XCTestCase {
             )
         )
 
+        let tamperedAsset = AssetInfoJSON(
+            assetID: event.asset.assetID,
+            assetType: event.asset.assetType,
+            assetHash: event.asset.assetHash,
+            assetName: "payload-tampered.bin",
+            assetSize: event.asset.assetSize,
+            mimeType: event.asset.mimeType,
+            videoMetadata: event.asset.videoMetadata
+        )
+
         let tamperedEvent = CPPEventJSON(
             eventID: event.eventID,
             chainID: event.chainID,
@@ -160,12 +170,12 @@ final class UnitCoreTests: XCTestCase {
             eventType: event.eventType,
             hashAlgo: event.hashAlgo,
             signAlgo: event.signAlgo,
-            asset: event.asset,
+            asset: tamperedAsset,
             captureContext: event.captureContext,
             sensorData: event.sensorData,
             cameraSettings: event.cameraSettings,
             signerInfo: nil,
-            eventHash: "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+            eventHash: event.eventHash,
             signature: event.signature
         )
 
