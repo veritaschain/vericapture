@@ -32,8 +32,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: generated-proofs
-          # working-directory is VeraSnap, so use relative path without the prefix
-          path: Tests/Fixtures/**/proof*.json
+          # actions use repo root for path resolution, so include the VeraSnap prefix
+          path: VeraSnap/Tests/Fixtures/**/*proof*.json
 
   vcp-protocol-validation:
     name: VCP Standard Compliance (Python)
@@ -48,8 +48,8 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: generated-proofs
-          # working-directory is VeraSnap, so download into ./proofs
-          path: proofs
+          # download into VeraSnap/proofs so the next run step finds it
+          path: VeraSnap/proofs
 
       - name: Set up Python
         uses: actions/setup-python@v5
