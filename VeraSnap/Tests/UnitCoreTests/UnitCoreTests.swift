@@ -108,7 +108,8 @@ final class UnitCoreTests: XCTestCase {
                 assetHash: "sha256:\(payloadHash)",
                 assetName: "payload.bin",
                 assetSize: payload.count,
-                mimeType: "application/octet-stream"
+                mimeType: "application/octet-stream",
+                videoMetadata: nil
             ),
             captureContext: CaptureContextJSON(
                 deviceID: "device-test",
@@ -120,6 +121,7 @@ final class UnitCoreTests: XCTestCase {
             ),
             sensorData: nil,
             cameraSettings: nil,
+            signerInfo: nil,
             eventHash: "sha256:\(payloadHash)",
             signature: "es256:\(signature.base64EncodedString())"
         )
@@ -143,6 +145,7 @@ final class UnitCoreTests: XCTestCase {
             captureContext: event.captureContext,
             sensorData: event.sensorData,
             cameraSettings: event.cameraSettings,
+            signerInfo: nil,
             eventHash: "sha256:0000000000000000000000000000000000000000000000000000000000000000",
             signature: event.signature
         )
