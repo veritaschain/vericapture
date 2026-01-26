@@ -10,6 +10,9 @@ jobs:
   logic-integrity-check:
     name: SwiftPM Unit Core Test
     runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: VeraSnap
 
     steps:
       - name: Checkout Code
@@ -29,19 +32,22 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: generated-proofs
-          path: Tests/Fixtures/**/proof*.json
+          path: VeraSnap/Tests/Fixtures/**/proof*.json
 
   vcp-protocol-validation:
     name: VCP Standard Compliance (Python)
     needs: logic-integrity-check
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: VeraSnap
 
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: generated-proofs
-          path: proofs
+          path: VeraSnap/proofs
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -60,6 +66,9 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: vcp-protocol-validation
     runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: VeraSnap
 
     steps:
       - uses: actions/checkout@v4
